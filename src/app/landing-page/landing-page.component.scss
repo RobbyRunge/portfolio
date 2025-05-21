@@ -1,6 +1,27 @@
 .landing-page {
   height: 100vh;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+
+  .you-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(217, 217, 217, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 128px;
+    }
+  }
 }
 
 .header-background {
@@ -11,4 +32,5 @@
   height: 98px;
   z-index: 1;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 13.56%, rgba(0, 0, 0, 0.6) 84.01%);
+  pointer-events: none;
 }
