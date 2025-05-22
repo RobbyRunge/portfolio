@@ -24,7 +24,7 @@ export class AppComponent implements AfterViewInit {
         cursor.style.top = `${e.clientY}px`;
       });
       
-      document.querySelectorAll('a, button').forEach(item => {
+      document.querySelectorAll('a, button, img').forEach(item => {
         item.addEventListener('mouseenter', () => {
           cursor.style.transform = 'translate(-50%, -50%) scale(1.2)';
         });
