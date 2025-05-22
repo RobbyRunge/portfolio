@@ -21,6 +21,27 @@
       margin: 0;
       font-size: 128px;
     }
+
+    .button-position-you-info {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+
+      button {
+        height: 48px;
+        width: 172px;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 100px;
+
+        &:hover {
+          animation-timing-function: ease-out;
+          animation-duration: 300ms;
+        }
+      }
+    }
   }
 }
 
