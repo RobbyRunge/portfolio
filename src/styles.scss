@@ -1,5 +1,16 @@
+@font-face {
+  font-family: Karla;
+  src: url(../src/assets/fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Fira Code;
+  src: url(../src/assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
+}
+
 * {
   color: rgba(255, 255, 255, 1);
+  font-family: Karla;
 }
 
 body {
