@@ -31,7 +31,7 @@
 
       button {
         height: 48px;
-        width: 192px;
+        width: 182px;
         padding-left: 24px;
         padding-right: 24px;
         background-color: transparent;
@@ -69,12 +69,12 @@
   }
 
   49.9% {
-    transform: translateX(-130%);
+    transform: translateX(-150%);
     opacity: 1;
   }
 
   50% {
-    transform: translateX(130%);
+    transform: translateX(150%);
     opacity: 0;
   }
 
@@ -153,5 +153,23 @@
 
   50% {
     transform: translate(-50%, -40%) rotate(-45deg);
+  }
+}
+
+.container-info-links {
+  height: 480px;
+  gap: 24px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .border-right{
+    position: absolute;
+    bottom: 0;
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 186px;
+    width: 0;
   }
 }
