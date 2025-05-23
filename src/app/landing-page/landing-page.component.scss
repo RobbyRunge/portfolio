@@ -183,38 +183,6 @@
       width: 30px;
       height: 30px;
     }
-
-    .nav-container {
-      position: relative;
-      display: inline-block;
-
-      img {
-        cursor: pointer;
-        display: block;
-      }
-
-      .normal {
-        transition: opacity 125ms ease-in-out;
-      }
-
-      .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 125ms ease-in-out;
-      }
-
-      &:hover {
-        .normal {
-          opacity: 0;
-        }
-
-        .hover {
-          opacity: 1;
-        }
-      }
-    }
   }
 
   .border-right {
