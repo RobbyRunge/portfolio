@@ -239,3 +239,44 @@
     }
   }
 }
+
+.marquee {
+  position: absolute;
+  bottom: 34px;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background-color: rgba(67, 67, 67, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5.300000190734863px);
+  transform: rotate(-2deg);
+  
+  .marquee-inner {
+    display: flex;
+    position: relative;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+
+    p {
+      white-space: nowrap;
+      color: rgba(61, 207, 182, 1);
+      font-size: 32px;
+      padding: 12px 32px 12px 32px;
+      margin: 0 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
