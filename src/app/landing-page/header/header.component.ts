@@ -1,8 +1,10 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../shared/translation.service';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -10,7 +12,10 @@ export class HeaderComponent {
   mobileMenuOpen = false;
   isGerman = true;
 
-  constructor(private elementRef: ElementRef) { }
+  constructor(
+    private elementRef: ElementRef,
+    private translationService: TranslationService
+  ) { }
 
   toggleMobileMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
@@ -53,5 +58,7 @@ export class HeaderComponent {
 
   changeButton() {
     this.isGerman = !this.isGerman;
+    const lang = this.isGerman ? 'de' : 'en';
+    this.translationService.changeLang(lang);
   }
 }

@@ -1,0 +1,18 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte"
+  },
+  "HERO": {
+    "JOB_TITLE": "Frontend Entwickler",
+    "MY_PROJECTS": "Meine Projekte",
+    "CONTACT_ME": "Kontaktiere mich"
+  },
+  "MARQUEE": {
+    "MOBILE_WORK": "Einsetzbar für mobiles Arbeiten",
+    "FRONTEND_DEV": "Frontend Entwickler",
+    "LOCATION": "Mit Sitz in Eilenburg",
+    "AVAILABLE": "Offen für Arbeit"
+  }
+}

@@ -5,9 +5,9 @@
       <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">
     </div>
     
-    <a href="#">Über mich</a>
-    <a href="#">Fähigkeiten</a>
-    <a href="#">Projekte</a>
+    <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
+    <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
+    <a href="#">{{ 'NAV.PROJECTS' | translate }}</a>
   </div>
 
   <p>LOGO</p>
@@ -20,9 +20,9 @@
 
   <div class="mobile-menu" [class.open]="mobileMenuOpen">
     <div class="mobile-nav-items">
-      <a href="#">Über mich</a>
-      <a href="#">Fähigkeiten</a>
-      <a href="#">Projekte</a>
+      <a href="#">{{ 'NAV.ABOUT' | translate }}</a>
+      <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
+      <a href="#">{{ 'NAV.PROJECTS' | translate }}</a>
       <div class="mobile-language" (click)="changeButton()">
         <img class="normal" [src]="languageButtonSrc" [alt]="languageButtonAlt">
         <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">

@@ -1,0 +1,18 @@
+{
+  "NAV": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects"
+  },
+  "HERO": {
+    "JOB_TITLE": "Frontend Developer",
+    "MY_PROJECTS": "Check my Work",
+    "CONTACT_ME": "Contact me"
+  },
+  "MARQUEE": {
+    "MOBILE_WORK": "Available for remote work",
+    "FRONTEND_DEV": "Frontend Developer",
+    "LOCATION": "Based in Eilenburg",
+    "AVAILABLE": "Open for work"
+  }
+}
