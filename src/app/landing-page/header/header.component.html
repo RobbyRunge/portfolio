@@ -1,10 +1,10 @@
 <header>
   <div class="nav-bar">
-    <div class="nav-container">
-      <img class="normal" src="/assets/imgs/header/english-button.png" alt="English button">
-      <img class="hover" src="/assets/imgs/header/english-button-hover.png" alt="English button hover">
+    <div class="nav-container" (click)="changeButton()">
+      <img class="normal" [src]="languageButtonSrc" [alt]="languageButtonAlt">
+      <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">
     </div>
-
+    
     <a href="#">Über mich</a>
     <a href="#">Fähigkeiten</a>
     <a href="#">Projekte</a>
@@ -23,9 +23,9 @@
       <a href="#">Über mich</a>
       <a href="#">Fähigkeiten</a>
       <a href="#">Projekte</a>
-      <div class="mobile-language">
-        <img class="normal" src="/assets/imgs/header/english-button.png" alt="English button">
-        <img class="hover" src="/assets/imgs/header/english-button-hover.png" alt="English button hover">
+      <div class="mobile-language" (click)="changeButton()">
+        <img class="normal" [src]="languageButtonSrc" [alt]="languageButtonAlt">
+        <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">
       </div>
     </div>
   </div>
