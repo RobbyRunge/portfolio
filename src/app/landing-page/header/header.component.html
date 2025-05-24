@@ -11,4 +11,22 @@
   </div>
 
   <p>LOGO</p>
+  
+  <div class="hamburger-icon" (click)="toggleMobileMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="mobile-menu" [class.open]="mobileMenuOpen">
+    <div class="mobile-nav-items">
+      <a href="#">Über mich</a>
+      <a href="#">Fähigkeiten</a>
+      <a href="#">Projekte</a>
+      <div class="mobile-language">
+        <img class="normal" src="/assets/imgs/header/english-button.png" alt="English button">
+        <img class="hover" src="/assets/imgs/header/english-button-hover.png" alt="English button hover">
+      </div>
+    </div>
+  </div>
 </header>

@@ -23,9 +23,12 @@ body {
 
 .content-width {
   position: relative;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 app-root {
