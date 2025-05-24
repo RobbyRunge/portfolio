@@ -72,6 +72,10 @@ header {
   }
 }
 
+.logo {
+  height: 70px;
+}
+
 p {
   margin: 0;
 }
@@ -120,13 +124,13 @@ p {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    
+
     a {
       width: 120px;
       font-size: 24px;
       text-align: left;
       position: relative;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -137,10 +141,10 @@ p {
         background-color: rgba(61, 207, 182, 1);
         transition: width 125ms ease-in-out;
       }
-      
+
       &:hover {
         color: rgba(61, 207, 182, 1);
-        
+
         &::after {
           width: 25%;
         }
@@ -150,15 +154,15 @@ p {
     .mobile-language {
       position: relative;
       width: fit-content;
-      
+
       img {
         cursor: pointer;
       }
-      
+
       .normal {
         transition: opacity 125ms ease-in-out;
       }
-      
+
       .hover {
         position: absolute;
         top: 0;
@@ -166,12 +170,12 @@ p {
         opacity: 0;
         transition: opacity 125ms ease-in-out;
       }
-      
+
       &:hover {
         .normal {
           opacity: 0;
         }
-        
+
         .hover {
           opacity: 1;
         }
@@ -198,6 +202,7 @@ p {
 }
 
 @media (max-width: 576px) {
+
   /* XS: 320px - 575px */
   .nav-bar {
     display: none;
