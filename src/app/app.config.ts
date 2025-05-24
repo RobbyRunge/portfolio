@@ -3,7 +3,6 @@ import { provideRouter } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
 import { routes } from './app.routes';
 
 export function HttpLoaderFactory(http: HttpClient) {
