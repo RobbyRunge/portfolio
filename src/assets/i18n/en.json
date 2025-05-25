@@ -6,13 +6,21 @@
   },
   "HERO": {
     "JOB_TITLE": "Frontend Developer",
-    "MY_PROJECTS": "Check my Work",
+    "MY_PROJECTS": "My Projects",
     "CONTACT_ME": "Contact me"
   },
   "MARQUEE": {
     "MOBILE_WORK": "Available for remote work",
     "FRONTEND_DEV": "Frontend Developer",
-    "LOCATION": "Based in Eilenburg",
-    "AVAILABLE": "Open for work"
+    "LOCATION": "based in Eilenburg",
+    "AVAILABLE": "open for work"
+  },
+  "ABOUT": {
+    "WHO_I_AM": "Who I am",
+    "TITLE": "About me",
+    "INTRO": "Hello, I'm Robby. IT is a great source of inspiration for me, as I enjoy constantly learning new things and staying up to date with technology. This exciting field has always fascinated me. It's simply fun to solve problems, code, or develop innovative solutions. The mix of creativity and logic excites me every day anew!",
+    "LOCATION": "I currently live in Eilenburg. I'm very open to remote work (home office).",
+    "LEARNING": "I love new technologies and constantly learn - through practice, projects, and further education.",
+    "APPROACH": "My approach: break down problems analytically, solve them creatively - always with a focus on elegant, efficient results. Perseverance and teamwork help me learn from every challenge."
   }
 }

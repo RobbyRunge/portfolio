@@ -12,7 +12,15 @@
   "MARQUEE": {
     "MOBILE_WORK": "Einsetzbar für mobiles Arbeiten",
     "FRONTEND_DEV": "Frontend Entwickler",
-    "LOCATION": "Mit Sitz in Eilenburg",
-    "AVAILABLE": "Offen für Arbeit"
+    "LOCATION": "mit Sitz in Eilenburg",
+    "AVAILABLE": "offen für Arbeit"
+  },
+  "ABOUT": {
+    "WHO_I_AM": "Wer Ich bin",
+    "TITLE": "Über mich",
+    "INTRO": "Hallo, ich bin Robby. Die IT ist für mich eine großartige Inspirationsquelle, denn ich lerne gerne ständig neue Dinge und bleibe so immer am Puls der Technik. Schon immer hat mich dieses spannende Feld fasziniert. Es macht einfach Spaß, Probleme zu lösen, zu programmieren oder innovative Lösungen zu entwickeln. Die Mischung aus Kreativität und Logik begeistert mich jeden Tag aufs Neue!",
+    "LOCATION": "Mein derzeitiger Wohnort ist Eilenburg. Ich stehe Remote-Arbeit (Home-Office) sehr offen gegenüber.",
+    "LEARNING": "Ich liebe neue Technologien und lerne ständig dazu – durch Praxis, Projekte und Weiterbildung.",
+    "APPROACH": "Mein Ansatz: Probleme analytisch zerlegen, kreativ lösen – immer mit Fokus auf elegante, effiziente Ergebnisse. Ausdauer und Teamwork helfen mir, aus jeder Herausforderung zu lernen."
   }
 }
