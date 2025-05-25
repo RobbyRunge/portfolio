@@ -39,10 +39,10 @@
   width: 568px;
   height: 588px;
   z-index: 2;
+  text-align: start;
 
   p {
     margin: 0;
-    text-align: start;
     font-size: 24px;
     font-weight: 500;
     color: rgba(61, 207, 182, 1);
@@ -67,6 +67,33 @@
     font-weight: 700;
     font-family: Fira Code;
     margin: 0;
-    text-align: start;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+.text1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  line-height: 120%;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+
+  span {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+    }
   }
 }
