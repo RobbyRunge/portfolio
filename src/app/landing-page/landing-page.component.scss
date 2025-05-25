@@ -4,7 +4,7 @@
   position: relative;
   overflow-x: hidden;
 
-  .you-info {
+  .your-info {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -16,6 +16,7 @@
     gap: 24px;
     padding: 0 15px;
     box-sizing: border-box;
+    text-align: center;
 
     h2 {
       font-family: Fira Code;
@@ -45,6 +46,10 @@
         position: relative;
         overflow: hidden;
         transition: border 125ms ease-in-out;
+
+        span {
+          cursor: pointer;
+        }
 
         .text-container {
           display: inline-block;
