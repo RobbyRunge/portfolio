@@ -112,7 +112,6 @@
   }
 }
 
-/* XL: 1200px - 1440px */
 @media (max-width: 1440px) {
   .about-me-text {
     h3 {
@@ -129,7 +128,6 @@
   }
 }
 
-/* L: 992px - 1199px */
 @media (max-width: 1200px) {
   .container-picture-and-about-me {
     height: 650px !important;
@@ -169,6 +167,11 @@
     span {
       font-size: 14px;
     }
+  }
+
+  .background-moved {
+    top: 24px;
+    left: -37px; 
   }
 }
 
@@ -214,6 +217,11 @@
     span {
       font-size: 13px;
     }
+  }
+
+  .background-moved {
+    top: 19px;
+    left: -28px;
   }
 }
 
@@ -265,6 +273,16 @@
       font-size: 14px;
     }
   }
+
+  .background-moved {
+    top: 19px;
+    left: calc(50% - 203px) !important;
+  }
+  
+
+  .profil-img .background-hover {
+    left: calc(50% - 175px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -307,6 +325,16 @@
       font-size: 12px;
     }
   }
+
+  .background-moved {
+    top: 25px;
+    left: -25px !important;
+  }
+  
+  .profil-img .background-hover {
+    width: 100%;
+    height: 460px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -339,5 +367,15 @@
       width: 18px;
       height: 18px;
     }
+  }
+
+  .background-moved {
+    top: 15px;
+    left: -15px;
+  }
+  
+  .profil-img .background-hover {
+    width: 100%;
+    height: 280px;
   }
 }
