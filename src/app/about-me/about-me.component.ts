@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -6,7 +6,17 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './about-me.component.html',
-  styleUrl: './about-me.component.scss'
+  styleUrls: ['./about-me.component.scss']
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements AfterViewInit {
+  
+  ngAfterViewInit() {
+    const profileContainer = document.getElementById('profile-container');
+    const mainImage = profileContainer?.querySelector('img:not(.background-hover)');
+    const backgroundImage = profileContainer?.querySelector('.background-hover');
+    
+    mainImage?.addEventListener('mouseenter', () => {
+      backgroundImage?.classList.add('background-moved');
+    });
+  }
 }

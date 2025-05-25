@@ -23,12 +23,26 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 
-  img {
+  > img {
+    position: relative;
     width: 568px;
     height: 568px;
     border-radius: 30px;
+    z-index: 1;
+  }
+
+  .background-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 125ms ease-out;
+  }
+
+  .background-moved {
+    top: 30px;
+    left: -46px;
   }
 }
 
@@ -104,12 +118,12 @@
     h3 {
       font-size: 56px;
     }
-    
+
     p {
       font-size: 16px;
     }
   }
-  
+
   .about-me-info p {
     font-size: 22px;
   }
@@ -120,38 +134,38 @@
   .container-picture-and-about-me {
     height: 650px !important;
   }
-  
+
   .profil-img img {
     width: 450px;
     height: 450px;
   }
-  
+
   .about-me-info {
     width: 450px;
     height: 520px;
   }
-  
+
   .about-me-text {
     height: 480px;
     width: 448px;
-    
+
     h3 {
       font-size: 48px;
     }
-    
+
     p {
       font-size: 15px;
     }
   }
-  
+
   .text1 {
     margin-top: 20px;
-    
+
     img {
       width: 28px;
       height: 28px;
     }
-    
+
     span {
       font-size: 14px;
     }
@@ -162,41 +176,41 @@
   .container-picture-and-about-me {
     height: 580px !important;
   }
-  
+
   .profil-img img {
     width: 350px;
     height: 350px;
     border-radius: 24px;
   }
-  
+
   .about-me-info {
     width: 380px;
     height: 420px;
   }
-  
+
   .about-me-text {
     height: 380px;
     width: 388px;
     padding: 24px;
-    
+
     h3 {
       font-size: 32px;
     }
-    
+
     p {
       font-size: 12px;
     }
   }
-  
+
   .text1 {
     margin-top: 16px;
     gap: 12px;
-    
+
     img {
       width: 24px;
       height: 24px;
     }
-    
+
     span {
       font-size: 13px;
     }
@@ -208,25 +222,25 @@
     height: auto;
     padding: 60px 0;
   }
-  
+
   .container-picture-and-about-me {
     height: auto !important;
     flex-direction: column;
   }
-  
+
   .profil-img {
     position: relative;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
-    
+
     img {
       width: 350px;
       height: 350px;
     }
   }
-  
+
   .about-me-info {
     position: relative;
     width: 100%;
@@ -236,17 +250,17 @@
       margin-bottom: 20px;
     }
   }
-  
+
   .about-me-text {
     position: relative;
     width: 100%;
     height: auto;
     padding: 20px;
-    
+
     h3 {
       font-size: 36px;
     }
-    
+
     p {
       font-size: 14px;
     }
@@ -257,38 +271,38 @@
   .about-me {
     padding: 40px 0;
   }
-  
+
   .profil-img img {
     width: 100%;
     height: 460px;
     border-radius: 20px;
   }
-  
+
   .about-me-info p {
     font-size: 18px;
   }
-  
+
   .about-me-text {
     padding: 16px;
-    
+
     h3 {
       font-size: 30px;
     }
-    
+
     p {
       font-size: 13px;
     }
   }
-  
+
   .text1 {
     margin-top: 14px;
     gap: 10px;
-    
+
     img {
       width: 20px;
       height: 20px;
     }
-    
+
     span {
       font-size: 12px;
     }
@@ -301,26 +315,26 @@
     height: 280px;
     border-radius: 16px;
   }
-  
+
   .about-me-info p {
     font-size: 16px;
   }
-  
+
   .about-me-text {
     padding: 12px;
-    
+
     h3 {
       font-size: 24px;
     }
-    
+
     p {
       font-size: 12px;
     }
   }
-  
+
   .text1 {
     margin-top: 12px;
-    
+
     img {
       width: 18px;
       height: 18px;
