@@ -18,7 +18,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  // overflow: hidden; 
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .content-width {
