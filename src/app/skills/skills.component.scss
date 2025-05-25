@@ -151,11 +151,21 @@
 }
 
 .skill-icons {
+  display: flex;
+  flex-wrap: wrap;
   height: 428px;
   width: 632px;
-  border-radius: 30px;
-  border: 1px solid rgba(61, 207, 182, 1);
-  background-color: rgba(31, 46, 43, 1);
-  padding: 32px;
+  gap: 72px;
   box-sizing: border-box;
+
+  .text-bottom-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    height: 64px;
+    width: 64px;
+  }
 }
