@@ -6,7 +6,7 @@
     </div>
     
     <a href="#about-me-section">{{ 'NAV.ABOUT' | translate }}</a>
-    <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
+    <a href="#skills-section">{{ 'NAV.SKILLS' | translate }}</a>
     <a href="#">{{ 'NAV.PROJECTS' | translate }}</a>
   </div>
 
@@ -21,7 +21,7 @@
   <div class="mobile-menu" [class.open]="mobileMenuOpen">
     <div class="mobile-nav-items">
       <a href="#about-me-section">{{ 'NAV.ABOUT' | translate }}</a>
-      <a href="#">{{ 'NAV.SKILLS' | translate }}</a>
+      <a href="#skills-section">{{ 'NAV.SKILLS' | translate }}</a>
       <a href="#">{{ 'NAV.PROJECTS' | translate }}</a>
       <div class="mobile-language" (click)="changeButton()">
         <img class="normal" [src]="languageButtonSrc" [alt]="languageButtonAlt">
