@@ -1,0 +1,16 @@
+.featured-projects {
+  background-color: rgba(28, 28, 28, 1);
+  height: 100vh;
+
+  .content-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-featured-projects {
+      height: 581px;
+      width: 1440px;
+      border: 1px solid white;
+    }
+  }
+}
