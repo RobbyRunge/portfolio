@@ -22,5 +22,16 @@
     "LOCATION": "Mein derzeitiger Wohnort ist Eilenburg. Ich stehe Remote-Arbeit (Home-Office) sehr offen gegenüber.",
     "LEARNING": "Ich liebe neue Technologien und lerne ständig dazu – durch Praxis, Projekte und Weiterbildung.",
     "APPROACH": "Mein Ansatz: Probleme analytisch zerlegen, kreativ lösen – immer mit Fokus auf elegante, effiziente Ergebnisse. Ausdauer und Teamwork helfen mir, aus jeder Herausforderung zu lernen."
+  },
+  "SKILLS": {
+    "TECHNOLOGIES": "Technologien",
+    "TITLE": "Skill Set",
+    "DESCRIPTION": "Ich entwickle moderne Webanwendungen mit HTML5, CSS3, JavaScript/TypeScript und Frameworks wie Angular. Mir liegt Clean Code, Performance und UX am Herzen. Da sich die Webentwicklung schnell wandelt, lerne ich ständig dazu – ob neue Tools, Bibliotheken oder Best Practices. Flexibilität und Anpassungsfähigkeit sind für mich selbstverständlich.",
+    "NEED": "Brauchen eine ",
+    "ANOTHER_SKILL": "weitere Fähigkeit?",
+    "CONTACT_ME": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+    "LETS_TALK": "Reden wir",
+    "GROWTH_MINDSET": "Growth mindset",
+    "LEARNING_INTEREST": "Ich habe ein besonderes Interesse am Lernen"
   }
 }
