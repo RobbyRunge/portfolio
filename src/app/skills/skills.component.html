@@ -1,0 +1,50 @@
+<div id="skills-section" class="skills">
+  <div class="background-img"></div>
+  <div class="content-width">
+    <div class="container-skill-set-and-icons">
+      <div class="skill-set">
+        <p>{{ 'SKILLS.TECHNOLOGIES' | translate }}</p>
+        <div class="skill-set-text">
+          <h3>{{ 'SKILLS.TITLE' | translate }}</h3>
+          <p>{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+
+          <h4>{{ 'SKILLS.NEED' | translate }} <span>{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span></h4>
+          <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
+
+          <button>
+            <span class="text-container">{{ 'SKILLS.LETS_TALK' | translate }}</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="skill-icons">
+        @for (skill of skills; track skill.name) {
+        <div class="text-bottom-icon">
+          <img [src]="skill.iconPath" [alt]="skill.alt">
+          <p>{{ skill.name }}</p>
+        </div>
+        }
+
+        <div class="text-bottom-icon skill-preview">
+          <img src="assets/imgs/skills/growth-mindset.png" alt="Growth mindset">
+          <p class="text-color-change-by-icon">{{ 'SKILLS.GROWTH_MINDSET' | translate }}</p>
+
+          <div class="skill-preview-content">
+            <span>{{ 'SKILLS.LEARNING_INTEREST' | translate }}</span>
+            <div class="icon-position">
+              <div>
+                <img src="assets/imgs/skills/react.png" alt="React icon">
+                <p>React</p>
+              </div>
+              <div>
+                <img src="assets/imgs/skills/vue-js.png" alt="Vue Js icon">
+                <p>Vue Js</p>
+              </div>
+            </div>
+            <img class="arrow-indicator" src="assets/imgs/skills/arrow-skills.png" alt="Arrow indicator">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

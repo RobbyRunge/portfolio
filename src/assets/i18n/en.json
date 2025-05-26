@@ -22,5 +22,16 @@
     "LOCATION": "I currently live in Eilenburg. I'm very open to remote work (home office).",
     "LEARNING": "I love new technologies and constantly learn - through practice, projects, and further education.",
     "APPROACH": "My approach: break down problems analytically, solve them creatively - always with a focus on elegant, efficient results. Perseverance and teamwork help me learn from every challenge."
+  },
+  "SKILLS": {
+    "TECHNOLOGIES": "Technologies",
+    "TITLE": "Skill Set",
+    "DESCRIPTION": "I develop modern web applications with HTML5, CSS3, JavaScript/TypeScript and frameworks such as Angular. Clean code, performance and UX are important to me. As web development is changing rapidly, I am constantly learning - whether new tools, libraries or best practices. Flexibility and adaptability are a matter of course for me.",
+    "NEED": "You need ",
+    "ANOTHER_SKILL": "another skill?",
+    "CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "LETS_TALK": "Let's talk",
+    "GROWTH_MINDSET": "Growth mindset",
+    "LEARNING_INTEREST": "I have a special interest in learning"
   }
 }

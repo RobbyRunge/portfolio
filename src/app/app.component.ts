@@ -2,10 +2,11 @@ import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
+import { SkillsComponent } from "./skills/skills.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPageComponent, AboutMeComponent],
+  imports: [RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
