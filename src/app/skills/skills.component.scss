@@ -192,13 +192,13 @@
   transition: color 125ms ease-in-out;
 }
 
-.tooltip {
+.skill-preview {
   position: relative;
   display: inline-block;
   transition: all 125ms ease-in-out;
 }
 
-.tooltip .tooltiptext {
+.skill-preview .skill-preview-content {
   visibility: hidden;
   opacity: 0;
   transition: visibility 125ms, opacity 125ms;
@@ -246,7 +246,7 @@
   }
 }
 
-.tooltip:hover .tooltiptext {
+.skill-preview:hover .skill-preview-content {
   visibility: visible;
   opacity: 1;
 }
