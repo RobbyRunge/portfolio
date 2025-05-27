@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 interface Project {
   id: number;
+  titleNumber: string;
   title: string;
   technologies: string[];
   imageSrc?: string;
@@ -19,22 +20,25 @@ interface Project {
 export class FeaturedProjectsComponent {
   showOverlay = false;
   currentProject: Project | null = null;
-  
+
   projects: Project[] = [
     {
       id: 1,
+      titleNumber: '01',
       title: 'Join',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       imageSrc: 'assets/imgs/featured-projects/join-hover.png'
     },
     {
       id: 2,
+      titleNumber: '02',
       title: 'Sharkie',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png'
     },
     {
       id: 3,
+      titleNumber: '03',
       title: 'DA Bubble',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
       inProgress: true
@@ -54,7 +58,7 @@ export class FeaturedProjectsComponent {
 
   nextProject(): void {
     if (!this.currentProject) return;
-    
+
     const currentIndex = this.projects.findIndex(p => p.id === this.currentProject!.id);
     const nextIndex = (currentIndex + 1) % this.projects.length;
     this.currentProject = this.projects[nextIndex];
@@ -62,7 +66,7 @@ export class FeaturedProjectsComponent {
 
   prevProject(): void {
     if (!this.currentProject) return;
-    
+
     const currentIndex = this.projects.findIndex(p => p.id === this.currentProject!.id);
     const prevIndex = (currentIndex - 1 + this.projects.length) % this.projects.length;
     this.currentProject = this.projects[prevIndex];

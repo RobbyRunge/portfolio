@@ -47,7 +47,8 @@
   <div class="overlay-content">
     <div class="close-btn" (click)="closeOverlay()">×</div>
     
-    <h2>{{ currentProject.title }}</h2>
+    <h2>{{ currentProject.titleNumber }}</h2>
+    <h3>{{ currentProject.title }}</h3>
     <div class="project-technologies">
       <span *ngFor="let tech of currentProject.technologies; let last = last">
         {{ tech }}<span *ngIf="!last"> | </span>
