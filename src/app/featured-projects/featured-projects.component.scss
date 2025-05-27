@@ -244,24 +244,24 @@
 
     .project-details {
       display: flex;
-      flex-direction: row; // Changed from column to row
+      flex-direction: row;
       margin-bottom: 40px;
-      gap: 40px; // Add spacing between text and image
+      gap: 40px;
 
       .project-description {
-        flex: 1; // Take up available space
-        max-width: 50%; // Limit width for readability
+        flex: 1;
+        max-width: 50%;
       }
 
       .project-image-large {
-        flex: 1; // Take up available space
-        max-width: 50%; // Set to 50% of container width
+        flex: 1;
+        max-width: 50%;
 
         img {
           width: 100%;
           height: auto;
           border-radius: 8px;
-          object-fit: cover; // Ensure proper image fitting
+          object-fit: cover;
         }
       }
 
