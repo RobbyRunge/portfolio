@@ -19,12 +19,10 @@
   display: flex;
   flex-direction: column;
   width: 880px;
-  height: 565px;
+  height: auto;
   gap: 41px;
 
-  // border: 1px solid green;
-
-  .border-line p {
+  p:first-child {
     color: rgba(61, 207, 182, 1);
     font-size: 24px;
     font-weight: 700;
@@ -48,24 +46,39 @@
 
 .projects-list {
   height: 327px;
-}
 
-.join-project {
-  width: 100%;
-  height: 109px;
-  border-width: 1px 0px 1px 0px;
-  border-style: solid;
-  border-color: rgba(61, 207, 182, 1);
-}
+  %project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 109px;
+    border-bottom: 1px solid rgba(61, 207, 182, 1);
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
 
-.sharkie-project {
-  width: 100%;
-  height: 109px;
-  border-bottom: 1px solid rgba(61, 207, 182, 1);
-}
+    &:hover {
+      background-color: rgba(61, 207, 182, 0.3);
+    }
 
-.da-bubble-project {
-  width: 100%;
-  height: 109px;
-  border-bottom: 1px solid rgba(61, 207, 182, 1);
+    p {
+      padding: 42px;
+      cursor: pointer;
+    }
+  }
+
+  .join-project {
+    @extend %project-item;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(61, 207, 182, 1);
+  }
+
+  .sharkie-project {
+    @extend %project-item;
+  }
+
+  .da-bubble-project {
+    @extend %project-item;
+  }
 }
