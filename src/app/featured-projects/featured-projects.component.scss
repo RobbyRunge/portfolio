@@ -79,7 +79,7 @@
       color: rgba(61, 207, 182, 1);
       cursor: pointer;
     }
-    
+
     .project-arrow {
       opacity: 0;
       transform: translateX(-10px);
@@ -114,6 +114,7 @@
       width: 295px;
       height: 192px;
       z-index: 1;
+      border-radius: 16px;
     }
 
     .hover-preview {
@@ -123,6 +124,7 @@
       width: 295px;
       height: 192px;
       z-index: 2;
+      border-radius: 30px;
     }
 
     .in-progress {
@@ -139,6 +141,7 @@
       justify-content: center;
       align-items: center;
       z-index: 2;
+      border-radius: 30px;
     }
   }
 
@@ -147,7 +150,7 @@
     border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color: rgba(61, 207, 182, 1);
-    
+
     .project-image {
       top: 0px;
       transform: translateY(0);
@@ -160,7 +163,7 @@
 
   .da-bubble-project {
     @extend %project-item;
-    
+
     .project-image {
       top: auto;
       bottom: 0px;
