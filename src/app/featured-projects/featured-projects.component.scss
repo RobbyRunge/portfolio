@@ -70,6 +70,17 @@
       color: rgba(61, 207, 182, 1);
       cursor: pointer;
     }
+    
+    .project-arrow {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 125ms ease-in-out;
+    }
+
+    &:hover .project-arrow {
+      opacity: 1;
+      transform: translateX(6px);
+    }
   }
 
   .join-project {
