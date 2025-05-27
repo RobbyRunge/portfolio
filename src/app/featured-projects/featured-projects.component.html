@@ -7,7 +7,7 @@
         Aktion zu sehen.</span>
 
       <div class="projects-list">
-        <div class="join-project">
+        <div class="join-project" (click)="openProject(1)">
           <div class="project-info">
             <p>Join <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project"></p>
             <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
@@ -17,7 +17,7 @@
             <img class="hover-preview" src="assets/imgs/featured-projects/join-hover.png" alt="Join Preview">
           </div>
         </div>
-        <div class="sharkie-project">
+        <div class="sharkie-project" (click)="openProject(2)">
           <div class="project-info">
             <p>Sharkie <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project"></p>
             <p>HTML <span>|</span> CSS <span>|</span> JavaScript</p>
@@ -27,7 +27,7 @@
             <img class="hover-preview" src="assets/imgs/featured-projects/sharkie-hover.png" alt="Sharkie Preview">
           </div>
         </div>
-        <div class="da-bubble-project">
+        <div class="da-bubble-project" (click)="openProject(3)">
           <div class="project-info">
             <p>DA Bubble <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project"></p>
             <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
@@ -38,7 +38,43 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
 
+<div class="project-overlay" *ngIf="showOverlay && currentProject">
+  <div class="overlay-background" (click)="closeOverlay()"></div>
+  <div class="overlay-content">
+    <div class="close-btn" (click)="closeOverlay()">×</div>
+    
+    <h2>{{ currentProject.title }}</h2>
+    <div class="project-technologies">
+      <span *ngFor="let tech of currentProject.technologies; let last = last">
+        {{ tech }}<span *ngIf="!last"> | </span>
+      </span>
+    </div>
+    
+    <div class="project-details">
+      <div class="project-description">
+        <h3>Projektbeschreibung</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+          Maecenas at augue eget nisi feugiat aliquam. Vivamus eu tortor vel nisl 
+          fermentum lacinia at ac quam.
+        </p>
+      </div>
+      
+      <div class="project-image-large" *ngIf="!currentProject.inProgress && currentProject.imageSrc">
+        <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
+      </div>
+      <div class="project-in-progress" *ngIf="currentProject.inProgress">
+        In Arbeit
+      </div>
+    </div>
+    
+    <div class="navigation-buttons">
+      <button class="prev-btn" (click)="prevProject()">Vorheriges Projekt</button>
+      <button class="next-btn" (click)="nextProject()">Nächstes Projekt</button>
     </div>
   </div>
 </div>
