@@ -63,12 +63,4 @@ export class FeaturedProjectsComponent {
     const nextIndex = (currentIndex + 1) % this.projects.length;
     this.currentProject = this.projects[nextIndex];
   }
-
-  prevProject(): void {
-    if (!this.currentProject) return;
-
-    const currentIndex = this.projects.findIndex(p => p.id === this.currentProject!.id);
-    const prevIndex = (currentIndex - 1 + this.projects.length) % this.projects.length;
-    this.currentProject = this.projects[prevIndex];
-  }
 }
