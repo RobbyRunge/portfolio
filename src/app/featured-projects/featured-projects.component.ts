@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 interface TechItem {
   icon: string;
@@ -21,13 +23,14 @@ interface Project {
 @Component({
   selector: 'app-featured-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './featured-projects.component.html',
   styleUrl: './featured-projects.component.scss'
 })
-export class FeaturedProjectsComponent {
+export class FeaturedProjectsComponent implements OnInit, OnDestroy {
   showOverlay = false;
   currentProject: Project | null = null;
+  private langChangeSubscription: Subscription | null = null;
 
   projects: Project[] = [
     {
@@ -76,8 +79,37 @@ export class FeaturedProjectsComponent {
     }
   ];
 
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.initializeProjects();
+    this.langChangeSubscription = this.translate.onLangChange.subscribe(() => {
+      this.initializeProjects();
+      this.updateCurrentProject();
+    });
+  }
+  
+  ngOnDestroy() {
+    if (this.langChangeSubscription) {
+      this.langChangeSubscription.unsubscribe();
+    }
+  }
+
+  initializeProjects() {
+    for (const project of this.projects) {
+      const projectKey = this.getProjectKeyById(project.id);
+      if (projectKey) {
+        this.translate.get(`PROJECTS.${projectKey}.DESCRIPTION`)
+          .subscribe(description => {
+            project.description = description;
+          });
+      }
+    }
+  }
+
   openProject(projectId: number): void {
     this.currentProject = this.projects.find(p => p.id === projectId) || null;
+    this.updateCurrentProject();
     this.showOverlay = true;
     document.body.style.overflow = 'hidden';
   }
@@ -93,5 +125,41 @@ export class FeaturedProjectsComponent {
     const currentIndex = this.projects.findIndex(p => p.id === this.currentProject!.id);
     const nextIndex = (currentIndex + 1) % this.projects.length;
     this.currentProject = this.projects[nextIndex];
+  }
+
+  updateProjectContent() {
+    if (this.currentProject) {
+      const projectKey = this.getProjectKeyById(this.currentProject.id);
+      if (projectKey) {
+        this.translate.get(`PROJECTS.${projectKey}.DESCRIPTION`).subscribe(desc => {
+          if (this.currentProject) {
+            this.currentProject.description = desc;
+          }
+        });
+      }
+    }
+  }
+
+  updateCurrentProject() {
+    if (this.currentProject) {
+      const projectKey = this.getProjectKeyById(this.currentProject.id);
+      if (projectKey) {
+        this.translate.get(`PROJECTS.${projectKey}.DESCRIPTION`)
+          .subscribe(description => {
+            if (this.currentProject) {
+              this.currentProject.description = description;
+            }
+          });
+      }
+    }
+  }
+
+  private getProjectKeyById(id: number): string {
+    switch(id) {
+      case 1: return 'JOIN';
+      case 2: return 'SHARKIE';
+      case 3: return 'DABUBBLE';
+      default: return '';
+    }
   }
 }

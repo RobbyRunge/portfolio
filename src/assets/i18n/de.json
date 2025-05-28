@@ -33,5 +33,29 @@
     "LETS_TALK": "Reden wir",
     "GROWTH_MINDSET": "Growth mindset",
     "LEARNING_INTEREST": "Ich habe ein besonderes Interesse am Lernen"
+  },
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "TITLE": "Besondere Projekte",
+    "DESCRIPTION": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "PROJECT_ABOUT": "Worum geht es bei diesem Projekt?",
+    "NEXT_PROJECT": "Nächstes Projekt",
+    "LIVE_TEST": "Live Test",
+    "IN_PROGRESS": "In Arbeit",
+    
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams."
+    },
+    
+    "SHARKIE": {
+      "TITLE": "Sharkie",
+      "DESCRIPTION": "Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert."
+    },
+    
+    "DABUBBLE": {
+      "TITLE": "DA Bubble",
+      "DESCRIPTION": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation."
+    }
   }
 }

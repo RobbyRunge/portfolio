@@ -1,10 +1,9 @@
 <div class="featured-projects">
   <div class="content-width">
     <div class="featured-projects-text">
-      <p>Portfolio</p>
-      <h3>Besondere Projekte</h3>
-      <span>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in
-        Aktion zu sehen.</span>
+      <p>{{ 'PROJECTS.PORTFOLIO' | translate }}</p>
+      <h3>{{ 'PROJECTS.TITLE' | translate }}</h3>
+      <span>{{ 'PROJECTS.DESCRIPTION' | translate }}</span>
 
       <div class="projects-list">
         <div class="join-project" (click)="openProject(1)">
@@ -40,7 +39,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <div class="in-progress">In Arbeit</div>
+            <div class="in-progress">{{ 'PROJECTS.IN_PROGRESS' | translate }}</div>
           </div>
         </div>
       </div>
@@ -60,7 +59,7 @@
       <div class="project-description">
         <h2>{{ currentProject.titleNumber }}</h2>
         <h3>{{ currentProject.title }}</h3>
-        <h4>Worum geht es bei diesem Projekt?</h4>
+        <h4>{{ 'PROJECTS.PROJECT_ABOUT' | translate }}</h4>
         <p>{{ currentProject.description }}</p>
 
         <div class="project-technologies">
@@ -71,7 +70,7 @@
 
         <div class="button-position">
           <button><a href="{{ currentProject.githubLink }}" target="_blank">GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
-          <button class="live-test-button-width"><a href="{{ currentProject.liveTestLink }}" target="_blank">Live Test <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
+          <button class="live-test-button-width"><a href="{{ currentProject.liveTestLink }}" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
         </div>
       </div>
 
@@ -79,11 +78,11 @@
         <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
       </div>
       <div class="project-in-progress" *ngIf="currentProject.inProgress">
-        <p>In Arbeit</p>
+        <p>{{ 'PROJECTS.IN_PROGRESS' | translate }}</p>
       </div>
     </div>
 
-    <button class="next-btn" (click)="nextProject()">Nächstes Projekt <img
+    <button class="next-btn" (click)="nextProject()">{{ 'PROJECTS.NEXT_PROJECT' | translate }} <img
         src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
   </div>
 </div>

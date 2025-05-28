@@ -33,5 +33,29 @@
     "LETS_TALK": "Let's talk",
     "GROWTH_MINDSET": "Growth mindset",
     "LEARNING_INTEREST": "I have a special interest in learning"
+  },
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "TITLE": "Featured Projects",
+    "DESCRIPTION": "Discover a selection of my work - Interact with projects to see my skills in action.",
+    "PROJECT_ABOUT": "What is this project about?",
+    "NEXT_PROJECT": "Next project",
+    "LIVE_TEST": "Live Test",
+    "IN_PROGRESS": "In Progress",
+    
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Web-based Kanban app for task management: Users can create, organise and track tasks in interactive lists - ideal for individuals or teams."
+    },
+    
+    "SHARKIE": {
+      "TITLE": "Sharkie",
+      "DESCRIPTION": "Sharkie is a 2D game developed using HTML, JavaScript, and CSS. The game features an exciting underwater adventure where players control a shark navigating through various obstacles and challenges."
+    },
+    
+    "DABUBBLE": {
+      "TITLE": "DA Bubble",
+      "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    }
   }
 }
