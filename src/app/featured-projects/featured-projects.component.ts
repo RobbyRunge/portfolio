@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+interface TechItem {
+  icon: string;
+  name: string;
+}
+
 interface Project {
   id: number;
   titleNumber: string;
   title: string;
   description: string;
-  technologies: string[];
+  techStack: TechItem[]; // Replace technologies string[] with this
   imageSrc?: string;
   githubLink?: string;
   liveTestLink?: string;
@@ -30,7 +35,12 @@ export class FeaturedProjectsComponent {
       titleNumber: '01',
       title: 'Join',
       description: 'Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+      techStack: [
+        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+      ],
       imageSrc: 'assets/imgs/featured-projects/join-hover.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
       liveTestLink: ''
@@ -40,7 +50,11 @@ export class FeaturedProjectsComponent {
       titleNumber: '02',
       title: 'Sharkie',
       description: 'Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      techStack: [
+        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' }
+      ],
       imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
       liveTestLink: ''
@@ -50,7 +64,12 @@ export class FeaturedProjectsComponent {
       titleNumber: '03',
       title: 'DA Bubble',
       description: 'Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+      techStack: [
+        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+      ],
       githubLink: '',
       liveTestLink: '',
       inProgress: true

@@ -64,8 +64,8 @@
         <p>{{ currentProject.description }}</p>
 
         <div class="project-technologies">
-          <span *ngFor="let tech of currentProject.technologies; let last = last">
-            {{ tech }}<span *ngIf="!last"> | </span>
+          <span *ngFor="let tech of currentProject.techStack; let last = last">
+            <img [src]="tech.icon" [alt]="tech.name"> {{ tech.name }}
           </span>
         </div>
 

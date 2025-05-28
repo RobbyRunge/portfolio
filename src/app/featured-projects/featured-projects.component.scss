@@ -261,9 +261,13 @@
 
       span {
         color: rgba(255, 255, 255, 1);
+        margin-right: 8px;
 
-        span {
-          color: rgba(61, 207, 182, 1);
+        img {
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+          margin-right: 4px;
         }
       }
     }
