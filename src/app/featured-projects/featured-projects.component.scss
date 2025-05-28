@@ -296,6 +296,38 @@
         p {
           line-height: 1.6;
         }
+
+        .button-position {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+
+          button {
+            width: 130px;
+            height: 48px;
+            gap: 10px;
+            border-radius: 100px;
+            border: 1px solid rgba(255, 255, 255, 1);
+            background-color: transparent;
+            padding-right: 24px;
+            padding-left: 24px;
+            transition: all 125ms ease-in-out;
+
+            a {
+              color: rgba(255, 255, 255, 1);
+              transition: color 125ms ease-in-out;
+              font-size: 18px;
+            }
+
+            &:hover {
+              border: 1px solid rgba(61, 207, 182, 1);
+
+              a {
+                color: rgba(61, 207, 182, 1);
+              }
+            }
+          }
+        }
       }
 
       .project-image-large,
