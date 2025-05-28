@@ -60,17 +60,14 @@
       <div class="project-description">
         <h2>{{ currentProject.titleNumber }}</h2>
         <h3>{{ currentProject.title }}</h3>
+        <h4>Worum geht es bei diesem Projekt?</h4>
+        <p>{{ currentProject.description }}</p>
+
         <div class="project-technologies">
           <span *ngFor="let tech of currentProject.technologies; let last = last">
             {{ tech }}<span *ngIf="!last"> | </span>
           </span>
         </div>
-        <h3>Projektbeschreibung</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
-          Maecenas at augue eget nisi feugiat aliquam. Vivamus eu tortor vel nisl
-          fermentum lacinia at ac quam.
-        </p>
 
         <div class="button-position">
           <button><a href="{{ currentProject.githubLink }}" target="_blank">GitHub</a></button>

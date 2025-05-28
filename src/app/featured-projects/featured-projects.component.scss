@@ -260,7 +260,7 @@
       margin-bottom: 32px;
 
       span {
-        color: white;
+        color: rgba(255, 255, 255, 1);
 
         span {
           color: rgba(61, 207, 182, 1);
@@ -274,27 +274,41 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      margin-bottom: 40px;
       gap: 40px;
 
       .project-description {
         flex: 1;
         max-width: 480px;
 
+        %margin {
+          margin: 0;
+        }
+
         h2 {
-          font-size: 36px;
-          margin-bottom: 8px;
+          @extend %margin;
+          font-size: 128px;
+          font-weight: 700;
           color: rgba(61, 207, 182, 1);
         }
 
         h3 {
+          @extend %margin;
+          font-size: 64px;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        h4 {
+          @extend %margin;
           font-size: 24px;
-          margin-bottom: 16px;
+          font-weight: 700;
           color: rgba(61, 207, 182, 1);
         }
 
         p {
-          line-height: 1.6;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 120%;
         }
 
         .button-position {
@@ -334,9 +348,11 @@
       .project-in-progress {
         flex: 1;
         min-width: 500px;
+        display: flex;
+        justify-content: flex-end;
 
         img {
-          width: 100%;
+          width: 520px;
           height: auto;
           border-radius: 8px;
           object-fit: cover;
