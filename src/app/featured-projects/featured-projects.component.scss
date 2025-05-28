@@ -381,6 +381,17 @@
           border-radius: 8px;
           object-fit: cover;
         }
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 64px;
+          border-radius: 30px;
+          width: 520px;
+          height: 360px;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
       }
     }
 

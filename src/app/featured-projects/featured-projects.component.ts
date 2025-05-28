@@ -43,7 +43,7 @@ export class FeaturedProjectsComponent {
       ],
       imageSrc: 'assets/imgs/featured-projects/join-hover.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
-      liveTestLink: ''
+      liveTestLink: 'https://robby-runge.de/join/index.html'
     },
     {
       id: 2,
