@@ -7,6 +7,8 @@ interface Project {
   title: string;
   technologies: string[];
   imageSrc?: string;
+  githubLink?: string;
+  liveTestLink?: string;
   inProgress?: boolean;
 }
 
@@ -27,20 +29,26 @@ export class FeaturedProjectsComponent {
       titleNumber: '01',
       title: 'Join',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-      imageSrc: 'assets/imgs/featured-projects/join-hover.png'
+      imageSrc: 'assets/imgs/featured-projects/join-hover.png',
+      githubLink: 'https://github.com/RobbyRunge/join-groupwork',
+      liveTestLink: ''
     },
     {
       id: 2,
       titleNumber: '02',
       title: 'Sharkie',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png'
+      imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png',
+      githubLink: 'https://github.com/RobbyRunge/sharkie',
+      liveTestLink: ''
     },
     {
       id: 3,
       titleNumber: '03',
       title: 'DA Bubble',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+      githubLink: '',
+      liveTestLink: '',
       inProgress: true
     }
   ];
