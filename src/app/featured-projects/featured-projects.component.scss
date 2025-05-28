@@ -424,3 +424,318 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .featured-projects-text {
+    width: 780px;
+    gap: 32px;
+
+    h3 {
+      font-size: 56px;
+    }
+  }
+
+  .project-overlay .overlay-content {
+    width: 1000px;
+    height: 600px;
+    padding: 32px;
+
+    .project-details .project-description {
+      h2 {
+        font-size: 100px;
+      }
+
+      h3 {
+        font-size: 56px;
+      }
+    }
+
+    .project-image-large img,
+    .project-in-progress p {
+      width: 450px;
+      height: 320px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .featured-projects-text {
+    width: 700px;
+    gap: 24px;
+
+    h3 {
+      font-size: 48px;
+    }
+
+    span {
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+
+  .projects-list {
+    height: 300px;
+
+    %project-item {
+      height: 100px;
+
+      p {
+        padding: 32px;
+      }
+    }
+  }
+
+  .project-overlay .overlay-content {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    max-height: 80vh;
+
+    .project-details {
+      flex-direction: column;
+      gap: 24px;
+      
+      .project-description {
+        max-width: 100%;
+        order: 2;
+
+        h2 {
+          font-size: 80px;
+        }
+
+        h3 {
+          font-size: 48px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .project-image-large,
+      .project-in-progress {
+        min-width: auto;
+        width: 100%;
+        justify-content: center;
+        order: 1;
+
+        img, p {
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .featured-projects {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .featured-projects-text {
+    width: 100%;
+
+    p:first-child {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
+  }
+
+  .projects-list {
+    %project-item {
+      .project-image {
+        right: -30%;
+        width: 240px;
+        height: 160px;
+
+        .hover-background, .hover-preview, .in-progress {
+          width: 240px;
+          height: 160px;
+        }
+      }
+    }
+  }
+
+  .project-overlay .overlay-content {
+    .close-btn {
+      top: 20px;
+      right: 20px;
+    }
+
+    .project-details .project-description {
+      h2 {
+        font-size: 64px;
+        margin-bottom: -10px;
+      }
+
+      h3 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-projects-text {
+    gap: 16px;
+
+    p:first-child {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    span {
+      height: auto;
+      font-size: 14px;
+    }
+  }
+
+  .projects-list {
+    height: auto;
+
+    %project-item {
+      height: 80px;
+
+      p {
+        padding: 16px;
+        font-size: 16px;
+      }
+
+      .project-image {
+        display: none;
+      }
+    }
+  }
+
+  .project-overlay .overlay-content {
+    padding: 24px;
+
+    .project-details .project-description {
+      h2 {
+        font-size: 48px;
+      }
+
+      h3 {
+        font-size: 28px;
+      }
+
+      .button-position {
+        gap: 16px;
+
+        button {
+          width: 110px;
+          height: 40px;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    button.next-btn {
+      bottom: 24px;
+      right: 24px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .featured-projects-text {
+    p:first-child {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .project-overlay .overlay-content {
+    padding: 16px;
+
+    .project-details .project-description {
+      h2 {
+        font-size: 36px;
+        margin-bottom: -5px;
+      }
+
+      h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .button-position {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+
+        button {
+          height: 36px;
+        }
+      }
+    }
+
+    .project-technologies span img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-list {
+    %project-item {
+      height: 70px;
+
+      p {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .project-overlay .overlay-content {
+    .close-btn {
+      top: 12px;
+      right: 12px;
+      width: 30px;
+      height: 30px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    button.next-btn {
+      font-size: 14px;
+      bottom: 16px;
+      right: 16px;
+    }
+  }
+}
