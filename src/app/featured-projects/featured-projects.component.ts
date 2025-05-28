@@ -57,7 +57,7 @@ export class FeaturedProjectsComponent {
       ],
       imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
-      liveTestLink: ''
+      liveTestLink: 'https://robby-runge.de/sharkie/index.html'
     },
     {
       id: 3,
