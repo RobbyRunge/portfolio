@@ -286,6 +286,7 @@
 
         h2 {
           @extend %margin;
+          margin-bottom: -20px;
           font-size: 128px;
           font-weight: 700;
           color: rgba(61, 207, 182, 1);
@@ -293,6 +294,7 @@
 
         h3 {
           @extend %margin;
+          margin-bottom: 30px;
           font-size: 64px;
           font-weight: 700;
           color: rgba(255, 255, 255, 1);
