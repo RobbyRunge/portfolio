@@ -205,6 +205,10 @@
     box-sizing: border-box;
     overflow-y: auto;
     border: 1px solid rgba(61, 207, 182, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 
     .close-btn {
       position: absolute;
@@ -267,17 +271,37 @@
     .project-details {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
       margin-bottom: 40px;
       gap: 40px;
 
       .project-description {
         flex: 1;
-        max-width: 50%;
+        max-width: 480px;
+
+        h2 {
+          font-size: 36px;
+          margin-bottom: 8px;
+          color: rgba(61, 207, 182, 1);
+        }
+
+        h3 {
+          font-size: 24px;
+          margin-bottom: 16px;
+          color: rgba(61, 207, 182, 1);
+        }
+
+        p {
+          line-height: 1.6;
+        }
       }
 
-      .project-image-large {
+      .project-image-large,
+      .project-in-progress {
         flex: 1;
-        max-width: 50%;
+        min-width: 500px;
 
         img {
           width: 100%;
@@ -286,22 +310,7 @@
           object-fit: cover;
         }
       }
-
-      .project-in-progress {
-        flex: 1;
-        max-width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        background-color: rgba(0, 0, 0, 0.3);
-        border-radius: 8px;
-        font-size: 28px;
-        font-weight: bold;
-      }
     }
-
-
 
     button.next-btn {
       position: absolute;

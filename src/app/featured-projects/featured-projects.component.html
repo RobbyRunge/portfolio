@@ -56,16 +56,15 @@
       <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close button hover">
     </div>
 
-    <h2>{{ currentProject.titleNumber }}</h2>
-    <h3>{{ currentProject.title }}</h3>
-    <div class="project-technologies">
-      <span *ngFor="let tech of currentProject.technologies; let last = last">
-        {{ tech }}<span *ngIf="!last"> | </span>
-      </span>
-    </div>
-
     <div class="project-details">
       <div class="project-description">
+        <h2>{{ currentProject.titleNumber }}</h2>
+        <h3>{{ currentProject.title }}</h3>
+        <div class="project-technologies">
+          <span *ngFor="let tech of currentProject.technologies; let last = last">
+            {{ tech }}<span *ngIf="!last"> | </span>
+          </span>
+        </div>
         <h3>Projektbeschreibung</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.
@@ -82,6 +81,7 @@
       </div>
     </div>
 
-    <button class="next-btn" (click)="nextProject()">Nächstes Projekt <img src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
+    <button class="next-btn" (click)="nextProject()">Nächstes Projekt <img
+        src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
   </div>
 </div>
