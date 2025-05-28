@@ -1,0 +1,88 @@
+<div class="featured-projects">
+  <div class="content-width">
+    <div class="featured-projects-text">
+      <p>{{ 'PROJECTS.PORTFOLIO' | translate }}</p>
+      <h3>{{ 'PROJECTS.TITLE' | translate }}</h3>
+      <span>{{ 'PROJECTS.DESCRIPTION' | translate }}</span>
+
+      <div class="projects-list">
+        <div class="join-project" (click)="openProject(1)">
+          <div class="project-info">
+            <p>Join <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
+                alt="Arrow project"></p>
+            <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+            <img class="hover-preview" src="assets/imgs/featured-projects/join-hover.png" alt="Join Preview">
+          </div>
+        </div>
+        <div class="sharkie-project" (click)="openProject(2)">
+          <div class="project-info">
+            <p>Sharkie <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
+                alt="Arrow project"></p>
+            <p>HTML <span>|</span> CSS <span>|</span> JavaScript</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+            <img class="hover-preview" src="assets/imgs/featured-projects/sharkie-hover.png" alt="Sharkie Preview">
+          </div>
+        </div>
+        <div class="da-bubble-project" (click)="openProject(3)">
+          <div class="project-info">
+            <p>DA Bubble <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
+                alt="Arrow project"></p>
+            <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+            <div class="in-progress">{{ 'PROJECTS.IN_PROGRESS' | translate }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="project-overlay" *ngIf="showOverlay && currentProject">
+  <div class="overlay-background" (click)="closeOverlay()"></div>
+  <div class="overlay-content">
+    <div class="close-btn" (click)="closeOverlay()">
+      <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close button">
+      <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close button hover">
+    </div>
+
+    <div class="project-details">
+      <div class="project-description">
+        <h2>{{ currentProject.titleNumber }}</h2>
+        <h3>{{ currentProject.title }}</h3>
+        <h4>{{ 'PROJECTS.PROJECT_ABOUT' | translate }}</h4>
+        <p>{{ currentProject.description }}</p>
+
+        <div class="project-technologies">
+          <span *ngFor="let tech of currentProject.techStack; let last = last">
+            <img [src]="tech.icon" [alt]="tech.name"> {{ tech.name }}
+          </span>
+        </div>
+
+        <div class="button-position">
+          <button><a href="{{ currentProject.githubLink }}" target="_blank">GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
+          <button class="live-test-button-width"><a href="{{ currentProject.liveTestLink }}" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
+        </div>
+      </div>
+
+      <div class="project-image-large" *ngIf="!currentProject.inProgress && currentProject.imageSrc">
+        <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
+      </div>
+      <div class="project-in-progress" *ngIf="currentProject.inProgress">
+        <p>{{ 'PROJECTS.IN_PROGRESS' | translate }}</p>
+      </div>
+    </div>
+
+    <button class="next-btn" (click)="nextProject()">{{ 'PROJECTS.NEXT_PROJECT' | translate }} <img
+        src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
+  </div>
+</div>
