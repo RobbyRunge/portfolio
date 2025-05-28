@@ -11,7 +11,7 @@ interface Project {
   titleNumber: string;
   title: string;
   description: string;
-  techStack: TechItem[]; // Replace technologies string[] with this
+  techStack: TechItem[];
   imageSrc?: string;
   githubLink?: string;
   liveTestLink?: string;
