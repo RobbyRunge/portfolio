@@ -301,21 +301,32 @@
       }
     }
 
-    .navigation-buttons {
+
+
+    button.next-btn {
+      position: absolute;
+      font-size: 18px;
+      right: 40px;
+      bottom: 40px;
+      color: rgba(61, 207, 182, 1);
+      cursor: pointer;
+      border: unset;
+      background-color: transparent;
+      transition: color 125ms ease-in-out;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
 
-      button {
-        padding: 12px 24px;
-        background-color: rgba(61, 207, 182, 0.2);
-        color: white;
-        border: 1px solid rgba(61, 207, 182, 1);
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.2s;
+      img {
+        transition: transform 125ms ease-in-out;
+        transform: translateX(0);
+      }
 
-        &:hover {
-          background-color: rgba(61, 207, 182, 0.4);
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+
+        img {
+          transform: translateX(4px);
         }
       }
     }
