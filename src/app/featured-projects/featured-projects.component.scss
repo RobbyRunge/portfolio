@@ -633,7 +633,7 @@
 
         p:last-child {
           font-size: 14px;
-          padding-left: 12px;
+          padding-left: 16px;
           margin: 0;
         }
       }
@@ -734,6 +734,13 @@
         padding: 12px;
         font-size: 14px;
       }
+    }
+  }
+
+  .project-info {
+
+    p:last-child {
+      padding-left: 12px !important;
     }
   }
 
