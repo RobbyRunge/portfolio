@@ -15,7 +15,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/join-hover.png" alt="Join Preview">
+            <img class="hover-preview" src="assets/imgs/featured-projects/join.png" alt="Join Preview">
           </div>
         </div>
         <div class="sharkie-project" (click)="openProject(2)">
@@ -27,7 +27,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/sharkie-hover.png" alt="Sharkie Preview">
+            <img class="hover-preview" src="assets/imgs/featured-projects/sharkie.png" alt="Sharkie Preview">
           </div>
         </div>
         <div class="da-bubble-project" (click)="openProject(3)">
@@ -39,7 +39,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <div class="in-progress">{{ 'PROJECTS.IN_PROGRESS' | translate }}</div>
+            <img class="hover-preview" src="assets/imgs/featured-projects/dabubble.png" alt="In Progress">
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
         <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
       </div>
       <div class="project-in-progress" *ngIf="currentProject.inProgress">
-        <p>{{ 'PROJECTS.IN_PROGRESS' | translate }}</p>
+        <img src="assets/imgs/featured-projects/dabubble.png" alt="Da bubble">
       </div>
     </div>
 

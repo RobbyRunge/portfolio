@@ -44,7 +44,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
         { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/join-hover.png',
+      imageSrc: 'assets/imgs/featured-projects/join.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
       liveTestLink: 'https://robby-runge.de/join/index.html'
     },
@@ -58,7 +58,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
         { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/sharkie-hover.png',
+      imageSrc: 'assets/imgs/featured-projects/sharkie.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
       liveTestLink: 'https://robby-runge.de/sharkie/index.html'
     },
