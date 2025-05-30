@@ -549,6 +549,32 @@
   }
 }
 
+@media (max-width: 1100px) and (min-width: 992px) {
+  .projects-list {
+    %project-item {
+      .project-image {
+        right: -40%;
+        width: 260px;
+        height: 170px;
+        
+        .hover-background,
+        .hover-preview {
+          width: 260px;
+          height: 170px;
+        }
+      }
+    }
+    
+    .join-project .project-image {
+      top: 5px;
+    }
+    
+    .da-bubble-project .project-image {
+      bottom: 5px;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .featured-projects {
     height: auto;
