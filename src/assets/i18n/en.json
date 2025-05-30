@@ -42,6 +42,8 @@
     "NEXT_PROJECT": "Next project",
     "LIVE_TEST": "Live Test",
     "IN_PROGRESS": "In Progress",
+    "IN_DEVELOPMENT": "In Development",
+    "COMING_SOON": "Coming Soon",
     
     "JOIN": {
       "TITLE": "Join",
