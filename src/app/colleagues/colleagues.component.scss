@@ -25,14 +25,16 @@
 
 .card-switch {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  width: 100%;
 
   %cards-same-design {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 358px;
+    width: 500px;
     border-radius: 32px;
     border: 1px solid rgba(61, 207, 182, 1);
     padding: 40px;
@@ -40,22 +42,27 @@
 
   .active-commit {
     @extend %cards-same-design;
-    height: 274px;
+    height: 174px;
     background-color: rgba(61, 207, 182, 0.3);
+    z-index: 2;
   }
 
   .inactive-commit-left {
     @extend %cards-same-design;
-    height: 248px;
+    height: 148px;
     background-color: rgba(61, 207, 182, 0.1);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    position: absolute;
+    right: calc(72% + 179px);
   }
 
   .inactive-commit-right {
     @extend %cards-same-design;
-    height: 248px;
+    height: 148px;
     background-color: rgba(61, 207, 182, 0.1);
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    position: absolute;
+    left: calc(72% + 179px);
   }
 
   .author {
