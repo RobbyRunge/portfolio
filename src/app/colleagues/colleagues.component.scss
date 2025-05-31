@@ -47,12 +47,6 @@
     z-index: 2;
     border: 1px solid rgba(61, 207, 182, 1);
 
-    .border-card {
-      width: 60%;
-      height: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-    }
-
     .author {
       display: flex;
       align-items: center;
@@ -82,10 +76,8 @@
     position: absolute;
     right: calc(72% + 179px);
 
-    border: 1px solid transparent;
-    border-image: linear-gradient(to left,
-        rgba(61, 207, 182, 1) 0%,
-        rgba(61, 207, 182, 0.1) 50%) 1;
+    border: 1px solid rgba(61, 207, 182, 0.6);
+    border-radius: 32px;
 
     p {
       background: linear-gradient(to left,
@@ -139,10 +131,8 @@
     position: absolute;
     left: calc(72% + 179px);
 
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right,
-        rgba(61, 207, 182, 1) 0%,
-        rgba(61, 207, 182, 0.1) 50%) 1;
+    border: 1px solid rgba(61, 207, 182, 0.6);
+    border-radius: 32px;
 
     p {
       background: linear-gradient(to right,
