@@ -59,5 +59,10 @@
       "TITLE": "DA Bubble",
       "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
+  },
+  "TESTIMONIALS": {
+    "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",
+    "ALDIN": "Working with Robby has always been very pleasant. He not only brings technical expertise, but also impresses with his calm and solution-oriented manner – a real asset for any team. I especially appreciate his reliability: When Robby takes on something, you can 100% rely on it being done on time and with high quality.",
+    "PETER": "Working with Robby was not only extremely effective but also consistently characterized by trust and clarity. As a true team player, he convinces with his reliability, structured work approach, and sense of common goals. I was particularly impressed by how he maintains an overview even in challenging situations and motivatingly accompanies the team."
   }
 }
