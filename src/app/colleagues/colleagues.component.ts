@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { TranslationService } from '../shared/translation.service';
 
 interface Testimonial {
   id: number;
-  testimonial: string;
+  translationKey: string;
   author: string;
   role: string;
   gitHubLink: string;
@@ -21,21 +22,21 @@ export class ColleaguesComponent {
   testimonials: Testimonial[] = [
     {
       id: 0,
-      testimonial: "Robby ist für mich ein guter Mitarbeiter im Team. Er ist sehr organisiert und hat stets dazu beigetragen, eine gute Atmosphäre im Team aufrechtzuerhalten. Auf jeden Fall war es eine positive Erfahrung, ein Projekt mit ihm umsetzen zu dürfen.",
+      translationKey: "TESTIMONIALS.ARNESTO",
       author: "Arnesto",
       role: "Kochwelt",
       gitHubLink: "https://github.com/Arnesto-maker"
     },
     {
       id: 1,
-      testimonial: "Mit Robby zu arbeiten war immer sehr angenehm. Er bringt nicht nur technisches Know-how mit, sondern überzeugt auch durch seine ruhige und lösungsorientierte Art – eine echte Stärkung für jedes Team. Besonders schätze ich seine Verlässlichkeit: Wenn Robby etwas übernimmt, kann man sich zu 100 % darauf verlassen, dass es pünktlich und in hoher Qualität erledigt wird.",
+      translationKey: "TESTIMONIALS.ALDIN",
       author: "Aldin Dobric",
       role: "Join",
       gitHubLink: "https://github.com/D-Aldin"
     },
     {
       id: 2,
-      testimonial: "Die Zusammenarbeit mit Robby war nicht nur äußerst effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Als echter Teamplayer überzeugt er durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele. Besonders beeindruckt hat mich, wie er selbst in herausfordernden Situationen den Überblick behält und das Team motivierend begleitet.",
+      translationKey: "TESTIMONIALS.PETER",
       author: "Peter Trözmüller",
       role: "Kochwelt",
       gitHubLink: "https://github.com/PeterTr-ust"
@@ -45,6 +46,11 @@ export class ColleaguesComponent {
   currentIndex = 1;
   translateValue = '0';
   isTransitioning = false;
+
+  constructor(
+    private translationService: TranslationService,
+    private translateService: TranslateService
+  ) {}
 
   nextCard(): void {
     if (this.isTransitioning) return;

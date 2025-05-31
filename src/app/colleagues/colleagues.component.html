@@ -11,7 +11,7 @@
                  [class.inactive-left]="getCardPosition(card.id) === 'left'" 
                  [class.inactive-right]="getCardPosition(card.id) === 'right'"
                  [class.hidden]="getCardPosition(card.id) === 'hidden'">
-              <p>{{ card.testimonial }}</p>
+              <p>{{ card.translationKey | translate }}</p>
               <div class="author">
                 <div class="border-card"></div>
                 <p>{{ card.author }} - {{ card.role }} - <a href="{{ card.gitHubLink }}" target="_blank">GitHub</a></p>
