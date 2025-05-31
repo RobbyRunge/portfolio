@@ -15,7 +15,6 @@
       .work-together {
         width: 50%;
         height: auto;
-        border: 1px solid red;
 
         .contact-me-text {
           font-size: 24px;
@@ -55,7 +54,44 @@
       .form {
         width: 50%;
         height: auto;
-        border: 1px solid red;
+        text-align: center;
+
+        .input-fields {
+          height: 393px;
+
+          %form-position {
+            text-align: start;
+            padding: 24px;
+            height: 80px;
+
+            p {
+              font-family: Fira Code;
+              font-size: 24px;
+              font-weight: 500;
+              color: rgba(61, 207, 182, 1);
+              margin: 0;
+              margin-bottom: 16px
+            }
+          }
+
+          .name {
+            @extend %form-position;
+            border-top: 1px solid rgba(61, 207, 182, 1);
+            border-bottom: 1px solid rgba(61, 207, 182, 1);
+          }
+
+          .email {
+            @extend %form-position;
+            border-top: 1px solid rgba(61, 207, 182, 1);
+            border-bottom: 1px solid rgba(61, 207, 182, 1);
+          }
+
+          .message {
+            @extend %form-position;
+            border-top: 1px solid rgba(61, 207, 182, 1);
+            border-bottom: 1px solid rgba(61, 207, 182, 1);
+          }
+        }
       }
     }
   }
