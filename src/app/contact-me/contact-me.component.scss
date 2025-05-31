@@ -6,5 +6,57 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    .contact-me-container {
+      display: flex;
+      height: 541px;
+      width: 100%;
+
+      .work-together {
+        width: 50%;
+        height: auto;
+        border: 1px solid red;
+
+        .contact-me-text {
+          font-size: 24px;
+          font-weight: 500;
+          color: rgba(61, 207, 182, 1);
+          margin: 0;
+          margin-bottom: 16px;
+        }
+
+        h3 {
+          font-family: Fira Code;
+          font-weight: 700;
+          font-size: 64px;
+          color: rgba(61, 207, 182, 1);
+          line-height: 0.8;
+          margin: 0;
+          margin-bottom: 24px;
+        }
+
+        .problem-text {
+          font-family: Fira Code;
+          font-weight: 700;
+          font-size: 24px;
+          color: rgba(61, 207, 182, 1);
+        }
+
+        .need-me-text {
+          line-height: 1.6;
+
+          span {
+            font-weight: 700;
+            color: rgba(61, 207, 182, 1);
+          }
+        }
+      }
+
+      .form {
+        width: 50%;
+        height: auto;
+        border: 1px solid red;
+      }
+    }
   }
 }
