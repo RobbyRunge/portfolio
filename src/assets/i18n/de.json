@@ -44,22 +44,20 @@
     "IN_PROGRESS": "In Arbeit",
     "IN_DEVELOPMENT": "In Entwicklung",
     "COMING_SOON": "Demnächst verfügbar",
-    
     "JOIN": {
       "TITLE": "Join",
       "DESCRIPTION": "Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams."
     },
-    
     "SHARKIE": {
       "TITLE": "Sharkie",
       "DESCRIPTION": "Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert."
     },
-    
     "DABUBBLE": {
       "TITLE": "DA Bubble",
       "DESCRIPTION": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation."
     }
   },
+  "HEADLINE_SECTION": "Was meine Kollegen über mich sagen",
   "TESTIMONIALS": {
     "ARNESTO": "Robby ist für mich ein guter Mitarbeiter im Team. Er ist sehr organisiert und hat stets dazu beigetragen, eine gute Atmosphäre im Team aufrechtzuerhalten. Auf jeden Fall war es eine positive Erfahrung, ein Projekt mit ihm umsetzen zu dürfen.",
     "ALDIN": "Mit Robby zu arbeiten war immer sehr angenehm. Er bringt nicht nur technisches Know-how mit, sondern überzeugt auch durch seine ruhige und lösungsorientierte Art – eine echte Stärkung für jedes Team. Besonders schätze ich seine Verlässlichkeit: Wenn Robby etwas übernimmt, kann man sich zu 100 % darauf verlassen, dass es pünktlich und in hoher Qualität erledigt wird.",

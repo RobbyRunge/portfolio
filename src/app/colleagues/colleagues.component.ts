@@ -19,6 +19,7 @@ interface Testimonial {
   styleUrls: ['./colleagues.component.scss']
 })
 export class ColleaguesComponent {
+  headline: string = "HEADLINE_SECTION";
   testimonials: Testimonial[] = [
     {
       id: 0,
@@ -50,7 +51,7 @@ export class ColleaguesComponent {
   constructor(
     private translationService: TranslationService,
     private translateService: TranslateService
-  ) {}
+  ) { }
 
   nextCard(): void {
     if (this.isTransitioning) return;
