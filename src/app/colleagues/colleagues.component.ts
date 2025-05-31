@@ -35,6 +35,12 @@ export class ColleaguesComponent {
       testimonial: "Die Zusammenarbeit mit Robby war nicht nur effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Er ist ein echter Team Player, der durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele überzeugt. Besonders beeindruckt hat mich, wie er auch in herausfordernden Situationen den Überblick behält und das Team motivierend unterstützt.",
       author: "Peter Trözmüller", 
       role: "Team Partner Kochwelt"
+    },
+    {
+      id: 3,
+      testimonial: "Test",
+      author: "Test", 
+      role: "Team Partner Test"
     }
   ];
 
@@ -77,23 +83,18 @@ export class ColleaguesComponent {
 
   getCardPosition(cardId: number): string {
     if (cardId === this.currentIndex) return 'active';
-    
-    if (this.testimonials.length <= 3) {
-      if ((this.currentIndex === 0 && cardId === this.testimonials.length - 1) || 
-          (cardId === this.currentIndex - 1)) {
-        return 'left';
-      }
-      if ((this.currentIndex === this.testimonials.length - 1 && cardId === 0) || 
-          (cardId === this.currentIndex + 1)) {
-        return 'right';
-      }
-    }
-    
-    const diff = (cardId - this.currentIndex + this.testimonials.length) % this.testimonials.length;
-    if (diff === this.testimonials.length - 1 || diff < this.testimonials.length / 2) {
+
+    const totalCards = this.testimonials.length;
+
+    const prevCardId = (this.currentIndex - 1 + totalCards) % totalCards;
+    const nextCardId = (this.currentIndex + 1) % totalCards;
+
+    if (cardId === prevCardId) {
       return 'left';
-    } else {
+    } else if (cardId === nextCardId) {
       return 'right';
+    } else {
+      return 'hidden';
     }
   }
 }
