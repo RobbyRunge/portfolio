@@ -50,7 +50,7 @@
   box-sizing: border-box;
   position: absolute;
   transition: all 0.5s ease-in-out, opacity 0.3s ease-in-out;
-  
+
   p {
     margin: 0 0 24px 0;
     line-height: 1.6;
@@ -80,11 +80,11 @@
     transform: translateX(0) scale(0.85) rotateY(10deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     opacity: 1;
-    
+
     p {
       background: linear-gradient(to left,
-        rgba(255, 255, 255, 0.8) 0%,
-        rgba(255, 255, 255, 0.2) 50%);
+          rgba(255, 255, 255, 0.8) 0%,
+          rgba(255, 255, 255, 0.2) 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -105,11 +105,11 @@
     transform: translateX(0) scale(0.85) rotateY(-10deg);
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
     opacity: 1;
-    
+
     p {
       background: linear-gradient(to right,
-        rgba(255, 255, 255, 0.8) 0%,
-        rgba(255, 255, 255, 0.2) 50%);
+          rgba(255, 255, 255, 0.8) 0%,
+          rgba(255, 255, 255, 0.2) 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -129,16 +129,18 @@
 .author {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 16px;
 
   p {
-    text-align: center;
-    width: 100%;
+    width: auto;
     margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .border-card {
-    width: 100%;
+    flex-grow: 1;
     height: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
   }
@@ -219,6 +221,7 @@
   from {
     opacity: 0.7;
   }
+
   to {
     opacity: 1;
   }
@@ -229,6 +232,7 @@
     transform: translateX(0);
     opacity: 0.7;
   }
+
   to {
     transform: translateX(-5%);
     opacity: 1;
@@ -240,6 +244,7 @@
     transform: translateX(0);
     opacity: 0.7;
   }
+
   to {
     transform: translateX(5%);
     opacity: 1;
@@ -250,9 +255,11 @@
   0% {
     transform: translate(-50%, -50%);
   }
+
   50% {
     transform: translate(-80%, -50%);
   }
+
   100% {
     transform: translate(-70%, -50%);
   }
@@ -262,9 +269,11 @@
   0% {
     transform: translate(-50%, -50%);
   }
+
   50% {
     transform: translate(-20%, -50%);
   }
+
   100% {
     transform: translate(-30%, -50%);
   }
@@ -274,6 +283,7 @@
   0% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -283,6 +293,7 @@
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }

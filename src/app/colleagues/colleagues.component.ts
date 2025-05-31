@@ -22,19 +22,19 @@ export class ColleaguesComponent {
       id: 0,
       testimonial: "Robby ist für mich ein guter Mitarbeiter im Team, er ist ein sehr guter Organisation in unserem Team und hat immer beigetragen, das gute Atmosphäre im Team aufrecht zu halten, auf jedem Fall war das ein gutes Erlebnis, ein Projekt mit ihm erledigen zu dürfen",
       author: "Arnesto",
-      role: "Team Partner Kochwelt"
+      role: "Kochwelt"
     },
     {
       id: 1,
       testimonial: "Mit Robby zu arbeiten, war immer sehr angenehm. Er bringt nicht nur technisches Know-how mit, sondern auch eine ruhige und lösungsorientierte Art, die jedes Team stärkt. Besonders schätze ich seine Verlässlichkeitwenn Robby etwas übernimmt, kann man sich zu 100 % darauf verlassen, dass es pünktlich und in hoher Qualität erledigt wird.",
       author: "Aldin Dobric",
-      role: "Team Partner Join"
+      role: "Join"
     },
     {
       id: 2,
       testimonial: "Die Zusammenarbeit mit Robby war nicht nur effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Er ist ein echter Team Player, der durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele überzeugt. Besonders beeindruckt hat mich, wie er auch in herausfordernden Situationen den Überblick behält und das Team motivierend unterstützt.",
       author: "Peter Trözmüller", 
-      role: "Team Partner Kochwelt"
+      role: "Kochwelt"
     },
   ];
 
