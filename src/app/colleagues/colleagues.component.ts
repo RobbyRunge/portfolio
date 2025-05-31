@@ -36,12 +36,6 @@ export class ColleaguesComponent {
       author: "Peter Trözmüller", 
       role: "Team Partner Kochwelt"
     },
-    {
-      id: 3,
-      testimonial: "Test",
-      author: "Test", 
-      role: "Team Partner Test"
-    }
   ];
 
   currentIndex = 1;
