@@ -137,6 +137,13 @@
     margin: 0;
     white-space: nowrap;
     flex-shrink: 0;
+
+    a {
+      animation-name: githubLinkColorChange;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
   }
 
   .border-card {
@@ -214,6 +221,22 @@
         animation: moveRightArrow 0.3s ease;
       }
     }
+  }
+}
+
+@keyframes githubLinkColorChange {
+
+  0%,
+  100% {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  40% {
+    color: rgba(61, 207, 182, 1);
+  }
+
+  60% {
+    color: rgba(61, 207, 182, 1);
   }
 }
 
