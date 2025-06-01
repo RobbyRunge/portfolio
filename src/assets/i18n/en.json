@@ -62,5 +62,28 @@
     "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",
     "ALDIN": "Working with Robby has always been very pleasant. He not only brings technical expertise, but also impresses with his calm and solution-oriented manner – a real asset for any team. I especially appreciate his reliability: When Robby takes on something, you can 100% rely on it being done on time and with high quality.",
     "PETER": "Working with Robby was not only extremely effective but also consistently characterized by trust and clarity. As a true team player, he convinces with his reliability, structured work approach, and sense of common goals. I was particularly impressed by how he maintains an overview even in challenging situations and motivatingly accompanies the team."
+  },
+  "CONTACT": {
+    "CONTACT_ME": "Contact me",
+    "LETS_WORK_TOGETHER": "Let's work together",
+    "PROBLEM_TO_SOLVE": "Do you have a problem to solve?",
+    "EXPERTISE_TEXT": "Whether it's project management, digitalization, or process optimization – with me by your side, it'll be strategic, creative, and above all, effective. I bring not only expertise but also fresh ideas to your projects.",
+    "NEED_FRONTEND": "Need a frontend developer?",
+    "LETS_TALK": "Let's talk!",
+    "NAME_QUESTION": "What is your name?",
+    "NAME_PLACEHOLDER": "Your name goes here",
+    "EMAIL_QUESTION": "What is your email?",
+    "EMAIL_PLACEHOLDER": "your.email@example.com",
+    "HELP_QUESTION": "How can I help you?",
+    "MESSAGE_PLACEHOLDER": "Hello Robby, I'm interested in...",
+    "PRIVACY_AGREEMENT_FIRST_TEXT": "I have read the",
+    "PRIVACY_AGREEMENT_POLICY": "privacy policy",
+    "PRIVACY_AGREEMENT_SECOND_TEXT": "and agree to the processing of my data as described.",
+    "SEND_BUTTON": "Say Hello ;)",
+    "ERROR_NAME": "Please enter your name.",
+    "ERROR_EMAIL_REQUIRED": "Please enter your email address.",
+    "ERROR_EMAIL_INVALID": "Please enter a valid email address.",
+    "ERROR_MESSAGE": "Please describe your request.",
+    "ERROR_PRIVACY": "Please accept the privacy policy."
   }
 }

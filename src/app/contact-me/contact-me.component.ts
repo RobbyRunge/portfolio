@@ -2,11 +2,13 @@ import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../shared/translation.service';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
@@ -34,6 +36,11 @@ export class ContactMeComponent implements OnInit {
       },
     },
   };
+
+  constructor(
+    private translationService: TranslationService,
+    private translateService: TranslateService
+  ) {}
 
   ngOnInit() {
     this.privacyTouched = false;

@@ -2,51 +2,49 @@
   <div class="content-width">
     <div class="contact-me-container">
       <div class="work-together">
-        <p class="contact-me-text">Kontaktiere Sie mich</p>
-        <h3>Lassen Sie uns zusammenarbeiten</h3>
-        <p class="problem-text">Haben Sie ein Problem zu lösen?</p>
-        <p class="need-me-text">Ob Projektmanagement, Digitalisierung oder Prozessoptimierung – mit mir an Ihrer Seite
-          wird's strategisch, kreativ und vor allem wirksam. Ich bringe nicht nur Expertise, sondern auch frischen Wind
-          in Ihre Vorhaben.<br>
+        <p class="contact-me-text">{{ 'CONTACT.CONTACT_ME' | translate }}</p>
+        <h3>{{ 'CONTACT.LETS_WORK_TOGETHER' | translate }}</h3>
+        <p class="problem-text">{{ 'CONTACT.PROBLEM_TO_SOLVE' | translate }}</p>
+        <p class="need-me-text">{{ 'CONTACT.EXPERTISE_TEXT' | translate }}<br>
           <br>
-          Brauchen Sie einen Frontend-Entwickler?<span> Lassen Sie uns reden!</span>
+          {{ 'CONTACT.NEED_FRONTEND' | translate }}<span> {{ 'CONTACT.LETS_TALK' | translate }}</span>
         </p>
       </div>
       <div class="form">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
           <div class="input-fields">
             <div class="name">
-              <p>Wie ist Ihr Name?</p>
+              <p>{{ 'CONTACT.NAME_QUESTION' | translate }}</p>
               <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
-                placeholder="Ihr Name steht hier" required>
+                placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}" required>
               @if (!name.valid && name.touched) {
               <div class="error-message">
-                Bitte geben Sie Ihren Namen ein.
+                {{ 'CONTACT.ERROR_NAME' | translate }}
               </div>
               }
             </div>
             <div class="email">
-              <p>Wie lautet Ihre Email?</p>
+              <p>{{ 'CONTACT.EMAIL_QUESTION' | translate }}</p>
               <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
-                placeholder="ihre.email@beispiel.com" required
+                placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}" required
                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
               @if (!email.valid && email.touched) {
               <div class="error-message">
                 @if (email.errors?.['required']) {
-                Bitte geben Sie Ihre E-Mail-Adresse ein.
+                {{ 'CONTACT.ERROR_EMAIL_REQUIRED' | translate }}
                 } @else if (email.errors?.['pattern']) {
-                Bitte geben Sie eine gültige E-Mail-Adresse ein.
+                {{ 'CONTACT.ERROR_EMAIL_INVALID' | translate }}
                 }
               </div>
               }
             </div>
             <div class="message">
-              <p>Wie kann ich Ihnen helfen?</p>
+              <p>{{ 'CONTACT.HELP_QUESTION' | translate }}</p>
               <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message"
-                placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
+                placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}" required></textarea>
               @if (!message.valid && message.touched) {
               <div class="error-message">
-                Bitte beschreiben Sie Ihr Anliegen.
+                {{ 'CONTACT.ERROR_MESSAGE' | translate }}
               </div>
               }
             </div>
@@ -66,18 +64,16 @@
                 }
               </label>
             </span>
-            <span class="policy-text">Ich habe die <span class="policy">Datenschutzbestimmungen</span> gelesen und bin
-              mit der Verarbeitung
-              meiner Daten einverstanden.</span>
+            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }} <span class="policy">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }} </span>{{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}</span>
           </p>
           @if (!contactData.privacy && (privacyTouched || formSubmitted)) {
           <div class="error-message-privacy">
-            Bitte akzeptieren Sie die Datenschutzbestimmungen.
+            {{ 'CONTACT.ERROR_PRIVACY' | translate }}
           </div>
           }
           <button type="submit" [disabled]="!(name.valid && email.valid && message.valid && contactData.privacy)"
             [ngClass]="{'disabled': !(name.valid && email.valid && message.valid && contactData.privacy), 'active': name.valid && email.valid && message.valid && contactData.privacy}">
-            Sag Hallo ;)
+            {{ 'CONTACT.SEND_BUTTON' | translate }}
           </button>
         </form>
       </div>

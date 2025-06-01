@@ -62,5 +62,28 @@
     "ARNESTO": "Robby ist für mich ein guter Mitarbeiter im Team. Er ist sehr organisiert und hat stets dazu beigetragen, eine gute Atmosphäre im Team aufrechtzuerhalten. Auf jeden Fall war es eine positive Erfahrung, ein Projekt mit ihm umsetzen zu dürfen.",
     "ALDIN": "Mit Robby zu arbeiten war immer sehr angenehm. Er bringt nicht nur technisches Know-how mit, sondern überzeugt auch durch seine ruhige und lösungsorientierte Art – eine echte Stärkung für jedes Team. Besonders schätze ich seine Verlässlichkeit: Wenn Robby etwas übernimmt, kann man sich zu 100 % darauf verlassen, dass es pünktlich und in hoher Qualität erledigt wird.",
     "PETER": "Die Zusammenarbeit mit Robby war nicht nur äußerst effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Als echter Teamplayer überzeugt er durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele. Besonders beeindruckt hat mich, wie er selbst in herausfordernden Situationen den Überblick behält und das Team motivierend begleitet."
+  },
+  "CONTACT": {
+    "CONTACT_ME": "Kontaktiere Sie mich",
+    "LETS_WORK_TOGETHER": "Lassen Sie uns zusammenarbeiten",
+    "PROBLEM_TO_SOLVE": "Haben Sie ein Problem zu lösen?",
+    "EXPERTISE_TEXT": "Ob Projektmanagement, Digitalisierung oder Prozessoptimierung – mit mir an Ihrer Seite wird's strategisch, kreativ und vor allem wirksam. Ich bringe nicht nur Expertise, sondern auch frischen Wind in Ihre Vorhaben.",
+    "NEED_FRONTEND": "Brauchen Sie einen Frontend-Entwickler?",
+    "LETS_TALK": "Lassen Sie uns reden!",
+    "NAME_QUESTION": "Wie ist Ihr Name?",
+    "NAME_PLACEHOLDER": "Ihr Name steht hier",
+    "EMAIL_QUESTION": "Wie lautet Ihre Email?",
+    "EMAIL_PLACEHOLDER": "ihre.email@beispiel.com",
+    "HELP_QUESTION": "Wie kann ich Ihnen helfen?",
+    "MESSAGE_PLACEHOLDER": "Hallo Robby, ich bin interessiert an...",
+    "PRIVACY_AGREEMENT_FIRST_TEXT": "Ich habe die",
+    "PRIVACY_AGREEMENT_POLICY": "Datenschutzbestimmungen",
+    "PRIVACY_AGREEMENT_SECOND_TEXT": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "SEND_BUTTON": "Sag Hallo ;)",
+    "ERROR_NAME": "Bitte geben Sie Ihren Namen ein.",
+    "ERROR_EMAIL_REQUIRED": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+    "ERROR_EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "ERROR_MESSAGE": "Bitte beschreiben Sie Ihr Anliegen.",
+    "ERROR_PRIVACY": "Bitte akzeptieren Sie die Datenschutzerklärung."
   }
 }
