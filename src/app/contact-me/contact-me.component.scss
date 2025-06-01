@@ -204,7 +204,7 @@
   .checkbox-row {
     display: flex;
     align-items: flex-start;
-    
+
     .checkbox-container {
       display: inline-block;
       position: relative;
@@ -212,12 +212,12 @@
       height: 24px;
       margin-right: 8px;
       flex-shrink: 0;
-      
+
       label {
         display: block;
         width: 100%;
         height: 100%;
-        
+
         img {
           position: absolute;
           top: 0;
@@ -227,24 +227,24 @@
           object-fit: contain;
           cursor: pointer;
         }
-        
+
         .checkbox-hover {
           display: none;
         }
-        
+
         &:hover {
           .checkbox-normal {
             display: none;
           }
-          
+
           .checkbox-hover {
             display: block;
           }
         }
       }
     }
-    
-    & > span:last-child {
+
+    &>span:last-child {
       display: inline-block;
       flex: 1;
     }
@@ -302,4 +302,303 @@
   margin-top: -8px;
   margin-bottom: -9px;
   text-align: start;
+}
+
+@media (max-width: 1440px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        height: auto;
+        gap: 32px;
+
+        .work-together {
+          h3 {
+            font-size: 56px;
+          }
+
+          .contact-me-text {
+            font-size: 22px;
+          }
+
+          .problem-text {
+            font-size: 22px;
+          }
+        }
+
+        .form {
+          .input-fields {
+            height: auto;
+
+            %form-position {
+              padding: 20px;
+              height: 70px;
+
+              p {
+                font-size: 22px;
+                margin-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+
+  .error-message-privacy {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        gap: 24px;
+
+        .work-together {
+          h3 {
+            font-size: 48px;
+          }
+
+          .contact-me-text {
+            font-size: 20px;
+          }
+
+          .problem-text {
+            font-size: 20px;
+          }
+        }
+
+        .form {
+          .input-fields {
+            %form-position {
+              padding: 16px;
+              height: 65px;
+
+              p {
+                font-size: 20px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-me {
+    height: auto;
+
+    .content-width {
+      .contact-me-container {
+        flex-direction: column;
+        height: auto;
+
+        .work-together,
+        .form {
+          width: 100%;
+        }
+
+        .work-together {
+          margin-bottom: 40px;
+
+          h3 {
+            font-size: 36px;
+          }
+
+          .contact-me-text {
+            font-size: 18px;
+          }
+
+          .problem-text {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    margin-top: 16px;
+  }
+
+  .error-message {
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        gap: 16px;
+
+        .work-together {
+          margin-bottom: 32px;
+
+          h3 {
+            font-size: 30px;
+          }
+
+          .need-me-text {
+            font-size: 14px;
+          }
+        }
+
+        .form {
+          .input-fields {
+            %form-position {
+              padding: 14px;
+              height: 60px;
+
+              p {
+                font-size: 18px;
+                margin-bottom: 8px;
+              }
+            }
+
+            input,
+            textarea {
+              font-size: 16px;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-row {
+    .policy-text {
+      font-size: 14px;
+    }
+  }
+
+  button {
+    width: 130px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+
+  .error-message-privacy {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        .work-together {
+          h3 {
+            font-size: 24px;
+          }
+
+          .contact-me-text,
+          .problem-text {
+            font-size: 16px;
+          }
+        }
+
+        .form {
+          .input-fields {
+            %form-position {
+              // padding: 12px;
+              // height: 50px;
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-row {
+    .checkbox-container {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        .work-together {
+          h3 {
+            font-size: 20px;
+          }
+
+          .need-me-text {
+            font-size: 13px;
+          }
+        }
+
+        .form {
+          .input-fields {
+
+            input,
+            textarea {
+              font-size: 14px;
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: 120px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .error-message {
+    font-size: 12px;
+  }
+
+  .error-message-privacy {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-me {
+    .content-width {
+      .contact-me-container {
+        .work-together {
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
 }
