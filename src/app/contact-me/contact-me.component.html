@@ -28,7 +28,7 @@
             <div class="email">
               <p>Wie lautet Ihre Email?</p>
               <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
-                placeholder="deineemail@gmail.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                placeholder="ihre.email@beispiel.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
               @if (!email.valid && email.touched) {
               <div class="error-message">
                 @if (email.errors?.['required']) {
