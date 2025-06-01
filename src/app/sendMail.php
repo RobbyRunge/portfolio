@@ -20,18 +20,18 @@ switch ($_SERVER['REQUEST_METHOD']) {
     
             $recipient = 'robbyrunge@yahoo.com';  
             $subject = "Contact From <$email>";
-            $message = "From:" . $name . "<br>" . $message ;
+            $message = "Email: " . "<br>" . $email . "From: " . "<br>" . $name . "<br>" . "<br>" . "Message: " . $message ;
     
             $headers   = array();
             $headers[] = 'MIME-Version: 1.0';
             $headers[] = 'Content-type: text/html; charset=utf-8';
 
             // Additional headers
-            $headers[] = "From: noreply@mywebsite.com";
+            $headers[] = "From: noreply@robbyrungemywebsite.de";
 
             mail($recipient, $subject, $message, implode("\r\n", $headers));
             break;
-        default: //Reject any non POST or OPTIONS requests.
+            default: //Reject any non POST or OPTIONS requests.
             header("Allow: POST", true, 405);
             exit;
     } 
