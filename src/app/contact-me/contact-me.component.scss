@@ -208,8 +208,8 @@
     .checkbox-container {
       display: inline-block;
       position: relative;
-      width: 24px; /* Set fixed width - adjust to match your image size */
-      height: 24px; /* Set fixed height - adjust to match your image size */
+      width: 24px;
+      height: 24px;
       margin-right: 8px;
       flex-shrink: 0;
       
@@ -247,6 +247,10 @@
     & > span:last-child {
       display: inline-block;
       flex: 1;
+    }
+
+    .policy-text {
+      text-align: start;
     }
 
     .policy {
@@ -290,4 +294,12 @@
   color: rgba(236, 123, 123, 0.8);
   font-size: 18px;
   margin-top: 5px;
+}
+
+.error-message-privacy {
+  color: rgba(236, 123, 123, 0.8);
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: -14px;
+  text-align: start;
 }
