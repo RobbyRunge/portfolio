@@ -52,15 +52,25 @@
           </div>
           <p class="checkbox-row">
             <span class="checkbox-container">
+              <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacy" #privacyCheck="ngModel" required style="display: none;">
               <label for="privacy">
-                <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
-                <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
+                @if (!contactData.privacy) {
+                  <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
+                  <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
+                } @else {
+                  <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-checked.png" alt="Checkbox checked">
+                  <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-checked-hover.png" alt="Checkbox checked hover">
+                }
               </label>
             </span>
             <span>Ich habe die <span class="policy"> Datenschutzbestimmungen</span> gelesen und bin mit der Verarbeitung
               meiner Daten einverstanden.</span>
           </p>
-          <button>Sag Hallo ;)</button>
+          <button type="submit" 
+                  [disabled]="!(name.valid && email.valid && message.valid && contactData.privacy)"
+                  [ngClass]="{'disabled': !(name.valid && email.valid && message.valid && contactData.privacy), 'active': name.valid && email.valid && message.valid && contactData.privacy}">
+            Sag Hallo ;)
+          </button>
         </form>
       </div>
     </div>
