@@ -13,29 +13,41 @@
         </p>
       </div>
       <div class="form">
-        <div class="input-fields">
-          <div class="name">
-            <p>Wie ist Ihr Name?</p>
-            <input type="text" placeholder="Ihr Name steht hier">
+        <form>
+          <div class="input-fields">
+            <div class="name">
+              <p>Wie ist Ihr Name?</p>
+              <input type="text" formControlName="name" placeholder="Ihr Name steht hier" required>
+              <!-- <div class="error-message">
+                Bitte geben Sie Ihren Namen ein.
+              </div> -->
+            </div>
+            <div class="email">
+              <p>Wie lautet Ihre Email?</p>
+              <input type="email" formControlName="email" placeholder="deineemail@gmail.com" required>
+              <!-- <div class="error-message">
+                Bitte geben Sie eine gültige Email-Adresse ein.
+              </div> -->
+            </div>
+            <div class="message">
+              <p>Wie kann ich Ihnen helfen?</p>
+              <textarea formControlName="message" placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
+              <!-- <div class="error-message">
+                Bitte geben Sie Ihre Nachricht ein.
+              </div> -->
+            </div>
           </div>
-          <div class="email">
-            <p>Wie lautet Ihre Email?</p>
-            <input type="email" placeholder="deineemail@gmail.com">
-          </div>
-          <div class="message">
-            <p>Wie kann ich Ihnen helfen?</p>
-            <textarea placeholder="Hallo Robby, ich bin interessiert an..."></textarea>
-          </div>
-        </div>
-        <p class="checkbox-row">
-          <span class="checkbox-container">
-            <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
-            <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
-          </span>
-          <span>Ich habe die <span class="policy"> Datenschutzbestimmungen</span> gelesen und bin mit der Verarbeitung meiner Daten
-            einverstanden.</span>
-        </p>
-        <button>Sag Hallo ;)</button>
+          <p class="checkbox-row">
+            <span class="checkbox-container">
+              <label for="privacy">
+                <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
+                <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
+              </label>
+            </span>
+            <span>Ich habe die <span class="policy"> Datenschutzbestimmungen</span> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.</span>
+          </p>
+          <button>Sag Hallo ;)</button>
+        </form>
       </div>
     </div>
   </div>

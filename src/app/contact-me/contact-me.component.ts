@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-contact-me',
-  imports: [],
   templateUrl: './contact-me.component.html',
-  styleUrl: './contact-me.component.scss'
+  styleUrls: ['./contact-me.component.scss']
 })
-export class ContactMeComponent {
-
+export class ContactMeComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }
