@@ -55,7 +55,7 @@
             <span class="checkbox-container">
               <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacy"
                 #privacyCheck="ngModel" required style="display: none;">
-              <label for="privacy">
+              <label for="privacy" (click)="onPrivacyClick()">
                 @if (!contactData.privacy) {
                 <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
                 <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
@@ -70,7 +70,7 @@
               mit der Verarbeitung
               meiner Daten einverstanden.</span>
           </p>
-          @if (!contactData.privacy) {
+          @if (!contactData.privacy && (privacyTouched || formSubmitted)) {
           <div class="error-message-privacy">
             Bitte akzeptieren Sie die Datenschutzbestimmungen.
           </div>
