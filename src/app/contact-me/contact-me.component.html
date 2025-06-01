@@ -64,7 +64,7 @@
                 }
               </label>
             </span>
-            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }} <span class="policy">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }} </span>{{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}</span>
+            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }} <span class="policy">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }}</span> {{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}</span>
           </p>
           @if (!contactData.privacy && (privacyTouched || formSubmitted)) {
           <div class="error-message-privacy">
@@ -73,7 +73,7 @@
           }
           <button type="submit" [disabled]="!(name.valid && email.valid && message.valid && contactData.privacy)"
             [ngClass]="{'disabled': !(name.valid && email.valid && message.valid && contactData.privacy), 'active': name.valid && email.valid && message.valid && contactData.privacy}">
-            {{ 'CONTACT.SEND_BUTTON' | translate }}
+            <span class="text-container">{{ 'CONTACT.SEND_BUTTON' | translate }}</span>
           </button>
         </form>
       </div>
