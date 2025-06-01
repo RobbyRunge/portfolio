@@ -224,4 +224,15 @@
       }
     }
   }
+
+  button {
+    width: 139px;
+    height: 48px;
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    margin-top: 24px;
+    padding: 0 24px;
+  }
 }
