@@ -21,7 +21,7 @@ export class ContactMeComponent {
     privacy: false
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://robby-runge.de/sendMail.php',
@@ -35,7 +35,7 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -47,9 +47,7 @@ export class ContactMeComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      ngForm.resetForm();
     }
+    ngForm.resetForm();
   }
 }
