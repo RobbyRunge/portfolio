@@ -17,18 +17,37 @@
           <div class="input-fields">
             <div class="name">
               <p>Wie ist Ihr Name?</p>
-              <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Ihr Name steht hier" required>
+              <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                placeholder="Ihr Name steht hier" required>
+              @if (!name.valid && name.touched) {
               <div class="error-message">
                 Bitte geben Sie Ihren Namen ein.
               </div>
+              }
             </div>
             <div class="email">
               <p>Wie lautet Ihre Email?</p>
-              <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="deineemail@gmail.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+              <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
+                placeholder="deineemail@gmail.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+              @if (!email.valid && email.touched) {
+              <div class="error-message">
+                @if (email.errors?.['required']) {
+                Bitte geben Sie Ihre E-Mail-Adresse ein.
+                } @else if (email.errors?.['pattern']) {
+                Bitte geben Sie eine gültige E-Mail-Adresse ein.
+                }
+              </div>
+              }
             </div>
             <div class="message">
               <p>Wie kann ich Ihnen helfen?</p>
-              <textarea [(ngModel)]="contactData.message" name="message" placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
+              <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message"
+                placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
+              @if (!message.valid && message.touched) {
+              <div class="error-message">
+                Bitte beschreiben Sie Ihr Anliegen.
+              </div>
+              }
             </div>
           </div>
           <p class="checkbox-row">
@@ -38,7 +57,8 @@
                 <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
               </label>
             </span>
-            <span>Ich habe die <span class="policy"> Datenschutzbestimmungen</span> gelesen und bin mit der Verarbeitung meiner Daten einverstanden.</span>
+            <span>Ich habe die <span class="policy"> Datenschutzbestimmungen</span> gelesen und bin mit der Verarbeitung
+              meiner Daten einverstanden.</span>
           </p>
           <button>Sag Hallo ;)</button>
         </form>
