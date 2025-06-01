@@ -72,7 +72,7 @@
               color: rgba(61, 207, 182, 1);
               margin: 0;
               margin-bottom: 16px;
-              
+
               &:hover {
                 cursor: pointer;
               }
@@ -214,6 +214,14 @@
     .policy {
       font-weight: 700;
       color: rgba(61, 207, 182, 1);
+      transition: all 125ms ease-in-out;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 1);
+        border-bottom: 1px solid rgba(61, 207, 182, 1);
+      }
     }
   }
 }
