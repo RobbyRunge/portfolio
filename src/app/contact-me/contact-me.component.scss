@@ -65,8 +65,6 @@
             padding: 24px;
             height: 80px;
 
-
-
             p {
               font-family: Fira Code;
               font-size: 24px;
@@ -90,6 +88,7 @@
             font-weight: 400;
             color: rgba(255, 255, 255, 0.8);
             background-color: transparent;
+            transition: all 125ms ease-in-out;
           }
 
           textarea {
@@ -109,82 +108,108 @@
             font-size: 18px;
             font-weight: 400;
             color: rgba(255, 255, 255, 0.8);
+            transition: all 125ms ease-in-out;
           }
+        }
 
-          .name {
-            @extend %form-position;
-            border-top: 1px solid rgba(61, 207, 182, 1);
-            border-bottom: 1px solid rgba(61, 207, 182, 1);
+        %hover-effect {
+          cursor: pointer;
+          border-top: 1px solid rgba(61, 207, 182, 1);
+          border-bottom: 1px solid rgba(61, 207, 182, 1);
+
+          ::placeholder {
+            color: rgba(255, 255, 255, 1);
           }
+        }
 
-          .email {
-            @extend %form-position;
-            border-top: 1px solid rgba(61, 207, 182, 1);
-            border-bottom: 1px solid rgba(61, 207, 182, 1);
+        %border-style {
+          border-top: 1px solid rgba(61, 207, 182, 0.5);
+          border-bottom: 1px solid rgba(61, 207, 182, 0.5);
+          transition: all 125ms ease-in-out;
+        }
+
+        .name {
+          @extend %form-position;
+          @extend %border-style;
+
+          &:hover {
+            @extend %hover-effect;
           }
+        }
 
-          .message {
-            @extend %form-position;
-            border-top: 1px solid rgba(61, 207, 182, 1);
-            border-bottom: 1px solid rgba(61, 207, 182, 1);
+        .email {
+          @extend %form-position;
+          @extend %border-style;
+
+          &:hover {
+            @extend %hover-effect;
+          }
+        }
+
+        .message {
+          @extend %form-position;
+          @extend %border-style;
+
+          &:hover {
+            @extend %hover-effect;
           }
         }
       }
     }
   }
+}
 
-  .checkbox-image {
-    transition: all 125ms ease;
-    cursor: pointer;
+.checkbox-image {
+  transition: all 125ms ease;
+  cursor: pointer;
 
-  }
+}
 
-  .checkbox-container {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
+.checkbox-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
-  .checkbox-normal,
-  .checkbox-hover {
-    transition: opacity 125ms ease;
-  }
+.checkbox-normal,
+.checkbox-hover {
+  transition: opacity 125ms ease;
+}
 
+.checkbox-normal {
+  opacity: 1;
+}
+
+.checkbox-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.checkbox-container:hover {
   .checkbox-normal {
-    opacity: 1;
-  }
-
-  .checkbox-hover {
-    position: absolute;
-    left: 0;
-    top: 0;
     opacity: 0;
   }
 
-  .checkbox-container:hover {
-    .checkbox-normal {
-      opacity: 0;
-    }
+  .checkbox-hover {
+    opacity: 1;
+  }
+}
 
-    .checkbox-hover {
-      opacity: 1;
-    }
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 16px 0;
+
+  .checkbox-container {
+    margin-right: 8px;
+    flex-shrink: 0;
   }
 
-  .checkbox-row {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 16px 0;
-
-    .checkbox-container {
-      margin-right: 8px;
-      flex-shrink: 0;
-    }
-
-    .policy {
-      font-weight: 700;
-      color: rgba(61, 207, 182, 1);
-    }
+  .policy {
+    font-weight: 700;
+    color: rgba(61, 207, 182, 1);
   }
 }
