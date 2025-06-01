@@ -80,6 +80,7 @@
           }
 
           input {
+            font-size: 18px;
             background-color: transparent;
             border: unset;
             padding: 0;
@@ -239,4 +240,10 @@
     margin-top: 24px;
     padding: 0 24px;
   }
+}
+
+.error-message {
+  color: rgba(236, 123, 123, 0.8);
+  font-size: 18px;
+  margin-top: 5px;
 }

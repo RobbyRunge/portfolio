@@ -13,28 +13,22 @@
         </p>
       </div>
       <div class="form">
-        <form>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
           <div class="input-fields">
             <div class="name">
               <p>Wie ist Ihr Name?</p>
-              <input type="text" formControlName="name" placeholder="Ihr Name steht hier" required>
-              <!-- <div class="error-message">
+              <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Ihr Name steht hier" required>
+              <div class="error-message">
                 Bitte geben Sie Ihren Namen ein.
-              </div> -->
+              </div>
             </div>
             <div class="email">
               <p>Wie lautet Ihre Email?</p>
-              <input type="email" formControlName="email" placeholder="deineemail@gmail.com" required>
-              <!-- <div class="error-message">
-                Bitte geben Sie eine gültige Email-Adresse ein.
-              </div> -->
+              <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="deineemail@gmail.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
             </div>
             <div class="message">
               <p>Wie kann ich Ihnen helfen?</p>
-              <textarea formControlName="message" placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
-              <!-- <div class="error-message">
-                Bitte geben Sie Ihre Nachricht ein.
-              </div> -->
+              <textarea [(ngModel)]="contactData.message" name="message" placeholder="Hallo Robby, ich bin interessiert an..." required></textarea>
             </div>
           </div>
           <p class="checkbox-row">
