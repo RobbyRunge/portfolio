@@ -305,7 +305,7 @@
         }
       }
     }
-    
+
     &.disabled {
       height: 48px;
       width: 122px;
@@ -317,7 +317,7 @@
       position: relative;
       overflow: hidden;
       cursor: not-allowed;
-      
+
       .text-container {
         display: inline-block;
         white-space: nowrap;
@@ -368,6 +368,98 @@
   margin-top: -8px;
   margin-bottom: -9px;
   text-align: start;
+}
+
+.data-protection-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .overlay-content {
+    background-color: rgba(28, 28, 28, 1);
+    border: 1px solid rgba(61, 207, 182, 1);
+    border-radius: 24px;
+    width: 80%;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    h1 {
+      font-size: 24px;
+      color: rgba(61, 207, 182, 1);
+      margin-bottom: 20px;
+      font-family: Fira Code;
+      padding-right: 40px;
+    }
+
+    .scroll-content {
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      margin-right: -10px;
+      height: 100%;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 15px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: rgba(61, 207, 182, 1);
+        top: 50%;
+        left: 0;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: white;
+      }
+    }
+  }
 }
 
 @media (max-width: 1440px) {
@@ -586,8 +678,6 @@
         .form {
           .input-fields {
             %form-position {
-              // padding: 12px;
-              // height: 50px;
 
               p {
                 font-size: 16px;
@@ -666,414 +756,6 @@
             font-size: 18px;
           }
         }
-      }
-    }
-  }
-}
-
-.privacy-policy-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .overlay-content {
-    background-color: rgba(28, 28, 28, 1);
-    border: 1px solid rgba(61, 207, 182, 1);
-    border-radius: 24px;
-    width: 80%;
-    max-width: 800px;
-    padding: 30px;
-    position: relative;
-    max-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    h2 {
-      color: rgba(61, 207, 182, 1);
-      margin-bottom: 20px;
-      font-family: Fira Code;
-      padding-right: 40px;
-    }
-
-    .scroll-content {
-      overflow-y: auto;
-      padding-right: 10px;
-      margin-right: -10px;
-      height: 100%;
-    }
-
-    p {
-      color: rgba(255, 255, 255, 1);
-      margin-bottom: 15px;
-    }
-
-    .close-button {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 30px;
-      height: 30px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: rgba(61, 207, 182, 1);
-        top: 50%;
-        left: 0;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
-
-      &:hover::before,
-      &:hover::after {
-        background-color: white;
-      }
-    }
-  }
-}
-
-/* Responsive styles for privacy policy overlay */
-@media (max-width: 1440px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      max-width: 700px;
-      padding: 25px;
-
-      h2 {
-        font-size: 22px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      max-width: 650px;
-      max-height: 75vh;
-
-      .close-button {
-        top: 12px;
-        right: 12px;
-      }
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      width: 90%;
-      max-width: 600px;
-      padding: 22px;
-
-      h2 {
-        font-size: 20px;
-        padding-right: 35px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      width: 100%;
-      margin: 0 15px;
-      padding: 20px;
-      max-height: 70vh;
-
-      h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-      }
-
-      p {
-        font-size: 14px;
-        margin-bottom: 12px;
-      }
-
-      .close-button {
-        width: 25px;
-        height: 25px;
-        top: 10px;
-        right: 10px;
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      padding: 15px;
-      border-radius: 16px;
-
-      h2 {
-        font-size: 15px;
-      }
-
-      p {
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
-
-      .close-button {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .privacy-policy-overlay {
-    .overlay-content {
-      padding: 12px;
-
-      h2 {
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 12px;
-      }
-    }
-  }
-}
-
-.data-protection-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .overlay-content {
-    background-color: rgba(28, 28, 28, 1);
-    border: 1px solid rgba(61, 207, 182, 1);
-    border-radius: 24px;
-    width: 80%;
-    max-width: 800px;
-    padding: 30px;
-    position: relative;
-    max-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    h2 {
-      color: rgba(61, 207, 182, 1);
-      margin-bottom: 20px;
-      font-family: Fira Code;
-      padding-right: 40px;
-    }
-
-    .scroll-content {
-      overflow-y: auto;
-      padding-right: 10px;
-      margin-right: -10px;
-      height: 100%;
-    }
-
-    p {
-      color: rgba(255, 255, 255, 1);
-      margin-bottom: 15px;
-    }
-
-    .close-button {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 30px;
-      height: 30px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: rgba(61, 207, 182, 1);
-        top: 50%;
-        left: 0;
-      }
-
-      &::before {
-        transform: rotate(45deg);
-      }
-
-      &::after {
-        transform: rotate(-45deg);
-      }
-
-      &:hover::before,
-      &:hover::after {
-        background-color: white;
-      }
-    }
-  }
-}
-
-/* Responsive styles for data protection overlay */
-@media (max-width: 1440px) {
-  .data-protection-overlay {
-    .overlay-content {
-      max-width: 700px;
-      padding: 25px;
-
-      h2 {
-        font-size: 22px;
-      }
-
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .data-protection-overlay {
-    .overlay-content {
-      max-width: 650px;
-      max-height: 75vh;
-
-      .close-button {
-        top: 12px;
-        right: 12px;
-      }
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .data-protection-overlay {
-    .overlay-content {
-      width: 90%;
-      max-width: 600px;
-      padding: 22px;
-
-      h2 {
-        font-size: 20px;
-        padding-right: 35px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .data-protection-overlay {
-    .overlay-content {
-      width: 100%;
-      margin: 0 15px;
-      padding: 20px;
-      max-height: 70vh;
-
-      h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-      }
-
-      p {
-        font-size: 14px;
-        margin-bottom: 12px;
-      }
-
-      .close-button {
-        width: 25px;
-        height: 25px;
-        top: 10px;
-        right: 10px;
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .data-protection-overlay {
-    .overlay-content {
-      padding: 15px;
-      border-radius: 16px;
-
-      h2 {
-        font-size: 15px;
-      }
-
-      p {
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
-
-      .close-button {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .data-protection-overlay {
-    .overlay-content {
-      padding: 12px;
-
-      h2 {
-        font-size: 14px;
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 12px;
       }
     }
   }
