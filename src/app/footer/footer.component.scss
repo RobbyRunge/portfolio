@@ -315,6 +315,28 @@ footer {
       }
     }
   }
+
+  footer {
+    .content-width {
+      .footer-container {
+        .logo-and-text {
+          img {
+            width: 64px;
+          }
+
+          p {
+            font-size: 12px !important;
+          }
+        }
+
+        .links {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 320px) {
