@@ -174,3 +174,162 @@ footer {
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      max-width: 700px;
+      padding: 25px;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      max-width: 650px;
+      max-height: 75vh;
+
+      .close-button {
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      width: 90%;
+      max-width: 600px;
+      padding: 22px;
+
+      h2 {
+        font-size: 20px;
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      width: 100%;
+      margin: 0 15px;
+      padding: 20px;
+      max-height: 70vh;
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+
+      .close-button {
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding-bottom: 0;
+
+    .content-width {
+      .footer-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+
+        .logo-and-text,
+        .links {
+          min-width: 0;
+        }
+
+        .logo-and-text {
+          margin-right: 10px;
+
+          img {
+            width: 80px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .copyright {
+          width: 100%;
+          order: 3;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .links {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      padding: 15px;
+      border-radius: 16px;
+
+      h2 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .close-button {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .legal-notice-overlay {
+    .overlay-content {
+      padding: 12px;
+
+      h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
