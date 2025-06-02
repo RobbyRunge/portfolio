@@ -110,12 +110,21 @@ footer {
     padding: 30px;
     position: relative;
     max-height: 80vh;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    
     h2 {
       color: rgba(61, 207, 182, 1);
       margin-bottom: 20px;
       font-family: Fira Code;
+      padding-right: 40px;
+    }
+    
+    .scroll-content {
+      overflow-y: auto;
+      padding-right: 10px;
+      margin-right: -10px;
+      height: 100%;
     }
     
     p {
