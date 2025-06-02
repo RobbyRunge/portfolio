@@ -15,6 +15,7 @@ import { TranslationService } from '../shared/translation.service';
 export class ContactMeComponent implements OnInit {
 
   http = inject(HttpClient)
+  showPrivacyPolicy = false;
 
   contactData = {
     name: "",
@@ -49,6 +50,17 @@ export class ContactMeComponent implements OnInit {
 
   onPrivacyClick() {
     this.privacyTouched = true;
+  }
+
+  openPrivacyPolicy(event: Event): void {
+    event.preventDefault();
+    this.showPrivacyPolicy = true;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closePrivacyPolicy(): void {
+    this.showPrivacyPolicy = false;
+    document.body.style.overflow = '';
   }
 
   onSubmit(ngForm: NgForm) {

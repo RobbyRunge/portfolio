@@ -64,7 +64,10 @@
                 }
               </label>
             </span>
-            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }} <span class="policy">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }}</span> {{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}</span>
+            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }} 
+              <span class="policy" (click)="openPrivacyPolicy($event)">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }}</span> 
+              {{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}
+            </span>
           </p>
           @if (!contactData.privacy && (privacyTouched || formSubmitted)) {
           <div class="error-message-privacy">
@@ -77,6 +80,15 @@
           </button>
         </form>
       </div>
+    </div>
+  </div>
+</div>
+<div class="data-protection-overlay" [class.active]="showPrivacyPolicy">
+  <div class="overlay-content">
+    <button class="close-button" (click)="closePrivacyPolicy()"></button>
+    <h2>{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }}</h2>
+    <div class="scroll-content">
+      <p [innerHTML]="'FOOTER.LEGAL.PRIVACY' | translate"></p>
     </div>
   </div>
 </div>
