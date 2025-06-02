@@ -115,10 +115,6 @@ footer {
     flex-direction: column;
     overflow: hidden;
 
-    a {
-      color: rgba(61, 207, 182, 1);
-    }
-
     h2 {
       color: rgba(61, 207, 182, 1);
       margin-bottom: 20px;
@@ -134,7 +130,7 @@ footer {
     }
 
     p {
-      color: white;
+      color: rgba(255, 255, 255, 1);
       margin-bottom: 15px;
     }
 
