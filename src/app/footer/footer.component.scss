@@ -101,10 +101,11 @@ footer {
     opacity: 1;
     visibility: visible;
   }
-  
+
   .overlay-content {
     background-color: rgba(28, 28, 28, 1);
-    border: 2px solid rgba(61, 207, 182, 1);
+    border: 1px solid rgba(61, 207, 182, 1);
+    border-radius: 24px;
     width: 80%;
     max-width: 800px;
     padding: 30px;
@@ -113,25 +114,30 @@ footer {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+
+    a {
+      color: rgba(61, 207, 182, 1);
+    }
+
     h2 {
       color: rgba(61, 207, 182, 1);
       margin-bottom: 20px;
       font-family: Fira Code;
       padding-right: 40px;
     }
-    
+
     .scroll-content {
       overflow-y: auto;
       padding-right: 10px;
       margin-right: -10px;
       height: 100%;
     }
-    
+
     p {
       color: white;
       margin-bottom: 15px;
     }
-    
+
     .close-button {
       position: absolute;
       top: 15px;
@@ -141,7 +147,7 @@ footer {
       background: transparent;
       border: none;
       cursor: pointer;
-      
+
       &::before,
       &::after {
         content: '';
@@ -152,15 +158,15 @@ footer {
         top: 50%;
         left: 0;
       }
-      
+
       &::before {
         transform: rotate(45deg);
       }
-      
+
       &::after {
         transform: rotate(-45deg);
       }
-      
+
       &:hover::before,
       &:hover::after {
         background-color: white;
