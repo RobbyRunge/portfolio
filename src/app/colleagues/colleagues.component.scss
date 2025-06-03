@@ -62,7 +62,7 @@
     height: 274px;
     background-color: rgba(38, 82, 75, 1);
     border: 1px solid rgba(61, 207, 182, 1);
-    animation: fadeIn 0.5s forwards;
+    animation: revealCard 0.5s forwards;
     left: 22.5%;
     opacity: 1;
   }
@@ -80,6 +80,7 @@
     transform: translateX(0) scale(0.85) rotateY(10deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     opacity: 0.9;
+    transition: left 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.1s ease-in-out, clip-path 0.5s ease-in-out;
 
     p {
       background: linear-gradient(to left,
@@ -103,8 +104,8 @@
     border-radius: 32px;
     left: 75%;
     transform: translateX(0) scale(0.85) rotateY(-10deg);
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-    opacity: 0.9;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);    opacity: 0.9;
+    transition: left 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.2s ease-in-out, clip-path 0.5s ease-in-out;
 
     p {
       background: linear-gradient(to right,
@@ -116,13 +117,20 @@
       animation: flowTextRight 3s infinite alternate;
     }
   }
-
   &.hidden {
     opacity: 0;
     transform: scale(0.7);
     z-index: 0;
     pointer-events: none;
     left: 22.5%;
+  }
+
+  &.transitioning {
+    &.inactive-left,
+    &.inactive-right {
+      opacity: 0 !important;
+      transition: opacity 0.1s ease-in-out !important;
+    }
   }
 }
 
@@ -319,6 +327,15 @@
 
   100% {
     background-position: 100% 50%;
+  }
+}
+
+@keyframes revealCard {
+  0% {
+    clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
