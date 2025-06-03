@@ -75,7 +75,7 @@ header {
 .logo {
   height: 70px;
   transition: all 125ms ease-in-out;
-  
+
   &:hover {
     filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
   }
@@ -92,7 +92,7 @@ p {
   height: 24px;
   width: 30px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 999;
 
   span {
     display: block;
@@ -106,6 +106,7 @@ p {
 }
 
 .mobile-menu {
+  z-index: 999;
   display: none;
   position: fixed;
   top: 0;
@@ -114,7 +115,6 @@ p {
   max-width: 238px;
   height: 252px;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
-  z-index: 100;
   border-bottom-left-radius: 30px;
   transition: right 0.3s ease;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);

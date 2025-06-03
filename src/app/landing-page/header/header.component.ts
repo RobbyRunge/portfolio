@@ -19,7 +19,7 @@ export class HeaderComponent {
 
   toggleMobileMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
-    document.body.style.overflow = this.mobileMenuOpen ? 'hidden' : '';
+    // document.body.style.overflow = this.mobileMenuOpen ? 'hidden' : '';
   }
 
   @HostListener('document:click', ['$event'])
