@@ -50,47 +50,53 @@ export class ColleaguesComponent {
       gitHubLink: "https://github.com/Ysidr"
     }
   ];
-
   currentIndex = 1;
   translateValue = '0';
   isTransitioning = false;
+  isPositionChanging = false;
 
   constructor(
     private translationService: TranslationService,
     private translateService: TranslateService
-  ) { }
-
+  ) { } 
+  
   nextCard(): void {
     if (this.isTransitioning) return;
-
     this.isTransitioning = true;
-    this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
-
+    this.isPositionChanging = true;
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.testimonials.length;
+      this.isPositionChanging = false;
+    }, 100);
     setTimeout(() => {
       this.isTransitioning = false;
-    }, 500);
-  }
-
+    }, 300);
+  } 
+  
   prevCard(): void {
     if (this.isTransitioning) return;
-
     this.isTransitioning = true;
-    this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
-
+    this.isPositionChanging = true;
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
+      this.isPositionChanging = false;
+    }, 100);
     setTimeout(() => {
       this.isTransitioning = false;
-    }, 500);
-  }
-
+    }, 300);
+  } 
+  
   goToCard(index: number): void {
     if (this.isTransitioning || this.currentIndex === index) return;
-
     this.isTransitioning = true;
-    this.currentIndex = index;
-
+    this.isPositionChanging = true;
+    setTimeout(() => {
+      this.currentIndex = index;
+      this.isPositionChanging = false;
+    }, 100);
     setTimeout(() => {
       this.isTransitioning = false;
-    }, 500);
+    }, 300);
   }
 
   getCardPosition(cardId: number): string {
