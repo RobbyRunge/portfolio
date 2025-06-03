@@ -61,7 +61,8 @@
   "TESTIMONIALS": {
     "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",
     "ALDIN": "Working with Robby has always been very pleasant. He not only brings technical expertise, but also impresses with his calm and solution-oriented manner – a real asset for any team. I especially appreciate his reliability: When Robby takes on something, you can 100% rely on it being done on time and with high quality.",
-    "PETER": "Working with Robby was not only extremely effective but also consistently characterized by trust and clarity. As a true team player, he convinces with his reliability, structured work approach, and sense of common goals. I was particularly impressed by how he maintains an overview even in challenging situations and motivatingly accompanies the team."
+    "PETER": "Working with Robby was not only extremely effective but also consistently characterized by trust and clarity. As a true team player, he convinces with his reliability, structured work approach, and sense of common goals. I was particularly impressed by how he maintains an overview even in challenging situations and motivatingly accompanies the team.",
+    "FINN": "Robby impresses with his immediate responses, goal-orientated problem solving and excellent communication. Reliability and diligence are his strengths, but what is most impressive is the pleasant co-operation - even in difficult or long projects he keeps the mood high. An absolute pleasure, any time again!"
   },
   "CONTACT": {
     "CONTACT_ME": "Contact me",
@@ -101,7 +102,6 @@
       "CONSENT_WITHDRAWAL": "If you have given us consent, you can withdraw it at any time with effect for the future.",
       "COMPLAINT": "You can also submit a complaint to a supervisory authority at any time, such as the competent supervisory authority in the federal state where you reside or the authority responsible for us as the controller.",
       "AUTHORITIES_LIST": "A list of supervisory authorities (for the non-public sector) with addresses can be found at: <a href=\"https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html\">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.",
-      
       "PROCESSING_ACTIVITIES": "Processing Activities",
       "WEBSITE_INFORMATION": "Collection of General Information When You Visit Our Website",
       "PROCESSING_TYPE": "Type and Purpose of Processing",
@@ -109,62 +109,46 @@
       "PROCESSING_PURPOSES": "This data is processed particularly for the following purposes:",
       "PURPOSE_SMOOTH_OPERATION": "Ensuring smooth website operation",
       "DATA_USE_NOTICE": "We do not use your data to draw conclusions about you personally. However, we reserve the right to check the server log files retrospectively if there are concrete indications of illegal use.",
-      
       "LEGAL_BASIS": "Legal Basis and Legitimate Interest",
       "LEGAL_BASIS_DESC": "Processing is carried out in accordance with Art. 6 Para. 1 lit. f GDPR based on our legitimate interest in improving the stability and functionality of our website, as well as ensuring system security and detecting misuse.",
-      
       "RECIPIENT": "Recipients",
       "RECIPIENT_DESC": "Recipients of the data may include technical service providers who act as processors for the operation and maintenance of our website.",
-      
       "STORAGE_DURATION": "Storage Duration",
       "STORAGE_DURATION_DESC": "Data in server log files that allows identification of individuals is stored for a maximum of 14 days, unless a security-relevant event occurs (e.g., a DDoS attack).",
       "STORAGE_DURATION_EVENT": "In the event of such an incident, server log files are stored until the security-relevant event has been eliminated and fully resolved.",
-      
       "PROVISION_REQUIRED": "Provision Mandatory or Required",
       "PROVISION_REQUIRED_DESC": "The provision of the aforementioned personal data is neither legally nor contractually required. However, without the IP address, the service and functionality of our website cannot be guaranteed. Additionally, individual services may be unavailable or restricted.",
-      
       "OBJECTION": "Right to Object",
       "OBJECTION_DESC": "Please refer to the information about your right to object according to Art. 21 GDPR below.",
-      
       "CONTACT_SECTION": "Contact",
       "CONTACT_PURPOSE": "Type and Purpose of Processing",
       "CONTACT_FORM_DESC": "A contact form is available on our website, which can be used for electronic contact. If a user takes advantage of this option, the data entered in the input mask will be transmitted to us and stored.",
       "CONTACT_EMAIL_DESC": "Contact can be made via the provided email addresses. In this case, the user's personal data transmitted with the email will be stored. This includes the date and time of the email, email address, IP addresses, and information about the servers involved in email communication.",
       "CONTACT_PHONE_DESC": "You can contact us via the provided telephone numbers. In this case, we collect log data including your telephone number and the duration of the call.",
       "CONTACT_DATA_PURPOSE": "Regardless of the chosen communication method, we collect the content of your inquiry. Your data is stored for the purpose of individual communication with you.",
-      
       "CONTACT_LEGAL_BASIS": "Legal Basis",
       "CONTACT_LEGAL_BASIS_DESC": "Data processing is carried out on the basis of a legitimate interest (Art. 6 Para. 1 lit. f GDPR).",
       "CONTACT_LEGITIMATE_INTEREST": "Our legitimate interest in processing your data is to enable straightforward contact.",
       "CONTACT_PRECONTRACTUAL": "If you contact us to request a quote, the data processing is carried out for the implementation of pre-contractual measures (Art. 6 Para. 1 lit. b GDPR).",
-      
       "CONTACT_RECIPIENT": "Recipients",
       "CONTACT_RECIPIENT_DESC": "Recipients of the data may include technical service providers who act as processors for the operation and maintenance of our website.",
-      
       "CONTACT_STORAGE": "Storage Duration",
       "CONTACT_STORAGE_DESC": "Data will be deleted no later than 14 days after processing your contact request.",
       "CONTACT_STORAGE_CONTRACT": "If a contractual relationship is established, we are subject to statutory retention periods. These are generally 6 or 10 years for reasons of proper accounting and tax requirements.",
-      
       "CONTACT_PROVISION": "Provision Mandatory or Required",
       "CONTACT_PROVISION_DESC": "The provision of your personal data is voluntary. However, we can only process your request if you provide us with the necessary data and the reason for your inquiry.",
-      
       "CONTACT_OBJECTION": "Right to Object",
       "CONTACT_OBJECTION_DESC": "Please refer to the information about your right to object according to Art. 21 GDPR below.",
-      
       "OBJECTION_INFO": "Information on Your Right to Object Under Art. 21 GDPR",
       "INDIVIDUAL_OBJECTION": "Case-by-Case Right to Object",
       "INDIVIDUAL_OBJECTION_DESC": "You have the right to object, on grounds relating to your particular situation, at any time to processing of personal data concerning you which is based on Art. 6 Para. 1 lit. f GDPR (data processing based on a balancing of interests); this also applies to profiling based on this provision within the meaning of Art. 4 No. 4 GDPR.",
       "OBJECTION_CONSEQUENCE": "If you object, we will no longer process your personal data unless we can demonstrate compelling legitimate grounds for processing which override your interests, rights and freedoms, or processing serves the establishment, exercise or defense of legal claims.",
-      
       "OBJECTION_RECIPIENT": "Recipient of an Objection",
       "OBJECTION_CONTACT": "Name: Robby Runge<br />Address: Weinbergstraße 53, 04838 Eilenburg<br />Email: robbyrunge&#64;yahoo.com<br />Phone: +49-1624215278",
-      
       "POLICY_CHANGES": "Changes to Our Privacy Policy",
       "POLICY_CHANGES_DESC": "We reserve the right to adapt this privacy policy to ensure it always complies with current legal requirements or to implement changes to our services in the privacy policy, e.g., when introducing new services. The new privacy policy will then apply to your next visit.",
-      
       "QUESTIONS": "Questions About Data Protection",
       "QUESTIONS_DESC": "If you have questions about data protection, please send us an email to the controller mentioned above.",
-      
       "COPYRIGHT_NOTICE": "<em>This privacy policy was created with the help of activeMind AG - the experts for <a href=\"https://www.activemind.de/datenschutz/datenschutzbeauftragter/\" target=\"_blank\" rel=\"noopener dofollow\">external data protection officers</a> (Version #2024-10-25).</em>"
     }
   },

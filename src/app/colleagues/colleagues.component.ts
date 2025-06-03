@@ -42,6 +42,13 @@ export class ColleaguesComponent {
       role: "Kochwelt",
       gitHubLink: "https://github.com/PeterTr-ust"
     },
+    {
+      id: 3,
+      translationKey: "TESTIMONIALS.FINN",
+      author: "Finn Grünhage",
+      role: "Kochwelt",
+      gitHubLink: "https://github.com/Ysidr"
+    }
   ];
 
   currentIndex = 1;

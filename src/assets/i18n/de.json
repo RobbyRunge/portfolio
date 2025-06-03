@@ -61,7 +61,8 @@
   "TESTIMONIALS": {
     "ARNESTO": "Robby ist für mich ein guter Mitarbeiter im Team. Er ist sehr organisiert und hat stets dazu beigetragen, eine gute Atmosphäre im Team aufrechtzuerhalten. Auf jeden Fall war es eine positive Erfahrung, ein Projekt mit ihm umsetzen zu dürfen.",
     "ALDIN": "Mit Robby zu arbeiten war immer sehr angenehm. Er bringt nicht nur technisches Know-how mit, sondern überzeugt auch durch seine ruhige und lösungsorientierte Art – eine echte Stärkung für jedes Team. Besonders schätze ich seine Verlässlichkeit: Wenn Robby etwas übernimmt, kann man sich zu 100 % darauf verlassen, dass es pünktlich und in hoher Qualität erledigt wird.",
-    "PETER": "Die Zusammenarbeit mit Robby war nicht nur äußerst effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Als echter Teamplayer überzeugt er durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele. Besonders beeindruckt hat mich, wie er selbst in herausfordernden Situationen den Überblick behält und das Team motivierend begleitet."
+    "PETER": "Die Zusammenarbeit mit Robby war nicht nur äußerst effektiv, sondern auch stets von Vertrauen und Klarheit geprägt. Als echter Teamplayer überzeugt er durch seine Zuverlässigkeit, strukturierte Arbeitsweise und sein Gespür für gemeinsame Ziele. Besonders beeindruckt hat mich, wie er selbst in herausfordernden Situationen den Überblick behält und das Team motivierend begleitet.",
+    "FINN": "Robby besticht durch sofortiges Antworten, zielorientierte Problemlösung und exzellente Kommunikation. Verlässlichkeit und Sorgfalt sind seine Stärken, doch am meisten überzeugt die angenehme Zusammenarbeit – selbst in schwierigen oder langen Projekten hält er die Stimmung hoch. Eine absolute Freude, jederzeit wieder!"
   },
   "CONTACT": {
     "CONTACT_ME": "Kontaktiere Sie mich",
@@ -101,7 +102,6 @@
       "CONSENT_WITHDRAWAL": "Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.",
       "COMPLAINT": "Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.",
       "AUTHORITIES_LIST": "Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href=\"https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html\">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.",
-      
       "PROCESSING_ACTIVITIES": "Verarbeitungstätigkeiten",
       "WEBSITE_INFORMATION": "Erfassung allgemeiner Informationen beim Besuch unserer Website",
       "PROCESSING_TYPE": "Art und Zweck der Verarbeitung",
@@ -109,62 +109,46 @@
       "PROCESSING_PURPOSES": "Sie werden insbesondere zu folgenden Zwecken verarbeitet:",
       "PURPOSE_SMOOTH_OPERATION": "Sicherstellung einer reibungslosen Nutzung der Website",
       "DATA_USE_NOTICE": "Wir verwenden Ihre Daten nicht, um Rückschlüsse auf Ihre Person zu ziehen. Allerdings behalten wir uns vor, die Server-Logfiles nachträglich zu überprüfen, sollten konkrete Anhaltspunkte auf eine rechtswidrige Nutzung hinweisen.",
-      
       "LEGAL_BASIS": "Rechtsgrundlage und berechtigtes Interesse",
       "LEGAL_BASIS_DESC": "Die Verarbeitung erfolgt gemäß Art. 6 Abs. 1 lit. f DSGVO auf Basis unseres berechtigten Interesses an der Verbesserung der Stabilität und Funktionalität unserer Website sowie der Sicherstellung der Systemsicherheit und Missbrauchserkennung.",
-      
       "RECIPIENT": "Empfänger",
       "RECIPIENT_DESC": "Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.",
-      
       "STORAGE_DURATION": "Speicherdauer",
       "STORAGE_DURATION_DESC": "Daten werden in Server-Log-Dateien in einer Form, die die Identifizierung der betroffenen Personen ermöglicht, maximal für 14 Tage gespeichert; es sei denn, dass ein sicherheitsrelevantes Ereignis auftritt (z.B. ein DDoS-Angriff).",
       "STORAGE_DURATION_EVENT": "Im Falle eines solchen Ereignisses werden Server-Log-Dateien bis zur Beseitigung und vollständigen Aufklärung des sicherheitsrelevanten Ereignisses gespeichert.",
-      
       "PROVISION_REQUIRED": "Bereitstellung vorgeschrieben oder erforderlich",
       "PROVISION_REQUIRED_DESC": "Die Bereitstellung der vorgenannten personenbezogenen Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die IP-Adresse ist jedoch der Dienst und die Funktionsfähigkeit unserer Website nicht gewährleistet. Zudem können einzelne Dienste und Services nicht verfügbar oder eingeschränkt sein.",
-      
       "OBJECTION": "Widerspruch",
       "OBJECTION_DESC": "Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.",
-      
       "CONTACT_SECTION": "Kontaktaufnahme",
       "CONTACT_PURPOSE": "Art und Zweck der Verarbeitung",
       "CONTACT_FORM_DESC": "Auf unserer Website ist ein Kontaktformular vorhanden, welches für die elektronische Kontaktaufnahme genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske eingegeben Daten an uns übermittelt und gespeichert.",
       "CONTACT_EMAIL_DESC": "Eine Kontaktaufnahme ist über die bereitgestellten E-Mail-Adressen möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert. Hierzu zählen Datum und Uhrzeit des E-Mailversands, E-Mailadresse, IP-Adressen sowie Informationen zu den an der E-Mail-Kommunikation beteiligten Servern.",
       "CONTACT_PHONE_DESC": "Sie können Sie über die bereitgestellten Telefonnummern Kontakt zu uns aufnehmen. Hierbei erheben wir Protokolldaten, die Ihre Telefonnummer und die Dauer des Gesprächs beinhalten.",
       "CONTACT_DATA_PURPOSE": "Unabhängig von der gewählten Kommunikationsart erheben wir den Inhalt Ihrer Anfrage. Ihre Daten werden zum Zweck der individuellen Kommunikation mit Ihnen gespeichert.",
-      
       "CONTACT_LEGAL_BASIS": "Rechtsgrundlage",
       "CONTACT_LEGAL_BASIS_DESC": "Die Verarbeitung der Daten erfolgt auf der Grundlage eines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO).",
       "CONTACT_LEGITIMATE_INTEREST": "Unser berechtigtes Interesse an der Verarbeitung Ihrer Daten ist die Ermöglichung einer unkomplizierten Kontaktaufnahme.",
       "CONTACT_PRECONTRACTUAL": "Sofern Sie mit uns Kontakt aufnehmen, um ein Angebot zu erfragen, erfolgt die Verarbeitung der Daten zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).",
-      
       "CONTACT_RECIPIENT": "Empfänger",
       "CONTACT_RECIPIENT_DESC": "Empfänger der Daten sind ggf. technische Dienstleister, die für den Betrieb und die Wartung unserer Webseite als Auftragsverarbeiter tätig werden.",
-      
       "CONTACT_STORAGE": "Speicherdauer",
       "CONTACT_STORAGE_DESC": "Daten werden spätestens 14 Tage nach Bearbeitung der Kontaktaufnahme gelöscht.",
       "CONTACT_STORAGE_CONTRACT": "Sofern es zu einem Vertragsverhältnis kommt, unterliegen wir den gesetzlichen Aufbewahrungsfristen. Diese betragen grundsätzlich 6 oder 10 Jahre aus Gründen der ordnungsmäßigen Buchführung und steuerrechtlichen Anforderungen.",
-      
       "CONTACT_PROVISION": "Bereitstellung vorgeschrieben oder erforderlich",
       "CONTACT_PROVISION_DESC": "Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Wir können Ihre Anfrage jedoch nur bearbeiten, sofern Sie uns die erforderlichen Daten und den Grund der Anfrage mitteilen.",
-      
       "CONTACT_OBJECTION": "Widerspruch",
       "CONTACT_OBJECTION_DESC": "Lesen Sie dazu die Informationen über Ihr Widerspruchsrecht nach Art. 21 DSGVO weiter unten.",
-      
       "OBJECTION_INFO": "Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO",
       "INDIVIDUAL_OBJECTION": "Einzelfallbezogenes Widerspruchsrecht",
       "INDIVIDUAL_OBJECTION_DESC": "Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender personenbezogener Daten, die aufgrund Art. 6 Abs. 1 lit. f DSGVO (Datenverarbeitung auf der Grundlage einer Interessenabwägung) erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmung gestütztes Profiling im Sinne von Art. 4 Nr. 4 DSGVO.",
       "OBJECTION_CONSEQUENCE": "Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.",
-      
       "OBJECTION_RECIPIENT": "Empfänger eines Widerspruchs",
       "OBJECTION_CONTACT": "Name: Robby Runge<br />Adresse: Weinbergstraße 53, 04838 Eilenburg<br />Email: robbyrunge&#64;yahoo.com<br />Tel: +49-1624215278",
-      
       "POLICY_CHANGES": "Änderung unserer Datenschutzerklärung",
       "POLICY_CHANGES_DESC": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.",
-      
       "QUESTIONS": "Fragen zum Datenschutz",
       "QUESTIONS_DESC": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail an den oben genannten Verantwortlichen.",
-      
       "COPYRIGHT_NOTICE": "<em>Diese Datenschutzerklärung wurde mit Hilfe der activeMind AG erstellt – den Experten für <a href=\"https://www.activemind.de/datenschutz/datenschutzbeauftragter/\" target=\"_blank\" rel=\"noopener dofollow\">externe Datenschutzbeauftragte</a> (Version #2024-10-25).</em>"
     }
   },
