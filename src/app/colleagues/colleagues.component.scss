@@ -70,6 +70,7 @@
   &.inactive-left {
     z-index: 2;
     height: 248px;
+    background-color: transparent;
     background-image: linear-gradient(to left,
         rgba(61, 207, 182, 0.1) 0%,
         rgba(28, 28, 28, 0.9) 50%);
@@ -94,6 +95,7 @@
   &.inactive-right {
     z-index: 1;
     height: 248px;
+    background-color: transparent;
     background-image: linear-gradient(to right,
         rgba(61, 207, 182, 0.1) 0%,
         rgba(28, 28, 28, 0.9) 50%);
