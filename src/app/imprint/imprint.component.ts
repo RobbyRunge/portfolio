@@ -11,7 +11,5 @@ import { FooterComponent } from "../shared/footer/footer.component";
   styleUrl: './imprint.component.scss'
 })
 export class ImpressumComponent {
-  showLegalNotice = false;
-
   constructor(private translationService: TranslationService) { }
 }
