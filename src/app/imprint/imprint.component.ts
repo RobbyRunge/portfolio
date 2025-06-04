@@ -6,8 +6,8 @@ import { TranslationService } from '../shared/translation.service';
   selector: 'app-impressum',
   imports: [TranslateModule],
   standalone: true,
-  templateUrl: './impressum.component.html',
-  styleUrl: './impressum.component.scss'
+  templateUrl: './imprint.component.html',
+  styleUrl: './imprint.component.scss'
 })
 export class ImpressumComponent {
   showLegalNotice = false;
