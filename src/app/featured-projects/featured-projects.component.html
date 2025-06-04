@@ -34,7 +34,7 @@
           <div class="project-info">
             <p>DA Bubble <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
                 alt="Arrow project"></p>
-            <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
+            <p>HTML <span>|</span> CSS <span>|</span> Angular <span>|</span> TypeScript <span>|</span> Firebase</p>
           </div>
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
@@ -70,9 +70,15 @@
         </div>
 
         <div class="button-position">
-          <button *ngIf="currentProject.githubLink"><a href="{{ currentProject.githubLink }}" target="_blank">GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
-          <button *ngIf="currentProject.liveTestLink" class="live-test-button-width"><a href="{{ currentProject.liveTestLink }}" target="_blank">{{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link"></a></button>
-          <button *ngIf="currentProject.inProgress" class="coming-soon-button" disabled>{{ 'PROJECTS.COMING_SOON' | translate }}</button>
+          <button (click)="openGitHub()" *ngIf="currentProject.githubLink">
+            GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
+          </button>
+          <button (click)="openLiveTest()" *ngIf="currentProject.liveTestLink" class="live-test-button-width">
+            {{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
+          </button>
+          <button *ngIf="currentProject.inProgress" class="coming-soon-button" disabled>
+            {{ 'PROJECTS.COMING_SOON' | translate }}
+          </button>
         </div>
       </div>
 

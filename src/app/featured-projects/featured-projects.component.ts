@@ -154,6 +154,18 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
     }
   }
 
+  openGitHub() {
+    if (this.currentProject?.githubLink) {
+      window.open(this.currentProject.githubLink, '_blank');
+    }
+  }
+
+  openLiveTest() {
+    if (this.currentProject?.liveTestLink) {
+      window.open(this.currentProject.liveTestLink, '_blank');
+    }
+  }
+
   private getProjectKeyById(id: number): string {
     switch(id) {
       case 1: return 'JOIN';
