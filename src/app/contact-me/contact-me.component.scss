@@ -318,6 +318,10 @@
       overflow: hidden;
       cursor: not-allowed;
 
+      span {
+        cursor: not-allowed;
+      }
+
       .text-container {
         display: inline-block;
         white-space: nowrap;
