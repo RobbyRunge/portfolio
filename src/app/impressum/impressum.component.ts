@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../shared/translation.service';
+import { TranslationService } from '../shared/translation.service';
 
 @Component({
   selector: 'app-impressum',
