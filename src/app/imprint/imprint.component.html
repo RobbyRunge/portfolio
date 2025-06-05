@@ -12,8 +12,8 @@
     </header>
     <h2>{{ 'IMPRINT.HEADLINE' | translate }}</h2>
     <div class="scroll-content">
-      <p>{{ 'IMPRINT.TITLE' | translate }}</p>
-      <p>{{ 'IMPRINT.CONTACT' | translate }}</p>
+      <p [innerHTML]="'IMPRINT.TITLE' | translate"></p>
+      <p [innerHTML]="'IMPRINT.CONTACT' | translate" ></p>
       <p [innerHTML]="'IMPRINT.REPRESENTATIVE' | translate"></p>
       <p [innerHTML]="'IMPRINT.CONTACT_INFO' | translate"></p>
       <p [innerHTML]="'IMPRINT.DISCLAIMER' | translate"></p>
