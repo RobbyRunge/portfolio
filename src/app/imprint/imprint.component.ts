@@ -10,7 +10,7 @@ import { FooterComponent } from "../shared/footer/footer.component";
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
-export class ImpressumComponent  {
+export class ImpressumComponent {
   isGerman = true;
 
   constructor(private translationService: TranslationService) { }
