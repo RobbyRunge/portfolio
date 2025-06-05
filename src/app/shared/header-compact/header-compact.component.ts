@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
-import { FooterComponent } from "../footer/footer.component";
-
 @Component({
   selector: 'app-header-compact',
-  imports: [TranslateModule, FooterComponent],
+  imports: [TranslateModule],
   standalone: true,
   templateUrl: './header-compact.component.html',
   styleUrl: './header-compact.component.scss'
