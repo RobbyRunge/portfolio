@@ -598,16 +598,7 @@
   .projects-list {
     %project-item {
       .project-image {
-        right: -30%;
-        width: 240px;
-        height: 160px;
-
-        .hover-background,
-        .hover-preview,
-        .in-progress {
-          width: 240px;
-          height: 160px;
-        }
+       display: none;
       }
     }
   }
