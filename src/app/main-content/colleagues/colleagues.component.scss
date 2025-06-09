@@ -1,11 +1,15 @@
 .colleagues {
   background-color: rgba(28, 28, 28, 1);
   height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 
   .content-width {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    max-width: 100%;
+    overflow: hidden;
 
     .container-colleagues-say {
       height: auto;
@@ -26,7 +30,7 @@
 .card-carousel {
   position: relative;
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   margin-bottom: 64px;
 }
 
@@ -37,14 +41,15 @@
   justify-content: center;
   position: relative;
   min-height: 300px;
+  overflow: hidden;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 55%;
-  max-width: 55%;
+  min-width: 45%;
+  max-width: 45%;
   padding: 40px;
   border-radius: 32px;
   box-sizing: border-box;
@@ -63,7 +68,7 @@
     background-color: rgba(38, 82, 75, 1);
     border: 1px solid rgba(61, 207, 182, 1);
     animation: revealCard 0.5s forwards;
-    left: 22.5%;
+    left: 27.5%;
     opacity: 1;
   }
 
@@ -76,7 +81,7 @@
         rgba(28, 28, 28, 0.9) 50%);
     border: 1px solid rgba(61, 207, 182, 0.6);
     border-radius: 32px;
-    left: -30%;
+    left: -15%;
     transform: translateX(0) scale(0.85) rotateY(10deg);
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     opacity: 0.9;
@@ -102,9 +107,10 @@
         rgba(28, 28, 28, 0.9) 50%);
     border: 1px solid rgba(61, 207, 182, 0.6);
     border-radius: 32px;
-    left: 75%;
+    left: 70%;
     transform: translateX(0) scale(0.85) rotateY(-10deg);
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);    opacity: 0.9;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    opacity: 0.9;
     transition: left 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.2s ease-in-out, clip-path 0.5s ease-in-out;
 
     p {
@@ -117,15 +123,17 @@
       animation: flowTextRight 3s infinite alternate;
     }
   }
+
   &.hidden {
     opacity: 0;
     transform: scale(0.7);
     z-index: 0;
     pointer-events: none;
-    left: 22.5%;
+    left: 27.5%;
   }
 
   &.transitioning {
+
     &.inactive-left,
     &.inactive-right {
       opacity: 0 !important;
@@ -334,6 +342,7 @@
   0% {
     clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -341,18 +350,26 @@
 
 @media (max-width: 1440px) {
   .card {
-    min-width: 60%;
-    max-width: 60%;
+    min-width: 50%;
+    max-width: 50%;
     padding: 35px;
 
+    &.active {
+      left: 25%;
+    }
+
     &.inactive-left {
-      left: -30%;
+      left: -18%;
       transform: translateX(0) scale(0.65) rotateY(10deg);
     }
 
     &.inactive-right {
-      left: 75%;
+      left: 68%;
       transform: translateX(0) scale(0.65) rotateY(-10deg);
+    }
+
+    &.hidden {
+      left: 25%;
     }
   }
 
@@ -368,7 +385,25 @@
   }
 
   .card {
+    min-width: 55%;
+    max-width: 55%;
     padding: 30px;
+
+    &.active {
+      left: 22.5%;
+    }
+
+    &.hidden {
+      left: 22.5%;
+    }
+
+    &.inactive-left {
+      left: -25%;
+    }
+
+    &.inactive-right {
+      left: 70%;
+    }
 
     p {
       font-size: 15px;
@@ -387,158 +422,195 @@
   }
 
   .card {
+    min-width: 60%;
+    max-width: 60%;
     padding: 25px;
 
     &.active {
       height: 250px;
+      left: 20%;
     }
 
     &.hidden {
-      left: 15%;
-    }
-  }
-
-  .author p {
-    font-size: 14px;
-  }
-
-  .cards-container {
-    min-height: 270px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    min-width: 80%;
-    max-width: 80%;
-    padding: 20px;
-
-    p {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    &.active {
-      height: 230px;
-      left: 10%;
+      left: 20%;
     }
 
     &.inactive-left {
-      display: none;
+      left: -30%;
     }
 
     &.inactive-right {
-      display: none;
+      left: 70%;
     }
 
-    &.hidden {
-      left: 10%;
+    .author p {
+      font-size: 14px;
     }
-  }
 
-  .author {
-    gap: 12px;
-
-    p {
-      font-size: 12px;
+    .cards-container {
+      min-height: 270px;
     }
   }
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
+  @media (max-width: 768px) {
+    .card {
+      min-width: 80%;
+      max-width: 80%;
+      padding: 20px;
 
-  .cards-container {
-    min-height: 250px;
-  }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
 
-  .card-carousel {
-    margin-bottom: 32px;
-  }
-}
+      &.active {
+        height: 230px;
+        left: 10%;
+      }
 
-@media (max-width: 576px) {
-  .card {
-    min-width: 90%;
-    max-width: 90%;
-    padding: 16px;
+      &.inactive-left {
+        display: none;
+      }
 
-    &.active {
-      z-index: 1;
-      height: auto;
-      min-height: 200px;
-      left: 5%;
-    }
+      &.inactive-right {
+        display: none;
+      }
 
-    &.hidden {
-      left: 5%;
-    }
-  }
-
-  .navigation-cards {
-    margin-top: 24px;
-
-    .arrow-container {
-      width: 24px;
-      height: 24px;
-
-      img {
-        width: 80%;
-        height: auto;
+      &.hidden {
+        left: 10%;
       }
     }
 
-    .points img {
-      width: 6px;
-      height: 6px;
+    .author {
+      gap: 12px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    .cards-container {
+      min-height: 250px;
+    }
+
+    .card-carousel {
+      margin-bottom: 32px;
     }
   }
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 22px;
-    margin-bottom: 24px;
+  @media (max-width: 576px) {
+    .card {
+      min-width: 90%;
+      max-width: 90%;
+      padding: 16px;
+
+      &.active {
+        z-index: 1;
+        height: auto;
+        min-height: 200px;
+        left: 5%;
+      }
+
+      &.hidden {
+        left: 5%;
+      }
+    }
+
+    .navigation-cards {
+      margin-top: 24px;
+
+      .arrow-container {
+        width: 24px;
+        height: 24px;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+
+      .points img {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 22px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .card {
+      padding: 12px;
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .author {
+      gap: 8px;
+
+      p {
+        font-size: 11px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .navigation-cards {
+      margin-top: 20px;
+      gap: 12px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .card p {
+      font-size: 12px;
+    }
+
+    .author p {
+      font-size: 10px;
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 18px;
+    }
   }
 }
 
-@media (max-width: 400px) {
-  .card {
-    padding: 12px;
-
-    p {
-      font-size: 13px;
-    }
-  }
-
-  .author {
-    gap: 8px;
-
-    p {
-      font-size: 11px;
-    }
-  }
-
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-
-  .navigation-cards {
-    margin-top: 20px;
-    gap: 12px;
+@media (min-width: 2080px) {
+  .colleagues {
+    height: 90vh;
   }
 }
 
-@media (max-width: 320px) {
-  .card p {
-    font-size: 12px;
-  }
 
-  .author p {
-    font-size: 10px;
+@media (min-width: 2200px) {
+  .colleagues {
+    height: 80vh;
   }
+}
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 18px;
+
+@media (min-width: 2400px) {
+  .colleagues {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2800px) {
+  .colleagues {
+    height: 60vh;
   }
 }

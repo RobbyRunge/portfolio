@@ -1,44 +1,29 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from "./landing-page/landing-page.component";
-import { AboutMeComponent } from "./about-me/about-me.component";
-import { SkillsComponent } from "./skills/skills.component";
-import { FeaturedProjectsComponent } from "./featured-projects/featured-projects.component";
-import { ColleaguesComponent } from "./colleagues/colleagues.component";
-import { ContactMeComponent } from "./contact-me/contact-me.component";
-import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPageComponent, AboutMeComponent, SkillsComponent, FeaturedProjectsComponent, ColleaguesComponent, ContactMeComponent, FooterComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit {
-  title = 'portfolio';
-  
-  ngAfterViewInit() {
-    this.initCustomCursor();
-  }
-  
-  initCustomCursor() {
-    const cursor = document.querySelector('.custom-cursor') as HTMLElement;
-    
-    if (cursor) {
-      document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-      });
-      
-      document.querySelectorAll('a, button, img').forEach(item => {
-        item.addEventListener('mouseenter', () => {
-          cursor.style.transform = 'translate(-50%, -50%) scale(1.2)';
+export class AppComponent implements OnInit {
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: NavigationEnd) => {
+      if (!event.url.includes('#') && event.url !== '/') {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'instant'
         });
-        
-        item.addEventListener('mouseleave', () => {
-          cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-        });
-      });
-    }
+      }
+    })
   }
 }

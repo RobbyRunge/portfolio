@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { TranslationService } from '../shared/translation.service';
+import { TranslationService } from '../../shared/translation.service';
 
 interface Testimonial {
   id: number;

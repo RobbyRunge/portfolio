@@ -3,19 +3,18 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { TranslationService } from '../shared/translation.service';
+import { TranslationService } from '../../shared/translation.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
-
   http = inject(HttpClient)
-  showPrivacyPolicy = false;
 
   contactData = {
     name: "",
@@ -26,6 +25,7 @@ export class ContactMeComponent implements OnInit {
 
   privacyTouched = false;
   formSubmitted = false;
+  showSuccessOverlay = false;
 
   post = {
     endPoint: 'https://robby-runge.de/sendMail.php',
@@ -41,7 +41,7 @@ export class ContactMeComponent implements OnInit {
   constructor(
     private translationService: TranslationService,
     private translateService: TranslateService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.privacyTouched = false;
@@ -50,17 +50,6 @@ export class ContactMeComponent implements OnInit {
 
   onPrivacyClick() {
     this.privacyTouched = true;
-  }
-
-  openPrivacyPolicy(event: Event): void {
-    event.preventDefault();
-    this.showPrivacyPolicy = true;
-    document.body.style.overflow = 'hidden';
-  }
-
-  closePrivacyPolicy(): void {
-    this.showPrivacyPolicy = false;
-    document.body.style.overflow = '';
   }
 
   onSubmit(ngForm: NgForm) {
@@ -73,6 +62,17 @@ export class ContactMeComponent implements OnInit {
             ngForm.resetForm();
             this.privacyTouched = false;
             this.formSubmitted = false;
+            this.contactData = {
+              name: "",
+              email: "",
+              message: "",
+              privacy: false
+            };
+            this.showSuccessOverlay = true;
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+              this.hideSuccessOverlay();
+            }, 4000);
           },
           error: (error) => {
             console.error(error);
@@ -80,5 +80,10 @@ export class ContactMeComponent implements OnInit {
           complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  hideSuccessOverlay() {
+    this.showSuccessOverlay = false;
+    document.body.style.overflow = '';
   }
 }

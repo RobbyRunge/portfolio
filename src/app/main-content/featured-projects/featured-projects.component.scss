@@ -598,16 +598,7 @@
   .projects-list {
     %project-item {
       .project-image {
-        right: -30%;
-        width: 240px;
-        height: 160px;
-
-        .hover-background,
-        .hover-preview,
-        .in-progress {
-          width: 240px;
-          height: 160px;
-        }
+       display: none;
       }
     }
   }
@@ -913,5 +904,31 @@
     .project-in-progress img {
       height: 160px;
     }
+  }
+}
+
+@media (min-width: 2080px) {
+  .featured-projects {
+    height: 90vh;
+  }
+}
+
+
+@media (min-width: 2200px) {
+  .featured-projects {
+    height: 80vh;
+  }
+}
+
+
+@media (min-width: 2400px) {
+  .featured-projects {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2800px) {
+  .featured-projects {
+    height: 60vh;
   }
 }

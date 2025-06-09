@@ -1,0 +1,101 @@
+<div class="contact-me">
+  <div class="content-width">
+    <div class="contact-me-container">
+      <div class="work-together">
+        <p class="contact-me-text">{{ 'CONTACT.CONTACT_ME' | translate }}</p>
+        <h3>{{ 'CONTACT.LETS_WORK_TOGETHER' | translate }}</h3>
+        <p class="problem-text">{{ 'CONTACT.PROBLEM_TO_SOLVE' | translate }}</p>
+        <p class="need-me-text">{{ 'CONTACT.EXPERTISE_TEXT' | translate }}<br>
+          <br>
+          {{ 'CONTACT.NEED_FRONTEND' | translate }}<span> {{ 'CONTACT.LETS_TALK' | translate }}</span>
+        </p>
+      </div>
+      <div class="form">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          <div class="input-fields">
+            <div class="name">
+              <p>{{ 'CONTACT.NAME_QUESTION' | translate }}</p>
+              <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}" required>
+              @if (!name.valid && name.touched) {
+              <div class="error-message">
+                {{ 'CONTACT.ERROR_NAME' | translate }}
+              </div>
+              }
+            </div>
+            <div class="email">
+              <p>{{ 'CONTACT.EMAIL_QUESTION' | translate }}</p>
+              <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="email"
+                placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}" required
+                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+              @if (!email.valid && email.touched) {
+              <div class="error-message">
+                @if (email.errors?.['required']) {
+                {{ 'CONTACT.ERROR_EMAIL_REQUIRED' | translate }}
+                } @else if (email.errors?.['pattern']) {
+                {{ 'CONTACT.ERROR_EMAIL_INVALID' | translate }}
+                }
+              </div>
+              }
+            </div>
+            <div class="message">
+              <p>{{ 'CONTACT.HELP_QUESTION' | translate }}</p>
+              <textarea #message="ngModel" [(ngModel)]="contactData.message" name="message"
+                placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}" required></textarea>
+              @if (!message.valid && message.touched) {
+              <div class="error-message">
+                {{ 'CONTACT.ERROR_MESSAGE' | translate }}
+              </div>
+              }
+            </div>
+          </div>
+          <p class="checkbox-row">
+            <span class="checkbox-container">
+              <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="contactData.privacy"
+                #privacyCheck="ngModel" required style="display: none;">
+              <label for="privacy" (click)="onPrivacyClick()">
+                @if (!contactData.privacy) {
+                <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-empty-normal.png" alt="Checkbox">
+                <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-empty-hover.png" alt="Checkbox">
+                } @else {
+                <img class="checkbox-normal" src="assets/imgs/contact-me/checkbox-checked.png" alt="Checkbox checked">
+                <img class="checkbox-hover" src="assets/imgs/contact-me/checkbox-checked-hover.png"
+                  alt="Checkbox checked hover">
+                }
+              </label>
+            </span>
+            <span class="policy-text">{{ 'CONTACT.PRIVACY_AGREEMENT_FIRST_TEXT' | translate }}
+              <a routerLink="/data-protection" class="policy">{{ 'CONTACT.PRIVACY_AGREEMENT_POLICY' | translate }}</a>
+              {{ 'CONTACT.PRIVACY_AGREEMENT_SECOND_TEXT' | translate }}
+            </span>
+          </p>
+          @if (!contactData.privacy && (privacyTouched || formSubmitted)) {
+          <div class="error-message-privacy">
+            {{ 'CONTACT.ERROR_PRIVACY' | translate }}
+          </div>
+          }
+          <button type="submit" [disabled]="!(name.valid && email.valid && message.valid && contactData.privacy)"
+            [ngClass]="{'disabled': !(name.valid && email.valid && message.valid && contactData.privacy), 'active': name.valid && email.valid && message.valid && contactData.privacy}">
+            <span class="text-container">{{ 'CONTACT.SEND_BUTTON' | translate }}</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="success-overlay" [class.active]="showSuccessOverlay">
+  <div class="success-content">
+    <div class="success-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10" stroke="rgba(61, 207, 182, 1)" stroke-width="2"/>
+        <path d="m9 12 2 2 4-4" stroke="rgba(61, 207, 182, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3>{{ 'CONTACT.SUCCESS_TITLE' | translate }}</h3>
+    <p>{{ 'CONTACT.SUCCESS_MESSAGE' | translate }}</p>
+    <button class="close-success-btn" (click)="hideSuccessOverlay()">
+      {{ 'CONTACT.SUCCESS_CLOSE' | translate }}
+    </button>
+  </div>
+</div>

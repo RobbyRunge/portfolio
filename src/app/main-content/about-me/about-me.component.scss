@@ -363,3 +363,30 @@
     height: 280px;
   }
 }
+
+
+@media (min-width: 2080px) {
+  .about-me {
+    height: 90vh;
+  }
+}
+
+
+@media (min-width: 2200px) {
+  .about-me {
+    height: 80vh;
+  }
+}
+
+
+@media (min-width: 2400px) {
+  .about-me {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2600px) {
+  .about-me {
+    height: 60vh;
+  }
+}

@@ -1,0 +1,152 @@
+footer {
+  background-color: rgba(28, 28, 28, 1);
+  height: auto;
+  padding: 24px 0; 
+
+  .content-width {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 126px;
+      width: 100%;
+
+      .logo-and-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+          width: 96px;
+          transition: all 125ms ease-in-out;
+
+          &:hover {
+            filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
+          }
+        }
+
+        p {
+          color: rgba(255, 255, 255, 1);
+          margin: 4px 0;
+        }
+      }
+
+      .copyright {
+        p {
+          font-size: 18px;
+          font-family: Fira Code;
+          color: rgba(61, 207, 182, 1);
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        a {
+          position: relative;
+          padding-left: 20px;
+          transition: all 125ms ease-in-out;
+          cursor: pointer;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-image: url('/assets/imgs/footer/radio-button-hover.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 125ms ease-in-out;
+          }
+
+          &:hover {
+            color: rgba(61, 207, 182, 1);
+
+            &::before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding-bottom: 0;
+
+    .content-width {
+      .footer-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+
+        .logo-and-text,
+        .links {
+          min-width: 0;
+        }
+
+        .logo-and-text {
+          margin-right: 10px;
+
+          img {
+            width: 80px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .copyright {
+          width: 100%;
+          order: 3;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .links {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    .content-width {
+      .footer-container {
+        .logo-and-text {
+          img {
+            width: 64px;
+          }
+
+          p {
+            font-size: 12px !important;
+          }
+        }
+
+        .links {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
