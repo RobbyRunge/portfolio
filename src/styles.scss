@@ -72,3 +72,36 @@ p,
 span {
   cursor: default;
 }
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid rgba(61, 207, 182, 1);
+  white-space: nowrap;
+  animation: 
+    typing-loop 4s steps(30, end) infinite,
+    blink-caret 0.75s step-end infinite;
+  width: 0;
+  max-width: max-content;
+}
+
+@keyframes typing-loop {
+  0%, 10% { 
+    width: 0; 
+  }
+  30%, 70% { 
+    width: 100%; 
+  }
+  90%, 100% { 
+    width: 0; 
+  }
+}
+
+@keyframes blink-caret {
+  from, to { 
+    border-color: transparent; 
+  }
+  50% { 
+    border-color: rgba(61, 207, 182, 1); 
+  }
+}
