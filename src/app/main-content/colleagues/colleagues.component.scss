@@ -133,6 +133,7 @@
   }
 
   &.transitioning {
+
     &.inactive-left,
     &.inactive-right {
       opacity: 0 !important;
@@ -341,6 +342,7 @@
   0% {
     clip-path: polygon(25% 0, 75% 0, 75% 100%, 25% 100%);
   }
+
   100% {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -439,150 +441,156 @@
 
     &.inactive-right {
       left: 70%;
-  }
+    }
 
-  .author p {
-    font-size: 14px;
-  }
-
-  .cards-container {
-    min-height: 270px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    min-width: 80%;
-    max-width: 80%;
-    padding: 20px;
-
-    p {
+    .author p {
       font-size: 14px;
-      line-height: 1.4;
     }
 
-    &.active {
-      height: 230px;
-      left: 10%;
-    }
-
-    &.inactive-left {
-      display: none;
-    }
-
-    &.inactive-right {
-      display: none;
-    }
-
-    &.hidden {
-      left: 10%;
+    .cards-container {
+      min-height: 270px;
     }
   }
 
-  .author {
-    gap: 12px;
+  @media (max-width: 768px) {
+    .card {
+      min-width: 80%;
+      max-width: 80%;
+      padding: 20px;
 
-    p {
-      font-size: 12px;
-    }
-  }
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
+      &.active {
+        height: 230px;
+        left: 10%;
+      }
 
-  .cards-container {
-    min-height: 250px;
-  }
+      &.inactive-left {
+        display: none;
+      }
 
-  .card-carousel {
-    margin-bottom: 32px;
-  }
-}
+      &.inactive-right {
+        display: none;
+      }
 
-@media (max-width: 576px) {
-  .card {
-    min-width: 90%;
-    max-width: 90%;
-    padding: 16px;
-
-    &.active {
-      z-index: 1;
-      height: auto;
-      min-height: 200px;
-      left: 5%;
-    }
-
-    &.hidden {
-      left: 5%;
-    }
-  }
-
-  .navigation-cards {
-    margin-top: 24px;
-
-    .arrow-container {
-      width: 24px;
-      height: 24px;
-
-      img {
-        width: 80%;
-        height: auto;
+      &.hidden {
+        left: 10%;
       }
     }
 
-    .points img {
-      width: 6px;
-      height: 6px;
+    .author {
+      gap: 12px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+
+    .cards-container {
+      min-height: 250px;
+    }
+
+    .card-carousel {
+      margin-bottom: 32px;
     }
   }
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 22px;
-    margin-bottom: 24px;
-  }
-}
+  @media (max-width: 576px) {
+    .card {
+      min-width: 90%;
+      max-width: 90%;
+      padding: 16px;
 
-@media (max-width: 400px) {
-  .card {
-    padding: 12px;
+      &.active {
+        z-index: 1;
+        height: auto;
+        min-height: 200px;
+        left: 5%;
+      }
 
-    p {
-      font-size: 13px;
+      &.hidden {
+        left: 5%;
+      }
+    }
+
+    .navigation-cards {
+      margin-top: 24px;
+
+      .arrow-container {
+        width: 24px;
+        height: 24px;
+
+        img {
+          width: 80%;
+          height: auto;
+        }
+      }
+
+      .points img {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 22px;
+      margin-bottom: 24px;
     }
   }
 
-  .author {
-    gap: 8px;
+  @media (max-width: 400px) {
+    .card {
+      padding: 12px;
 
-    p {
-      font-size: 11px;
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .author {
+      gap: 8px;
+
+      p {
+        font-size: 11px;
+      }
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .navigation-cards {
+      margin-top: 20px;
+      gap: 12px;
     }
   }
 
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+  @media (max-width: 320px) {
+    .card p {
+      font-size: 12px;
+    }
 
-  .navigation-cards {
-    margin-top: 20px;
-    gap: 12px;
+    .author p {
+      font-size: 10px;
+    }
+
+    .colleagues .content-width .container-colleagues-say h3 {
+      font-size: 18px;
+    }
   }
 }
 
-@media (max-width: 320px) {
-  .card p {
-    font-size: 12px;
+@media (min-width: 2080px) {
+  .colleagues {
+    height: 60vh;
   }
-
-  .author p {
-    font-size: 10px;
-  }
-
-  .colleagues .content-width .container-colleagues-say h3 {
-    font-size: 18px;
-  }
-}
 }

@@ -405,7 +405,7 @@
       .button-link {
         height: 38px !important;
         width: 160px !important;
-        
+
         .text-container {
           font-size: 14px !important;
         }
@@ -478,11 +478,17 @@
       .button-link {
         height: 36px;
         width: 130px;
-        
+
         .text-container {
           font-size: 12px;
         }
       }
     }
+  }
+}
+
+@media (min-width: 2080px) {
+  .marquee {
+    bottom: 80px;
   }
 }

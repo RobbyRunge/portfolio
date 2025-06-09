@@ -714,3 +714,9 @@
     }
   }
 }
+
+@media (min-width: 2080px) {
+  .skills, .background-img {
+    height: 60vh !important;
+  }
+}
