@@ -909,6 +909,26 @@
 
 @media (min-width: 2080px) {
   .featured-projects {
+    height: 90vh;
+  }
+}
+
+
+@media (min-width: 2200px) {
+  .featured-projects {
+    height: 80vh;
+  }
+}
+
+
+@media (min-width: 2400px) {
+  .featured-projects {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2800px) {
+  .featured-projects {
     height: 60vh;
   }
 }

@@ -887,6 +887,26 @@
 
 @media (min-width: 2080px) {
   .contact-me {
+    height: 90vh;
+  }
+}
+
+
+@media (min-width: 2200px) {
+  .contact-me {
+    height: 80vh;
+  }
+}
+
+
+@media (min-width: 2400px) {
+  .contact-me {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 2800px) {
+  .contact-me {
     height: 60vh;
   }
 }
