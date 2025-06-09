@@ -4,18 +4,18 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../../shared/translation.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
 export class ContactMeComponent implements OnInit {
 
   http = inject(HttpClient)
-  showPrivacyPolicy = false;
 
   contactData = {
     name: "",
@@ -50,17 +50,6 @@ export class ContactMeComponent implements OnInit {
 
   onPrivacyClick() {
     this.privacyTouched = true;
-  }
-
-  openPrivacyPolicy(event: Event): void {
-    event.preventDefault();
-    this.showPrivacyPolicy = true;
-    document.body.style.overflow = 'hidden';
-  }
-
-  closePrivacyPolicy(): void {
-    this.showPrivacyPolicy = false;
-    document.body.style.overflow = '';
   }
 
   onSubmit(ngForm: NgForm) {
