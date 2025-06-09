@@ -36,6 +36,7 @@
 
 .cards-container {
   display: flex;
+  align-items: center;
   width: 100%;
   transition: transform 0.5s ease-in-out;
   justify-content: center;
@@ -495,7 +496,7 @@
     }
 
     .cards-container {
-      min-height: 250px;
+      min-height: 280px;
     }
 
     .card-carousel {
