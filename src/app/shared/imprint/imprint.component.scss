@@ -25,6 +25,11 @@
     margin: 0;
     padding: 20px 0;
     line-height: 1.6;
+
+    strong {
+      color: rgba(61, 207, 182, 1);
+      font-weight: 700;
+    }
   }
 
   a {
