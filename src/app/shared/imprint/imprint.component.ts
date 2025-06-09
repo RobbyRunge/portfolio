@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { FooterComponent } from "../shared/footer/footer.component";
-import { HeaderCompactComponent } from "../shared/header-compact/header-compact.component";
+import { FooterComponent } from "../footer/footer.component";
+import { HeaderCompactComponent } from "../header-compact/header-compact.component";
 
 @Component({
   selector: 'app-imprint',
