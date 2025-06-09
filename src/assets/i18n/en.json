@@ -86,6 +86,9 @@
     "ERROR_EMAIL_INVALID": "Please enter a valid email address.",
     "ERROR_MESSAGE": "Please describe your request.",
     "ERROR_PRIVACY": "Please accept the privacy policy.",
+    "SUCCESS_TITLE": "Message Sent!",
+    "SUCCESS_MESSAGE": "Thank you for your message. I'll get back to you as soon as possible.",
+    "SUCCESS_CLOSE": "Close",
     "PRIVACY_POLICY": {
       "TITLE": "Privacy Policy",
       "RESPONSIBLE": "Controller",

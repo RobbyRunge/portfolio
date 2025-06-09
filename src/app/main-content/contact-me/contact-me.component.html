@@ -83,3 +83,19 @@
     </div>
   </div>
 </div>
+
+<div class="success-overlay" [class.active]="showSuccessOverlay">
+  <div class="success-content">
+    <div class="success-icon">
+      <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10" stroke="rgba(61, 207, 182, 1)" stroke-width="2"/>
+        <path d="m9 12 2 2 4-4" stroke="rgba(61, 207, 182, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3>{{ 'CONTACT.SUCCESS_TITLE' | translate }}</h3>
+    <p>{{ 'CONTACT.SUCCESS_MESSAGE' | translate }}</p>
+    <button class="close-success-btn" (click)="hideSuccessOverlay()">
+      {{ 'CONTACT.SUCCESS_CLOSE' | translate }}
+    </button>
+  </div>
+</div>

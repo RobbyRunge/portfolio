@@ -86,6 +86,9 @@
     "ERROR_EMAIL_INVALID": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "ERROR_MESSAGE": "Bitte beschreiben Sie Ihr Anliegen.",
     "ERROR_PRIVACY": "Bitte akzeptieren Sie die Datenschutzerklärung.",
+    "SUCCESS_TITLE": "Nachricht gesendet!",
+    "SUCCESS_MESSAGE": "Vielen Dank für Ihre Nachricht. Ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "SUCCESS_CLOSE": "Schließen",
     "PRIVACY_POLICY": {
       "TITLE": "Datenschutzhinweise",
       "RESPONSIBLE": "Verantwortlicher",
