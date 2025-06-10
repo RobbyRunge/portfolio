@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ export class HeaderComponent {
 
   constructor(
     private elementRef: ElementRef,
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private router: Router
   ) { }
 
   toggleMobileMenu() {
@@ -71,6 +73,18 @@ export class HeaderComponent {
   }
 
   onNavigationClick() {
+    this.closeMobileMenu();
+  }
+
+  navigateToSection(section: string) {
+    this.router.navigate(['/'], { fragment: section }).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    });
     this.closeMobileMenu();
   }
 }

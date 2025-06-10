@@ -5,12 +5,12 @@
       <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">
     </div>
     
-    <a href="#about-me-section">{{ 'NAV.ABOUT' | translate }}</a>
-    <a href="#skills-section">{{ 'NAV.SKILLS' | translate }}</a>
-    <a href="#projects-section">{{ 'NAV.PROJECTS' | translate }}</a>
+    <a (click)="navigateToSection('about-me-section')">{{ 'NAV.ABOUT' | translate }}</a>
+    <a (click)="navigateToSection('skills-section')">{{ 'NAV.SKILLS' | translate }}</a>
+    <a (click)="navigateToSection('projects-section')">{{ 'NAV.PROJECTS' | translate }}</a>
   </div>
 
-  <img class="logo" src="assets/imgs/logo-page.png" alt="logo">
+  <img class="logo" (click)="navigateToSection('landing-page')" src="assets/imgs/logo-page.png" alt="logo">
   
   <div class="hamburger-icon" (click)="toggleMobileMenu()">
     <span></span>
@@ -20,9 +20,9 @@
 
   <div class="mobile-menu" [class.open]="mobileMenuOpen">
     <div class="mobile-nav-items">
-      <a (click)="onNavigationClick()" href="#about-me-section">{{ 'NAV.ABOUT' | translate }}</a>
-      <a (click)="onNavigationClick()" href="#skills-section">{{ 'NAV.SKILLS' | translate }}</a>
-      <a (click)="onNavigationClick()" href="#projects-section">{{ 'NAV.PROJECTS' | translate }}</a>
+      <a (click)="navigateToSection('about-me-section')">{{ 'NAV.ABOUT' | translate }}</a>
+      <a (click)="navigateToSection('skills-section')">{{ 'NAV.SKILLS' | translate }}</a>
+      <a (click)="navigateToSection('projects-section')">{{ 'NAV.PROJECTS' | translate }}</a>
       <div class="mobile-language" (click)="changeButton()">
         <img class="normal" [src]="languageButtonSrc" [alt]="languageButtonAlt">
         <img class="hover" [src]="languageButtonHoverSrc" [alt]="languageButtonHoverAlt">

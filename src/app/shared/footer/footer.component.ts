@@ -1,19 +1,25 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../shared/translation.service';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
+  imports: [TranslateModule, RouterModule],
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
-  standalone: true,
-  imports: [TranslateModule, RouterModule]
+  styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  
+  constructor(private router: Router) {}
 
-  constructor(
-    private translationService: TranslationService,
-    private router: Router
-  ) {}
+  navigateToSection(section: string) {
+    this.router.navigate(['/'], { fragment: section }).then(() => {
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    });
+  }
 }
