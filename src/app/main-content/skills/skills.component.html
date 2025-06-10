@@ -2,7 +2,7 @@
   <div class="background-img"></div>
   <div class="content-width">
     <div class="container-skill-set-and-icons">
-      <div class="skill-set">
+      <div data-aos="fade-right" class="skill-set">
         <p>{{ 'SKILLS.TECHNOLOGIES' | translate }}</p>
         <div class="skill-set-text">
           <h3 class="typewriter">{{ 'SKILLS.TITLE' | translate }}</h3>
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="skill-icons">
+      <div data-aos="zoom-in" class="skill-icons">
         @for (skill of skills; track skill.name) {
         <div class="text-bottom-icon">
           <img [src]="skill.iconPath" [alt]="skill.alt">

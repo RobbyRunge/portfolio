@@ -1,7 +1,7 @@
 <div class="contact-me">
   <div class="content-width">
     <div class="contact-me-container">
-      <div class="work-together">
+      <div data-aos="fade-right" class="work-together">
         <p class="contact-me-text">{{ 'CONTACT.CONTACT_ME' | translate }}</p>
         <h3>{{ 'CONTACT.LETS_WORK_TOGETHER' | translate }}</h3>
         <p class="problem-text">{{ 'CONTACT.PROBLEM_TO_SOLVE' | translate }}</p>
@@ -10,7 +10,7 @@
           {{ 'CONTACT.NEED_FRONTEND' | translate }}<span> {{ 'CONTACT.LETS_TALK' | translate }}</span>
         </p>
       </div>
-      <div class="form">
+      <div data-aos="fade-left" class="form">
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
           <div class="input-fields">
             <div class="name">
@@ -88,8 +88,9 @@
   <div class="success-content">
     <div class="success-icon">
       <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="rgba(61, 207, 182, 1)" stroke-width="2"/>
-        <path d="m9 12 2 2 4-4" stroke="rgba(61, 207, 182, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="12" cy="12" r="10" stroke="rgba(61, 207, 182, 1)" stroke-width="2" />
+        <path d="m9 12 2 2 4-4" stroke="rgba(61, 207, 182, 1)" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
       </svg>
     </div>
     <h3>{{ 'CONTACT.SUCCESS_TITLE' | translate }}</h3>
