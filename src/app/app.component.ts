@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, PLATFORM_ID, Inject } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,17 +12,12 @@ import 'aos/dist/aos.css';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
 
-  constructor(private router: Router) { }
-  ngOnInit() {
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 50
-    });
-
+  constructor(
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) { }  ngOnInit() {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
@@ -33,7 +29,28 @@ export class AppComponent implements OnInit {
         });
       }
       // Refresh AOS after route change
-      AOS.refresh();
+      if (isPlatformBrowser(this.platformId)) {
+        setTimeout(() => {
+          AOS.refresh();
+        }, 100);
+      }
     })
+  }
+
+  ngAfterViewInit() {
+    // Initialize AOS only in browser environment
+    if (isPlatformBrowser(this.platformId)) {
+      setTimeout(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+          offset: 50,
+          delay: 100,
+          easing: 'ease-in-out',
+          mirror: false,
+          anchorPlacement: 'top-bottom'
+        });
+      }, 100);
+    }
   }
 }
