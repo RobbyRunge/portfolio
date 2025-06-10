@@ -60,5 +60,17 @@ export class HeaderComponent {
     this.isGerman = !this.isGerman;
     const lang = this.isGerman ? 'de' : 'en';
     this.translationService.changeLang(lang);
+    this.closeMobileMenu();
+  }
+
+  closeMobileMenu() {
+    if (this.mobileMenuOpen) {
+      this.mobileMenuOpen = false;
+      document.body.style.overflow = '';
+    }
+  }
+
+  onNavigationClick() {
+    this.closeMobileMenu();
   }
 }
