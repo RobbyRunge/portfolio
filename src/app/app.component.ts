@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   constructor(
     private router: Router,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) { }  ngOnInit() {
+  ) { } ngOnInit() {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe((event: NavigationEnd) => {
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       setTimeout(() => {
         AOS.init({
           duration: 1000,
-          once: true,
+          once: false,
           offset: 200,
           delay: 100,
           easing: 'ease-in-out',
