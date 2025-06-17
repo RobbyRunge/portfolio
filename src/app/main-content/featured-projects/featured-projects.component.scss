@@ -44,29 +44,6 @@
   }
 }
 
-.project-arrow {
-  opacity: 0.3;
-  transform: translateX(-10px);
-  animation: arrowLoop 3s ease-in-out infinite;
-}
-
-@keyframes arrowLoop {
-  0%, 100% {
-    opacity: 0.3;
-    transform: translateX(0px);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translateX(6px);
-  }
-}
-
-.project-info:hover .project-arrow {
-  animation: none;
-  opacity: 1;
-  transform: translateX(6px);
-}
-
 .projects-list {
   height: 327px;
   position: relative;
