@@ -1,6 +1,6 @@
 # 🌟 Portfolio - Robby Runge
 
-**Modern Angular Portfolio Website** *(In Progress)*
+**Modern Angular Portfolio Website**
 
 A responsive, multilingual portfolio website built with Angular 19, showcasing my skills as a Frontend Developer. Features a sleek design with custom cursor interactions and smooth animations.
 
