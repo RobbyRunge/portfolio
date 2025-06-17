@@ -28,7 +28,6 @@ export class AppComponent implements OnInit, AfterViewInit {
           behavior: 'instant'
         });
       }
-      // Refresh AOS after route change
       if (isPlatformBrowser(this.platformId)) {
         setTimeout(() => {
           AOS.refresh();
@@ -38,13 +37,12 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    // Initialize AOS only in browser environment
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
         AOS.init({
           duration: 1000,
           once: true,
-          offset: 50,
+          offset: 200,
           delay: 100,
           easing: 'ease-in-out',
           mirror: false,
