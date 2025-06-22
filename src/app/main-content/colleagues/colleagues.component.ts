@@ -1,7 +1,6 @@
-import { Component, inject } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { TranslationService } from '../../shared/translation.service';
 
 interface Testimonial {
   id: number;
@@ -19,8 +18,6 @@ interface Testimonial {
   styleUrls: ['./colleagues.component.scss']
 })
 export class ColleaguesComponent {
-  private translationService = inject(TranslationService);
-  private translateService = inject(TranslateModule);
   headline: string = "HEADLINE_SECTION";
   testimonials: Testimonial[] = [
     {
