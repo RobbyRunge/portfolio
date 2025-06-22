@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../shared/translation.service';
@@ -19,6 +19,8 @@ interface Testimonial {
   styleUrls: ['./colleagues.component.scss']
 })
 export class ColleaguesComponent {
+  private translationService = inject(TranslationService);
+  private translateService = inject(TranslateModule);
   headline: string = "HEADLINE_SECTION";
   testimonials: Testimonial[] = [
     {
@@ -50,15 +52,10 @@ export class ColleaguesComponent {
       gitHubLink: "https://github.com/Ysidr"
     }
   ];
-  currentIndex = 1;
+  currentIndex = 0;
   translateValue = '0';
   isTransitioning = false;
   isPositionChanging = false;
-
-  constructor(
-    private translationService: TranslationService,
-    private translateService: TranslateService
-  ) { } 
   
   nextCard(): void {
     if (this.isTransitioning) return;
