@@ -59,6 +59,25 @@
     transition: all 125ms ease-in-out;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(61, 207, 182, 0.1) 50%,
+        transparent 100%
+      );
+      animation: shimmer 2s ease-in-out infinite;
+      animation-delay: 1s;
+      pointer-events: none;
+    }
 
     &:hover {
       background-color: rgba(61, 207, 182, 0.3);
@@ -68,6 +87,10 @@
         transform: scale(1);
         opacity: 1;
       }
+    }
+
+    &:hover::after {
+      animation: none;
     }
 
     .project-info {
@@ -917,5 +940,15 @@
     .project-in-progress img {
       height: 160px;
     }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  
+  50%, 100% {
+    left: 100%;
   }
 }
