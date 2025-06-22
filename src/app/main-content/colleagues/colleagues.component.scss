@@ -91,7 +91,7 @@
     opacity: 1;
     z-index: 3;
     border-color: rgba(61, 207, 182, 0.8);
-    box-shadow: 
+    box-shadow:
       0 0px 40px rgba(0, 0, 0, 0.3),
       0 0 40px rgba(61, 207, 182, 0.2);
 
@@ -130,6 +130,11 @@
   .quote-icon {
     margin-bottom: 24px;
     align-self: flex-start;
+
+    img {
+      width: 32px;
+      height: 24px;
+    }
   }
 
   .testimonial-text {
@@ -195,7 +200,7 @@
         color: rgba(255, 255, 255, 0.7);
         text-decoration: none;
         transition: all 0.3s ease;
-        
+
         img {
           width: 16px;
           height: 16px;
@@ -308,10 +313,12 @@
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
+
   50% {
     opacity: 0.5;
     transform: translate(-50%, -50%) scale(1.2);
   }
+
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
