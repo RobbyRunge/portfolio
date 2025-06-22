@@ -68,10 +68,11 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'DA Bubble',
       description: 'Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.',
       techStack: [
-        // { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        // { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        // { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
-        // { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/angular-tech.png', name: 'Angular' },
+        { icon: 'assets/imgs/featured-projects/typescript-tech.png', name: 'TypeScript' },
+        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
       ],
       githubLink: '',
       liveTestLink: '',
