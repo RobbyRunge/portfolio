@@ -88,12 +88,13 @@
 
   &.active {
     transform: translateX(0) scale(1);
+    width: 100%;
     opacity: 1;
     z-index: 3;
     border-color: rgba(61, 207, 182, 0.8);
     box-shadow:
-      0 0px 40px rgba(0, 0, 0, 0.3),
-      0 0 40px rgba(61, 207, 182, 0.2);
+      0 0 40px rgba(0, 0, 0, 0.3),
+      0 0 25px rgba(61, 207, 182, 0.2);
 
     .card-background-glow {
       opacity: 1;
