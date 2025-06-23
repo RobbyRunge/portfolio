@@ -71,9 +71,11 @@
   width: 566px;
   border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 30px;
-  background-color: rgba(31, 46, 43, 1);
   padding: 32px;
   box-sizing: border-box;
+  background: linear-gradient(135deg, rgba(38, 82, 75, 0.9) 0%, rgba(28, 28, 28, 0.95) 100%);
+   box-shadow: 0 0px 40px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(61, 207, 182, 0.2);
 
   h3 {
     color: rgba(61, 207, 182, 1);

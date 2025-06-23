@@ -51,7 +51,8 @@
     width: 520px;
     border-radius: 30px;
     border: 1px solid rgba(61, 207, 182, 1);
-    background-color: rgba(31, 46, 43, 1);
+    background: linear-gradient(135deg, rgba(38, 82, 75, 0.9) 0%, rgba(28, 28, 28, 0.95) 100%);
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(61, 207, 182, 0.2);
     padding: 32px;
     box-sizing: border-box;
 
@@ -290,7 +291,7 @@
 
 @media (max-width: 1200px) {
   .skills {
-    height: 100vh;
+    height: 50vh;
   }
 
   .skill-set {
@@ -319,7 +320,8 @@
       }
 
       button {
-        margin-top: 6px;
+        margin-top: 14px;
+        height: 32px;
       }
     }
   }
@@ -332,6 +334,10 @@
 }
 
 @media (max-width: 992px) {
+  .skills {
+    height: 90vh;
+  }
+
   .container-skill-set-and-icons {
     flex-direction: column;
     align-items: center;
@@ -345,7 +351,7 @@
 
     .skill-set-text {
       width: 100%;
-      height: 400px;
+      height: 350px;
       padding: 24px;
 
       button {
@@ -380,6 +386,10 @@
 
     .skill-set-text {
       padding: 16px;
+    }
+
+    button {
+      margin-top: 0 !important;
     }
   }
 
@@ -561,6 +571,8 @@
 
   .skill-set {
     .skill-set-text {
+      height: 380px !important;
+
       button {
         margin-top: 16px;
         height: 40px;
@@ -577,6 +589,27 @@
     .arrow-indicator {
       left: 50% !important;
       transform: translateX(-50%) !important;
+    }
+  }
+
+  .skill-set {
+    .skill-set-text {
+      h3 {
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      h4 {
+        margin-top: 8px;
+      }
+
+      button {
+        margin-top: 16px;
+        height: 32px;
+      }
     }
   }
 }
@@ -616,6 +649,19 @@
       left: 57% !important;
     }
   }
+
+  .skill-set {
+    .skill-set-text {
+      button {
+        margin-top: 16px;
+        height: 32px;
+
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 
 
@@ -642,7 +688,7 @@
         height: 36px;
         width: 90px;
         padding: 0;
-        margin-top: 16px !important;
+        margin-top: 8px !important;
 
         span {
           font-size: 10px;
@@ -718,6 +764,8 @@
 @media (max-height: 740px) {
   .skill-set {
     .skill-set-text {
+      height: 300px;
+
       h3 {
         margin-bottom: 0 !important;
       }
