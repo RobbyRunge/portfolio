@@ -571,7 +571,7 @@
 
   .skill-set {
     .skill-set-text {
-      height: 380px !important;
+      height: auto !important;
 
       button {
         margin-top: 16px;
@@ -616,8 +616,6 @@
 
 @media (max-width: 370px) {
   .skill-set-text {
-    height: 400px !important;
-
     h3 {
       margin-bottom: 12px !important;
     }
