@@ -183,6 +183,34 @@
   }
 }
 
+.projects-list:hover .project-image {
+  animation-play-state: paused !important;
+  opacity: 0 !important;
+}
+
+.join-project:hover .project-image,
+.sharkie-project:hover .project-image,
+.da-bubble-project:hover .project-image {
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+.projects-list:not(:hover) .join-project .project-image {
+  animation: myAnim 10s ease-in-out 0s infinite;
+}
+.projects-list:not(:hover) .sharkie-project .project-image {
+  animation: myAnim 10s ease-in-out 3.33s infinite;
+}
+.projects-list:not(:hover) .da-bubble-project .project-image {
+  animation: myAnim 10s ease-in-out 6.66s infinite;
+}
+
+@keyframes myAnim {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  30% { opacity: 0; }
+}
+
 .project-overlay {
   position: fixed;
   top: 0;
