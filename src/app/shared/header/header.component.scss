@@ -9,43 +9,70 @@ header {
   position: relative;
 }
 
+.language-slider {
+  cursor: pointer;
+
+  .slider-track {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 84px;
+    height: 28px;
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid rgba(61, 207, 182, 1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: rgba(61, 207, 182, 0.5);
+    }
+
+    .slider-thumb {
+      position: absolute;
+      width: 46px;
+      height: 30px;
+      background: rgba(61, 207, 182, 1);
+      border-radius: 20px;
+      left: 2px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateX(-3px);
+
+      &.english {
+        transform: translateX(37px);
+      }
+    }
+
+    .lang-text {
+      position: absolute;
+      top: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(39, 116, 102, 1);
+      transition: color 0.3s ease;
+      z-index: 1;
+      cursor: pointer;
+
+      &.de {
+        left: 11px;
+      }
+
+      &.en {
+        right: 11px;
+      }
+
+      &.active {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
   gap: 24px;
   font-size: 20px;
-
-  .nav-container {
-    position: relative;
-    display: inline-block;
-
-    img {
-      cursor: pointer;
-      display: block;
-    }
-
-    .normal {
-      transition: opacity 125ms ease-in-out;
-    }
-
-    .hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 125ms ease-in-out;
-    }
-
-    &:hover {
-      .normal {
-        opacity: 0;
-      }
-
-      .hover {
-        opacity: 1;
-      }
-    }
-  }
 
   a {
     position: relative;
@@ -79,10 +106,6 @@ header {
   &:hover {
     filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
   }
-}
-
-p {
-  margin: 0;
 }
 
 .hamburger-icon {
@@ -152,37 +175,6 @@ p {
 
         &::after {
           width: 25%;
-        }
-      }
-    }
-
-    .mobile-language {
-      position: relative;
-      width: fit-content;
-
-      img {
-        cursor: pointer;
-      }
-
-      .normal {
-        transition: opacity 125ms ease-in-out;
-      }
-
-      .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 125ms ease-in-out;
-      }
-
-      &:hover {
-        .normal {
-          opacity: 0;
-        }
-
-        .hover {
-          opacity: 1;
         }
       }
     }
