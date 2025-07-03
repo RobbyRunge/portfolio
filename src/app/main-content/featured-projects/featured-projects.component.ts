@@ -74,7 +74,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/featured-projects/typescript-tech.png', name: 'TypeScript' },
         { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
       ],
-      githubLink: '',
+      githubLink: 'https://github.com/Mihael0599/DaBubble',
       liveTestLink: '',
       inProgress: true
     }
