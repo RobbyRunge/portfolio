@@ -64,21 +64,27 @@ https://robby-runge.de/
 ```
 src/
 ├── app/
-│   ├── about-me/              # About section component
-│   ├── colleagues/            # Testimonials component  
-│   ├── contact-me/            # Contact form component
-│   ├── featured-projects/     # Projects showcase
-│   ├── footer/                # Footer component
-│   ├── landing-page/          # Hero section with header
-│   │   └── header/            # Navigation header
-│   ├── shared/                # Shared services
+│   ├── main-content/
+│   │   ├── about-me/               # About section component
+│   │   ├── colleagues/             # Testimonials section component
+│   │   ├── contact-me/             # Contact form section component
+│   │   ├── featured-projects/      # Projects showcase
+│   │   ├── landing-page/           # Hero section component
+│   │   └── skills/                 # Skills section component
+│   ├── shared/
+│   │   ├── data-protection/        # Data-protection component
+│   │   ├── footer/                 # Footer component
+│   │   ├── header/                 # Navigation header component
+│   │   ├── imprint/                # Imprint Component
 │   │   └── translation.service.ts  # i18n service
-│   └── skills/                # Skills section component
+│   └── sendMail.php                # Handles contact form
 ├── assets/
-│   └── i18n/                  # Translation files
-│       ├── de.json            # German translations
-│       └── en.json            # English translations
-└── styles/                    # Global SCSS styles
+│   ├── fonts/                      # Fonts
+│   ├── i18n/                       # Translation files
+│   │  ├── de.json                  # German translations
+│   │  └── en.json                  # English translations
+│   └── imgs/                       # Images for the Portfolio
+└── styles/                         # Global SCSS styles
 ```
 
 ## 🚀 Getting Started
