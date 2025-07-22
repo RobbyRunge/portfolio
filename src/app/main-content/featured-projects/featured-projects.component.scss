@@ -198,17 +198,27 @@
 .projects-list:not(:hover) .join-project .project-image {
   animation: myAnim 10s ease-in-out 0s infinite;
 }
+
 .projects-list:not(:hover) .sharkie-project .project-image {
   animation: myAnim 10s ease-in-out 3.33s infinite;
 }
+
 .projects-list:not(:hover) .da-bubble-project .project-image {
   animation: myAnim 10s ease-in-out 6.66s infinite;
 }
 
 @keyframes myAnim {
-  0% { opacity: 0; }
-  20% { opacity: 1; }
-  30% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
 }
 
 .project-overlay {
@@ -793,6 +803,11 @@
           font-size: 16px;
           padding: 0 16px;
 
+          img {
+            width: 10px !important;
+            height: 10px !important;
+          }
+
           &.live-test-button-width {
             width: auto;
             min-width: 120px;
@@ -805,6 +820,11 @@
       bottom: 24px;
       right: 24px;
       font-size: 16px;
+
+      img {
+        width: 14px !important;
+        height: 14px !important;
+      }
     }
   }
 }
