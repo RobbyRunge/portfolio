@@ -97,6 +97,10 @@
     .card-background-glow {
       opacity: 1;
     }
+
+    .github-link {
+      animation: moving 1.5s infinite;
+    }
   }
 
   &.inactive-left {
@@ -321,6 +325,20 @@
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes moving {
+
+  0%,
+  100% {
+    transform: translateX(4px);
+    color: rgba(61, 207, 182, 1);
+  }
+
+  50% {
+    transform: translateX(0px);
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
