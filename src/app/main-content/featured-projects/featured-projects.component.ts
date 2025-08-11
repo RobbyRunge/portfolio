@@ -74,13 +74,30 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/featured-projects/typescript-tech.png', name: 'TypeScript' },
         { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
       ],
+      imageSrc: 'assets/imgs/featured-projects/dabubble.png',
       githubLink: 'https://github.com/Mihael0599/DaBubble',
       liveTestLink: '',
       inProgress: true
-    }
+    },
+    {
+      id: 4,
+      titleNumber: '04',
+      title: 'Die sieben großartigen Unternehmen',
+      description: 'Lorem',
+      techStack: [
+        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/angular-tech.png', name: 'VueJs' },
+        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
+      ],
+      imageSrc: 'assets/imgs/featured-projects/magnificent-seven.png',
+      githubLink: 'https://github.com/RobbyRunge/vuejs-stock-dashboard',
+      liveTestLink: '',
+      inProgress: true
+    },
   ];
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
     this.initializeProjects();
@@ -89,7 +106,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       this.updateCurrentProject();
     });
   }
-  
+
   ngOnDestroy() {
     if (this.langChangeSubscription) {
       this.langChangeSubscription.unsubscribe();
@@ -168,7 +185,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
   }
 
   private getProjectKeyById(id: number): string {
-    switch(id) {
+    switch (id) {
       case 1: return 'JOIN';
       case 2: return 'SHARKIE';
       case 3: return 'DABUBBLE';

@@ -1,6 +1,7 @@
 .featured-projects {
   background-color: rgba(28, 28, 28, 1);
   padding: 48px 0;
+  padding-bottom: 172px;
 
   .content-width {
     display: flex;
@@ -174,6 +175,10 @@
 
   .da-bubble-project {
     @extend %project-item;
+  }
+
+  .magnificent-seven-project {
+    @extend %project-item;
 
     .project-image {
       top: auto;
@@ -190,33 +195,39 @@
 
 .join-project:hover .project-image,
 .sharkie-project:hover .project-image,
-.da-bubble-project:hover .project-image {
+.da-bubble-project:hover .project-image,
+.magnificent-seven-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
 
 .projects-list:not(:hover) .join-project .project-image {
-  animation: myAnim 10s ease-in-out 0s infinite;
+  animation: myAnim 20s ease-in-out 0s infinite;
 }
 
 .projects-list:not(:hover) .sharkie-project .project-image {
-  animation: myAnim 10s ease-in-out 3.33s infinite;
+  animation: myAnim 20s ease-in-out 5s infinite;
 }
 
 .projects-list:not(:hover) .da-bubble-project .project-image {
-  animation: myAnim 10s ease-in-out 6.66s infinite;
+  animation: myAnim 20s ease-in-out 10s infinite;
 }
+
+.projects-list:not(:hover) .magnificent-seven-project .project-image {
+  animation: myAnim 20s ease-in-out 15s infinite;
+}
+
 
 @keyframes myAnim {
   0% {
     opacity: 0;
   }
 
-  20% {
+  15% {
     opacity: 1;
   }
 
-  30% {
+  25% {
     opacity: 0;
   }
 }
@@ -659,7 +670,7 @@
             transparent 0%,
             rgba(61, 207, 182, 0.1) 50%,
             transparent 100%);
-        animation: shimmer 2s ease-in-out infinite;
+        animation: shimmer 2.7s ease-in-out infinite;
         animation-delay: 1s;
         pointer-events: none;
       }
@@ -684,6 +695,12 @@
     .da-bubble-project {
       &::after {
         animation-delay: 1.4s;
+      }
+    }
+
+    .magnificent-seven-project {
+      &::after {
+        animation-delay: 2.1s;
       }
     }
   }
