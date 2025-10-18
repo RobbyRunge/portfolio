@@ -175,14 +175,10 @@
 
   .da-bubble-project {
     @extend %project-item;
-  }
-
-  .magnificent-seven-project {
-    @extend %project-item;
 
     .project-image {
-      top: auto;
       bottom: 0px;
+      top: auto;
       transform: translateY(0);
     }
   }
@@ -195,26 +191,21 @@
 
 .join-project:hover .project-image,
 .sharkie-project:hover .project-image,
-.da-bubble-project:hover .project-image,
-.magnificent-seven-project:hover .project-image {
+.da-bubble-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
 
 .projects-list:not(:hover) .join-project .project-image {
-  animation: myAnim 20s ease-in-out 0s infinite;
+  animation: myAnim 12s ease-in-out 0s infinite;
 }
 
 .projects-list:not(:hover) .sharkie-project .project-image {
-  animation: myAnim 20s ease-in-out 5s infinite;
+  animation: myAnim 12s ease-in-out 4s infinite;
 }
 
 .projects-list:not(:hover) .da-bubble-project .project-image {
-  animation: myAnim 20s ease-in-out 10s infinite;
-}
-
-.projects-list:not(:hover) .magnificent-seven-project .project-image {
-  animation: myAnim 20s ease-in-out 15s infinite;
+  animation: myAnim 12s ease-in-out 8s infinite;
 }
 
 
@@ -688,19 +679,13 @@
 
     .sharkie-project {
       &::after {
-        animation-delay: 0.7s;
+        animation-delay: 0.9s;
       }
     }
 
     .da-bubble-project {
       &::after {
-        animation-delay: 1.4s;
-      }
-    }
-
-    .magnificent-seven-project {
-      &::after {
-        animation-delay: 2.1s;
+        animation-delay: 1.8s;
       }
     }
   }

@@ -78,23 +78,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       githubLink: 'https://github.com/Mihael0599/DaBubble',
       liveTestLink: '',
       inProgress: true
-    },
-    {
-      id: 4,
-      titleNumber: '04',
-      title: 'Die sieben großartigen Unternehmen',
-      description: 'Lorem',
-      techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/angular-tech.png', name: 'VueJs' },
-        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
-      ],
-      imageSrc: 'assets/imgs/featured-projects/magnificent-seven.png',
-      githubLink: 'https://github.com/RobbyRunge/vuejs-stock-dashboard',
-      liveTestLink: '',
-      inProgress: true
-    },
+    }
   ];
 
   constructor(private translate: TranslateService) { }
