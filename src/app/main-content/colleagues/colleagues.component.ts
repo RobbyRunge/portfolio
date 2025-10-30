@@ -29,31 +29,45 @@ export class ColleaguesComponent {
     },
     {
       id: 1,
-      translationKey: "TESTIMONIALS.ALDIN",
-      author: "Aldin Dobric",
-      role: "Join",
-      gitHubLink: "https://github.com/D-Aldin"
-    },
-    {
-      id: 2,
       translationKey: "TESTIMONIALS.PETER",
       author: "Peter Trözmüller",
       role: "Kochwelt",
       gitHubLink: "https://github.com/PeterTr-ust"
     },
     {
-      id: 3,
+      id: 2,
       translationKey: "TESTIMONIALS.FINN",
       author: "Finn Grünhage",
       role: "Kochwelt",
       gitHubLink: "https://github.com/Ysidr"
-    }
+    },
+    {
+      id: 3,
+      translationKey: "TESTIMONIALS.ALDIN",
+      author: "Aldin Dobric",
+      role: "Join",
+      gitHubLink: "https://github.com/D-Aldin"
+    },
+    {
+      id: 4,
+      translationKey: "TESTIMONIALS.MIHAEL",
+      author: "Mihael Drazic",
+      role: "DaBubble",
+      gitHubLink: "https://github.com/Mihael0599"
+    },
+    {
+      id: 5,
+      translationKey: "TESTIMONIALS.PRATHAB",
+      author: "Prathab Kumarakulasingam",
+      role: "DaBubble",
+      gitHubLink: "https://github.com/Pradi8"
+    },
   ];
   currentIndex = 0;
   translateValue = '0';
   isTransitioning = false;
   isPositionChanging = false;
-  
+
   nextCard(): void {
     if (this.isTransitioning) return;
     this.isTransitioning = true;
@@ -65,8 +79,8 @@ export class ColleaguesComponent {
     setTimeout(() => {
       this.isTransitioning = false;
     }, 300);
-  } 
-  
+  }
+
   prevCard(): void {
     if (this.isTransitioning) return;
     this.isTransitioning = true;
@@ -78,8 +92,8 @@ export class ColleaguesComponent {
     setTimeout(() => {
       this.isTransitioning = false;
     }, 300);
-  } 
-  
+  }
+
   goToCard(index: number): void {
     if (this.isTransitioning || this.currentIndex === index) return;
     this.isTransitioning = true;

@@ -60,9 +60,11 @@
   "HEADLINE_SECTION": "What my colleagues say about me",
   "TESTIMONIALS": {
     "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",
-    "ALDIN": "Working with Robby has always been very pleasant. He not only brings technical expertise, but also impresses with his calm and solution-oriented manner – a real asset for any team. I especially appreciate his reliability: When Robby takes on something, you can 100% rely on it being done on time and with high quality.",
     "PETER": "Working with Robby was not only extremely effective but also consistently characterized by trust and clarity. As a true team player, he convinces with his reliability, structured work approach, and sense of common goals. I was particularly impressed by how he maintains an overview even in challenging situations and motivatingly accompanies the team.",
-    "FINN": "Robby impresses with his immediate responses, goal-orientated problem solving and excellent communication. Reliability and diligence are his strengths, but what is most impressive is the pleasant co-operation - even in difficult or long projects he keeps the mood high. An absolute pleasure, any time again!"
+    "FINN": "Robby impresses with his immediate responses, goal-orientated problem solving and excellent communication. Reliability and diligence are his strengths, but what is most impressive is the pleasant co-operation - even in difficult or long projects he keeps the mood high. An absolute pleasure, any time again!",
+    "ALDIN": "Working with Robby has always been very pleasant. He not only brings technical expertise, but also impresses with his calm and solution-oriented manner – a real asset for any team. I especially appreciate his reliability: When Robby takes on something, you can 100% rely on it being done on time and with high quality.",
+    "MIHAEL": "Working with Robby was simply fantastic! He is always reliable and committed, and keeps track of even the largest tasks. His structured approach and positive attitude made working on the project really enjoyable.",
+    "PRATHAB": "I worked with Robby on a chat messenger project. He contributed to the development with great commitment and technical understanding. I particularly appreciate his reliable, structured way of working and his calm, solution-oriented approach to challenges. Any team would benefit from his positive attitude and dedication."
   },
   "CONTACT": {
     "CONTACT_ME": "Contact me",
