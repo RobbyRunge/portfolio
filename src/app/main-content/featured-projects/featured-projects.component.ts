@@ -86,6 +86,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       techStack: [
         { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
         { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
       githubLink: 'https://github.com/RobbyRunge/coderr-backend',
