@@ -55,6 +55,10 @@
     "DABUBBLE": {
       "TITLE": "DA Bubble",
       "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    },
+    "CODERR": {
+      "TITLE": "Coderr",
+      "DESCRIPTION": "A backend project using Python, Django REST Framework to manage developer resources and APIs."
     }
   },
   "HEADLINE_SECTION": "What my colleagues say about me",

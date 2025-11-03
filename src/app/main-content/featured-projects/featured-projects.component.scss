@@ -378,7 +378,8 @@
 
 .join-project:hover .project-image,
 .sharkie-project:hover .project-image,
-.da-bubble-project:hover .project-image {
+.da-bubble-project:hover .project-image,
+.coderr-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
@@ -392,6 +393,12 @@
 }
 
 .projects-list:not(:hover) .da-bubble-project .project-image {
+  animation: myAnim 12s ease-in-out 8s infinite;
+}
+
+.projects-list-backend:not(:hover) .coderr-project .project-image {
+  animation: myAnim 12s ease-in-out 0s infinite;
+  animation: myAnim 12s ease-in-out 4s infinite;
   animation: myAnim 12s ease-in-out 8s infinite;
 }
 
@@ -498,7 +505,7 @@
       margin-bottom: 32px;
 
       span {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(61, 207, 182, 1);
         margin-right: 8px;
 
         img {
@@ -657,7 +664,7 @@
 .in-progress-badge {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 10px;
   background-color: rgba(61, 207, 182, 0.9);
   color: #1C1C1C;
   padding: 5px 10px;
@@ -690,6 +697,10 @@
     h3 {
       font-size: 56px;
     }
+  }
+
+  .reversed {
+    width: 780px !important;
   }
 
   .project-overlay .overlay-content {
@@ -730,7 +741,24 @@
     }
   }
 
+  .reversed {
+    width: 700px !important;
+    gap: 24px;
+  }
+
   .projects-list {
+    height: 300px;
+
+    %project-item {
+      height: 100px;
+
+      p {
+        padding: 32px;
+      }
+    }
+  }
+
+  .projects-list-backend {
     height: 300px;
 
     %project-item {
@@ -813,6 +841,26 @@
       bottom: 5px;
     }
   }
+
+  .projects-list-backend {
+    %project-item {
+      .project-image {
+        left: -40%;
+        width: 260px;
+        height: 170px;
+
+        .hover-background,
+        .hover-preview {
+          width: 260px;
+          height: 170px;
+        }
+      }
+    }
+
+    .coderr-project .project-image {
+      top: 5px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -830,6 +878,14 @@
 
     h3 {
       font-size: 36px;
+    }
+  }
+
+  .reversed {
+    width: 100% !important;
+    
+    h4 {
+      margin-top: 40px !important;
     }
   }
 
@@ -873,6 +929,45 @@
     .da-bubble-project {
       &::after {
         animation-delay: 1.8s;
+      }
+    }
+  }
+
+  .projects-list-backend {
+    height: 300px;
+
+    %project-item {
+      height: 100px;
+      overflow: hidden;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(61, 207, 182, 0.1) 50%,
+            transparent 100%);
+        animation: shimmer 2.7s ease-in-out infinite;
+        animation-delay: 1s;
+        pointer-events: none;
+      }
+
+      .project-image {
+        display: none;
+      }
+
+      p {
+        padding: 32px;
+      }
+    }
+
+    .coderr-project {
+      &::after {
+        animation-delay: 0s;
       }
     }
   }
@@ -940,6 +1035,15 @@
     }
   }
 
+  .reversed {
+    gap: 16px;
+    
+    h4 {
+      font-size: 20px;
+      margin-top: 30px !important;
+    }
+  }
+
   .projects-list {
     height: auto;
 
@@ -966,6 +1070,38 @@
         p:last-child {
           font-size: 14px;
           padding-left: 16px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .projects-list-backend {
+    height: auto;
+
+    %project-item {
+      height: 80px;
+
+      p {
+        padding: 16px;
+        font-size: 16px;
+      }
+
+      .project-image {
+        display: none;
+      }
+
+      .project-info {
+        flex-direction: column;
+        align-items: flex-end;
+
+        p:first-child {
+          margin: 0;
+        }
+
+        p:last-child {
+          font-size: 14px;
+          padding-right: 16px;
           margin: 0;
         }
       }
@@ -1029,6 +1165,13 @@
     }
   }
 
+  .reversed {
+    h4 {
+      font-size: 18px;
+      margin-top: 20px !important;
+    }
+  }
+
   .project-overlay .overlay-content {
     .project-details .project-description {
       h2 {
@@ -1084,9 +1227,21 @@
     }
   }
 
+  .projects-list-backend {
+    %project-item {
+      height: 70px;
+
+      p {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+  }
+
   .project-info {
     p:last-child {
       padding-left: 12px !important;
+      padding-right: 12px !important;
     }
   }
 

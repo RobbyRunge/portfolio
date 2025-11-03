@@ -39,10 +39,10 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Join',
       description: 'Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/frontend/javascript-tech.png', name: 'JavaScript' },
-        { icon: 'assets/imgs/featured-projects/frontend/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/javascript.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/skills/frontend/firebase.png', name: 'Firebase' }
       ],
       imageSrc: 'assets/imgs/featured-projects/frontend/join.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
@@ -54,9 +54,9 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Sharkie',
       description: 'Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/frontend/javascript-tech.png', name: 'JavaScript' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/javascript.png', name: 'JavaScript' }
       ],
       imageSrc: 'assets/imgs/featured-projects/frontend/sharkie.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
@@ -68,11 +68,11 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'DA Bubble',
       description: 'Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/frontend/angular-tech.png', name: 'Angular' },
-        { icon: 'assets/imgs/featured-projects/frontend/typescript-tech.png', name: 'TypeScript' },
-        { icon: 'assets/imgs/featured-projects/frontend/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/angular.png', name: 'Angular' },
+        { icon: 'assets/imgs/skills/frontend/typescript.png', name: 'TypeScript' },
+        { icon: 'assets/imgs/skills/frontend/firebase.png', name: 'Firebase' }
       ],
       imageSrc: 'assets/imgs/featured-projects/frontend/dabubble.png',
       githubLink: 'https://github.com/RobbyRunge/dabubble-groupwork',
@@ -84,9 +84,8 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Coderr',
       description: 'Ein Backend-Projekt mit Python, Django REST Framework zur Verwaltung von Developer-Ressourcen und APIs.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/backend/python-tech.png', name: 'Python' },
-        { icon: 'assets/imgs/featured-projects/backend/django-tech.png', name: 'Django' },
-        { icon: 'assets/imgs/featured-projects/backend/drf-tech.png', name: 'DRF' }
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
       githubLink: 'https://github.com/RobbyRunge/coderr-backend',
