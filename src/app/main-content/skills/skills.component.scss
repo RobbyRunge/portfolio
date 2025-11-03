@@ -47,8 +47,6 @@
   }
 
   .skill-set-text {
-    height: 503px;
-    width: 520px;
     border-radius: 30px;
     border: 1px solid rgba(61, 207, 182, 1);
     background: linear-gradient(135deg, rgba(38, 82, 75, 0.9) 0%, rgba(28, 28, 28, 0.95) 100%);
@@ -164,12 +162,17 @@
   }
 }
 
+.stack-headline {
+  margin: 0 0 16px 0;
+  font-size: 22px;
+  color: #3DCFB6;
+}
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
-  height: 428px;
-  width: 632px;
-  gap: 72px;
+  width: 732px;
+  gap: 16px;
   box-sizing: border-box;
 
   .text-bottom-icon {
@@ -190,8 +193,8 @@
     }
 
     img {
-      height: 64px;
-      width: 64px;
+      height: 40px;
+      width: 40px;
     }
 
     p {

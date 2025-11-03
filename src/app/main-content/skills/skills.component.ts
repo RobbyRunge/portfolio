@@ -16,7 +16,7 @@ interface Skill {
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-  skills: Skill[] = [
+  skillsFrontend: Skill[] = [
     { name: 'HTML', iconPath: 'assets/imgs/skills/frontend/html.png', alt: 'html icon' },
     { name: 'CSS', iconPath: 'assets/imgs/skills/frontend/css.png', alt: 'css icon' },
     { name: 'JavaScript', iconPath: 'assets/imgs/skills/frontend/javascript.png', alt: 'javascript icon' },
@@ -27,5 +27,10 @@ export class SkillsComponent {
     { name: 'Git', iconPath: 'assets/imgs/skills/tools/git.png', alt: 'git icon' },
     { name: 'Rest-Api', iconPath: 'assets/imgs/skills/frontend/rest-api.png', alt: 'rest-api icon' },
     { name: 'Scrum', iconPath: 'assets/imgs/skills/tools/scrum.png', alt: 'scrum icon' },
+  ];
+  skillsBackend: Skill[] = [
+    { name: 'Python', iconPath: 'assets/imgs/skills/backend/python.png', alt: 'python icon' },
+    { name: 'Django', iconPath: 'assets/imgs/skills/backend/django.png', alt: 'django icon' },
+    { name: 'DRF', iconPath: 'assets/imgs/skills/backend/drf.png', alt: 'drf icon' },
   ];
 }
