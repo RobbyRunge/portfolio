@@ -76,8 +76,22 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       ],
       imageSrc: 'assets/imgs/featured-projects/dabubble.png',
       githubLink: 'https://github.com/RobbyRunge/dabubble-groupwork',
-      // liveTestLink: 'https://robby-runge.de/dabubble/index.html',
-      inProgress: true
+      liveTestLink: 'https://robby-runge.de/dabubble/index.html'
+    },
+    {
+      id: 4,
+      titleNumber: '04',
+      title: 'Coderr',
+      description: 'Ein Backend-Projekt mit Python, Django REST Framework zur Verwaltung von Developer-Ressourcen und APIs.',
+      techStack: [
+        { icon: 'assets/imgs/featured-projects/python-tech.png', name: 'Python' },
+        { icon: 'assets/imgs/featured-projects/django-tech.png', name: 'Django' },
+        { icon: 'assets/imgs/featured-projects/drf-tech.png', name: 'DRF' }
+      ],
+      imageSrc: 'assets/imgs/featured-projects/coderr.png',
+      githubLink: 'https://github.com/RobbyRunge/coderr',
+      liveTestLink: 'https://robby-runge.de/coderr/',
+      inProgress: true // Placeholder for future projects, add this to the new one
     }
   ];
 
@@ -173,6 +187,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       case 1: return 'JOIN';
       case 2: return 'SHARKIE';
       case 3: return 'DABUBBLE';
+      case 4: return 'CODERR';
       default: return '';
     }
   }
