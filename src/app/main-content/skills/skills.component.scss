@@ -755,7 +755,39 @@
   }
 }
 
+@media (max-height: 850px) {
+  .skill-set {
+    .skill-set-text {
+      height: 350px;
+
+      h3 {
+        margin-bottom: 16px !important;
+      }
+
+      p {
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+
+  .skill-icons {
+    .text-bottom-icon {
+      height: 56px;
+    }
+
+    img {
+      height: 40px !important;
+      width: 40px !important;
+    }
+  }
+}
+
 @media (max-height: 740px) {
+  .skills {
+    height: 100vh;
+    padding-bottom: 56px;
+  }
+
   .skill-set {
     .skill-set-text {
       height: 300px;
