@@ -39,12 +39,12 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Join',
       description: 'Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
-        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/frontend/javascript-tech.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/featured-projects/frontend/firebase-tech.png', name: 'Firebase' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/join.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/join.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
       liveTestLink: 'https://robby-runge.de/join/index.html'
     },
@@ -54,11 +54,11 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Sharkie',
       description: 'Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' }
+        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/frontend/javascript-tech.png', name: 'JavaScript' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/sharkie.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/sharkie.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
       liveTestLink: 'https://robby-runge.de/sharkie/index.html'
     },
@@ -68,13 +68,13 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'DA Bubble',
       description: 'Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/angular-tech.png', name: 'Angular' },
-        { icon: 'assets/imgs/featured-projects/typescript-tech.png', name: 'TypeScript' },
-        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/featured-projects/frontend/html-tech.png', name: 'HTML' },
+        { icon: 'assets/imgs/featured-projects/frontend/css-tech.png', name: 'CSS' },
+        { icon: 'assets/imgs/featured-projects/frontend/angular-tech.png', name: 'Angular' },
+        { icon: 'assets/imgs/featured-projects/frontend/typescript-tech.png', name: 'TypeScript' },
+        { icon: 'assets/imgs/featured-projects/frontend/firebase-tech.png', name: 'Firebase' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/dabubble.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/dabubble.png',
       githubLink: 'https://github.com/RobbyRunge/dabubble-groupwork',
       liveTestLink: 'https://robby-runge.de/dabubble/index.html'
     },
@@ -84,13 +84,13 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Coderr',
       description: 'Ein Backend-Projekt mit Python, Django REST Framework zur Verwaltung von Developer-Ressourcen und APIs.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/python-tech.png', name: 'Python' },
-        { icon: 'assets/imgs/featured-projects/django-tech.png', name: 'Django' },
-        { icon: 'assets/imgs/featured-projects/drf-tech.png', name: 'DRF' }
+        { icon: 'assets/imgs/featured-projects/backend/python-tech.png', name: 'Python' },
+        { icon: 'assets/imgs/featured-projects/backend/django-tech.png', name: 'Django' },
+        { icon: 'assets/imgs/featured-projects/backend/drf-tech.png', name: 'DRF' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/coderr.png',
-      githubLink: 'https://github.com/RobbyRunge/coderr',
-      liveTestLink: 'https://robby-runge.de/coderr/',
+      imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
+      githubLink: 'https://github.com/RobbyRunge/coderr-backend',
+      // liveTestLink: 'https://robby-runge.de/coderr/',
       inProgress: true // Placeholder for future projects, add this to the new one
     }
   ];
