@@ -76,8 +76,8 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       ],
       imageSrc: 'assets/imgs/featured-projects/dabubble.png',
       githubLink: 'https://github.com/RobbyRunge/dabubble-groupwork',
-      // liveTestLink: 'https://robby-runge.de/dabubble/index.html',
-      inProgress: true
+      liveTestLink: 'https://robby-runge.de/dabubble/index.html',
+      // inProgress: true
     }
   ];
 
