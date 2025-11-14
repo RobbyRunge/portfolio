@@ -5,7 +5,8 @@
     "PROJECTS": "Projekte"
   },
   "HERO": {
-    "JOB_TITLE": "Frontend Entwickler",
+    "JOB_TITLE": "Frontend-Entwickler",
+    "FULLSTACK_TITLE": "angehender Full-Stack-Entwickler",
     "MY_PROJECTS": "Meine Projekte",
     "CONTACT_ME": "Kontaktiere mich"
   },
