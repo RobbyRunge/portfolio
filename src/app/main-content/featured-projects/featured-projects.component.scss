@@ -368,6 +368,34 @@
         transform: translateY(0);
       }
     }
+
+    .quizly-project {
+      @extend %project-item;
+
+      .project-info p:first-child {
+        color: rgb(61, 207, 182);
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+      }
+    }
+
+    .videoflix-project {
+      @extend %project-item;
+
+      .project-info p:first-child {
+        color: rgb(61, 207, 182);
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .project-image {
+        bottom: 0px;
+        top: auto;
+        transform: translateY(0);
+      }
+    }
   }
 }
 
@@ -379,7 +407,9 @@
 .join-project:hover .project-image,
 .sharkie-project:hover .project-image,
 .da-bubble-project:hover .project-image,
-.coderr-project:hover .project-image {
+.coderr-project:hover .project-image,
+.quizly-project:hover .project-image,
+.videoflix-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
@@ -397,11 +427,16 @@
 }
 
 .projects-list-backend:not(:hover) .coderr-project .project-image {
-  animation: myAnim 12s ease-in-out 0s infinite;
-  animation: myAnim 12s ease-in-out 4s infinite;
   animation: myAnim 12s ease-in-out 8s infinite;
 }
 
+.projects-list-backend:not(:hover) .quizly-project .project-image {
+  animation: myAnim 12s ease-in-out 4s infinite;
+}
+
+.projects-list-backend:not(:hover) .videoflix-project .project-image {
+  animation: myAnim 12s ease-in-out 0s infinite;
+}
 
 @keyframes myAnim {
   0% {
@@ -860,6 +895,10 @@
     .coderr-project .project-image {
       top: 5px;
     }
+
+    .videoflix-project .project-image {
+      bottom: 5px;
+    }
   }
 }
 
@@ -883,7 +922,7 @@
 
   .reversed {
     width: 100% !important;
-    
+
     h4 {
       margin-top: 40px !important;
     }
@@ -944,15 +983,14 @@
         content: '';
         position: absolute;
         top: 0;
-        left: -100%;
+        right: -100%;
         width: 100%;
         height: 100%;
         background: linear-gradient(90deg,
             transparent 0%,
             rgba(61, 207, 182, 0.1) 50%,
             transparent 100%);
-        animation: shimmer 2.7s ease-in-out infinite;
-        animation-delay: 1s;
+        animation: shimmerForBackend 2.7s ease-in-out infinite;
         pointer-events: none;
       }
 
@@ -967,7 +1005,19 @@
 
     .coderr-project {
       &::after {
-        animation-delay: 0s;
+        animation-delay: 1.8s !important;
+      }
+    }
+
+    .quizly-project {
+      &::after {
+        animation-delay: 0.9s !important;
+      }
+    }
+
+    .videoflix-project {
+      &::after {
+        animation-delay: 0s !important;
       }
     }
   }
@@ -1037,7 +1087,7 @@
 
   .reversed {
     gap: 16px;
-    
+
     h4 {
       font-size: 20px;
       margin-top: 30px !important;
@@ -1360,5 +1410,16 @@
   50%,
   100% {
     left: 100%;
+  }
+}
+
+@keyframes shimmerForBackend {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
   }
 }

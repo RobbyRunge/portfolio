@@ -59,6 +59,14 @@
     "CODERR": {
       "TITLE": "Coderr",
       "DESCRIPTION": "A backend project using Python, Django REST Framework to manage developer resources and APIs."
+    },
+    "QUIZLY": {
+      "TITLE": "Quizly",
+      "DESCRIPTION": "With Quizly, you can easily turn YouTube videos into exciting quizzes! Thanks to AI technology, the app analyzes the content of a video and automatically creates an interactive quiz with 10 questions. Ideal for learning, reviewing, or just for fun."
+    },
+    "VIDEOFLIX": {
+      "TITLE": "Videoflix",
+      "DESCRIPTION": "Creating a video streaming platform in the style of Netflix. Your own little universe in the digital world"
     }
   },
   "HEADLINE_SECTION": "What my colleagues say about me",

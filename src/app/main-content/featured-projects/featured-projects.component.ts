@@ -91,7 +91,36 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
       githubLink: 'https://github.com/RobbyRunge/coderr-backend',
       // liveTestLink: 'https://robby-runge.de/coderr/',
-      inProgress: true // Placeholder for future projects, add this to the new one
+      inProgress: true
+    },
+    {
+      id: 5,
+      titleNumber: '05',
+      title: 'Quizly',
+      description: 'Mit Quizly verwandelst du ganz einfach YouTube-Videos in spannende Quizze! Dank KI-Technologie analysiert die App die Inhalte eines Videos und erstellt automatisch ein interaktives Quiz mit 10 Fragen. Ideal zum Lernen, Wiederholen oder einfach zum Spaß. Probiere es aus und teste dein Wissen auf eine neue, unterhaltsame Art!',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+      ],
+      imageSrc: 'assets/imgs/featured-projects/backend/quizly.png',
+      // githubLink: 'https://github.com/RobbyRunge/quizly-backend',
+      inProgress: true
+    },
+    {
+      id: 6,
+      titleNumber: '06',
+      title: 'Videoflix',
+      description: 'Eine Videostreaming-Plattform im Stil von Netflix zu erstellen. Dein eigenes kleines Universum in der digitalen Welt',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+        { icon: 'assets/imgs/skills/backend/linux.png', name: 'Linux' }
+      ],
+      imageSrc: 'assets/imgs/featured-projects/backend/videoflix.png',
+      // githubLink: 'https://github.com/RobbyRunge/project-6',
+      inProgress: true
     }
   ];
 
@@ -188,6 +217,8 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       case 2: return 'SHARKIE';
       case 3: return 'DABUBBLE';
       case 4: return 'CODERR';
+      case 5: return 'QUIZLY';
+      case 6: return 'VIDEOFLIX';
       default: return '';
     }
   }

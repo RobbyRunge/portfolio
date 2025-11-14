@@ -56,13 +56,39 @@
           <div class="project-info">
             <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
               Coderr</p>
-            <p>Python <span>|</span> Django <span>|</span> Django REST Framework</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF</p>
           </div>
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
               <div class="in-progress-badge" *ngIf="projects[3].inProgress">Coming Soon</div>
               <img class="hover-preview" src="assets/imgs/featured-projects/backend/coderr.png" alt="Coderr Preview">
+          </div>
+        </div>
+        <div class="quizly-project" (click)="openProject(5)">
+          <div class="project-info">
+            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
+              Quizly</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+              <div class="in-progress-badge" *ngIf="projects[4].inProgress">Coming Soon</div>
+              <img class="hover-preview" src="assets/imgs/featured-projects/backend/quizly.png" alt="Quizly Preview">
+          </div>
+        </div>
+        <div class="videoflix-project" (click)="openProject(6)">
+          <div class="project-info">
+            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
+              Videoflix</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF <span>|</span> Linux</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+              <div class="in-progress-badge" *ngIf="projects[5].inProgress">Coming Soon</div>
+              <img class="hover-preview" src="assets/imgs/featured-projects/backend/videoflix.png" alt="Project 6 Preview">
           </div>
         </div>
       </div>
