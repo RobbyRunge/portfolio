@@ -4,6 +4,7 @@
       <p>{{ 'PROJECTS.PORTFOLIO' | translate }}</p>
       <h3>{{ 'PROJECTS.TITLE' | translate }}</h3>
       <span>{{ 'PROJECTS.DESCRIPTION' | translate }}</span>
+      <h4>Frontend</h4>
 
       <div class="projects-list">
         <div class="join-project" (click)="openProject(1)">
@@ -15,7 +16,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/join.png" alt="Join Preview">
+            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/join.png" alt="Join Preview">
           </div>
         </div>
         <div class="sharkie-project" (click)="openProject(2)">
@@ -27,7 +28,7 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/sharkie.png" alt="Sharkie Preview">
+            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/sharkie.png" alt="Sharkie Preview">
           </div>
         </div>
         <div class="da-bubble-project" (click)="openProject(3)">
@@ -39,62 +40,109 @@
           <div class="project-image">
             <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
               alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/dabubble.png" alt="In Progress">
-            <!-- <div class="in-progress-badge" *ngIf="projects[2].inProgress">Coming Soon</div> -->
+            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/dabubble.png" alt="In Progress">
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="project-overlay" *ngIf="showOverlay && currentProject">
-  <div class="overlay-background" (click)="closeOverlay()"></div>
-  <div class="overlay-content">
-    <div class="close-btn" (click)="closeOverlay()">
-      <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close button">
-      <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close button hover">
+  <div class="content-width">
+    <div class="reversed" data-aos="flip-down">
+      <h4>Backend</h4>
+
+      <div class="projects-list-backend">
+        <div class="coderr-project" (click)="openProject(4)">
+          <div class="project-info">
+            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
+              Coderr</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+              <div class="in-progress-badge" *ngIf="projects[3].inProgress">Coming Soon</div>
+              <img class="hover-preview" src="assets/imgs/featured-projects/backend/coderr.png" alt="Coderr Preview">
+          </div>
+        </div>
+        <div class="quizly-project" (click)="openProject(5)">
+          <div class="project-info">
+            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
+              Quizly</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+              <div class="in-progress-badge" *ngIf="projects[4].inProgress">Coming Soon</div>
+              <img class="hover-preview" src="assets/imgs/featured-projects/backend/quizly.png" alt="Quizly Preview">
+          </div>
+        </div>
+        <div class="videoflix-project" (click)="openProject(6)">
+          <div class="project-info">
+            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
+              Videoflix</p>
+            <p>Python <span>|</span> Django <span>|</span> DRF <span>|</span> Linux</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+              <div class="in-progress-badge" *ngIf="projects[5].inProgress">Coming Soon</div>
+              <img class="hover-preview" src="assets/imgs/featured-projects/backend/videoflix.png" alt="Project 6 Preview">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="project-details">
-      <div class="project-description">
-        <h2>{{ currentProject.titleNumber }}</h2>
-        <h3>{{ currentProject.title }}</h3>
-        <h4>{{ 'PROJECTS.PROJECT_ABOUT' | translate }}</h4>
-        <p>{{ currentProject.description }}</p>
+  <div class="project-overlay" *ngIf="showOverlay && currentProject">
+    <div class="overlay-background" (click)="closeOverlay()"></div>
+    <div class="overlay-content">
+      <div class="close-btn" (click)="closeOverlay()">
+        <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close button">
+        <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close button hover">
+      </div>
 
-        <div class="project-technologies">
-          <span *ngFor="let tech of currentProject.techStack; let last = last">
-            <img [src]="tech.icon" [alt]="tech.name"> {{ tech.name }}
-          </span>
+      <div class="project-details">
+        <div class="project-description">
+          <h2>{{ currentProject.titleNumber }}</h2>
+          <h3>{{ currentProject.title }}</h3>
+          <h4>{{ 'PROJECTS.PROJECT_ABOUT' | translate }}</h4>
+          <p>{{ currentProject.description }}</p>
+
+          <div class="project-technologies">
+            <span *ngFor="let tech of currentProject.techStack; let last = last">
+              <img [src]="tech.icon" [alt]="tech.name"> {{ tech.name }}
+            </span>
+          </div>
+
+          <div class="button-position">
+            <button (click)="openGitHub()" *ngIf="currentProject.githubLink">
+              GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
+            </button>
+            <button (click)="openLiveTest()" *ngIf="currentProject.liveTestLink" class="live-test-button-width">
+              {{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png"
+                alt="Arrow button link">
+            </button>
+            <button *ngIf="currentProject.inProgress" class="coming-soon-button" disabled>
+              {{ 'PROJECTS.COMING_SOON' | translate }}
+            </button>
+          </div>
         </div>
 
-        <div class="button-position">
-          <button (click)="openGitHub()" *ngIf="currentProject.githubLink">
-            GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
-          </button>
-          <button (click)="openLiveTest()" *ngIf="currentProject.liveTestLink" class="live-test-button-width">
-            {{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png"
-              alt="Arrow button link">
-          </button>
-          <button *ngIf="currentProject.inProgress" class="coming-soon-button" disabled>
-            {{ 'PROJECTS.COMING_SOON' | translate }}
-          </button>
+        <div class="project-image-large" *ngIf="!currentProject.inProgress && currentProject.imageSrc">
+          <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
+        </div>
+        <div class="project-in-progress" *ngIf="currentProject.inProgress">
+          <div class="development-banner">
+            <span>{{ 'PROJECTS.IN_DEVELOPMENT' | translate }}</span>
+          </div>
+          <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
         </div>
       </div>
 
-      <div class="project-image-large" *ngIf="!currentProject.inProgress && currentProject.imageSrc">
-        <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
-      </div>
-      <div class="project-in-progress" *ngIf="currentProject.inProgress">
-        <div class="development-banner">
-          <span>{{ 'PROJECTS.IN_DEVELOPMENT' | translate }}</span>
-        </div>
-        <img [src]="currentProject.imageSrc" [alt]="currentProject.title">
-      </div>
+      <button class="next-btn" (click)="nextProject()">{{ 'PROJECTS.NEXT_PROJECT' | translate }} <img
+          src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
     </div>
-
-    <button class="next-btn" (click)="nextProject()">{{ 'PROJECTS.NEXT_PROJECT' | translate }} <img
-        src="assets/imgs/featured-projects/arrow-forward.png" alt="Arrow forward"></button>
   </div>
 </div>

@@ -17,31 +17,48 @@
         </div>
       </div>
 
-      <div data-aos="zoom-in" class="skill-icons">
-        @for (skill of skills; track skill.name) {
-        <div class="text-bottom-icon">
-          <img [src]="skill.iconPath" [alt]="skill.alt">
-          <p>{{ skill.name }}</p>
-        </div>
-        }
+      <div data-aos="zoom-in" class="responsive">
+        <div>
+          <h4 class="stack-headline">Frontend</h4>
+          <div class="skill-icons">
+            @for (skill of skillsFrontend; track skill.name) {
+            <div class="text-bottom-icon">
+              <img [src]="skill.iconPath" [alt]="skill.alt">
+              <p>{{ skill.name }}</p>
+            </div>
+            }
 
-        <div class="text-bottom-icon skill-preview">
-          <img src="assets/imgs/skills/growth-mindset.png" alt="Growth mindset">
-          <p class="text-color-change-by-icon">{{ 'SKILLS.GROWTH_MINDSET' | translate }}</p>
+            <div class="text-bottom-icon skill-preview">
+              <img src="assets/imgs/skills/growth-mindset.png" alt="Growth mindset">
+              <p class="text-color-change-by-icon">{{ 'SKILLS.GROWTH_MINDSET' | translate }}</p>
 
-          <div class="skill-preview-content">
-            <span>{{ 'SKILLS.LEARNING_INTEREST' | translate }}</span>
-            <div class="icon-position">
-              <div>
-                <img src="assets/imgs/skills/react.png" alt="React icon">
-                <p>React</p>
-              </div>
-              <div>
-                <img src="assets/imgs/skills/vue-js.png" alt="Vue Js icon">
-                <p>Vue Js</p>
+              <div class="skill-preview-content">
+                <span>{{ 'SKILLS.LEARNING_INTEREST' | translate }}</span>
+                <div class="icon-position">
+                  <div>
+                    <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+                    <p>React</p>
+                  </div>
+                  <div>
+                    <img src="assets/imgs/skills/frontend/vue-js.png" alt="Vue Js icon">
+                    <p>Vue Js</p>
+                  </div>
+                </div>
+                <img class="arrow-indicator" src="assets/imgs/skills/arrow-skills.png" alt="Arrow indicator">
               </div>
             </div>
-            <img class="arrow-indicator" src="assets/imgs/skills/arrow-skills.png" alt="Arrow indicator">
+          </div>
+
+          <div>
+            <h4 class="stack-headline mt-24">Backend</h4>
+            <div class="skill-icons">
+              @for (skill of skillsBackend; track skill.name) {
+              <div class="text-bottom-icon">
+                <img [src]="skill.iconPath" [alt]="skill.alt">
+                <p>{{ skill.name }}</p>
+              </div>
+              }
+            </div>
           </div>
         </div>
       </div>

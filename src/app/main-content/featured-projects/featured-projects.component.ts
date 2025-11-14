@@ -39,12 +39,12 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Join',
       description: 'Webbasierte Kanban-App zur Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' },
-        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/javascript.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/skills/frontend/firebase.png', name: 'Firebase' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/join.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/join.png',
       githubLink: 'https://github.com/RobbyRunge/join-groupwork',
       liveTestLink: 'https://robby-runge.de/join/index.html'
     },
@@ -54,11 +54,11 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'Sharkie',
       description: 'Sharkie ist ein 2D-Spiel, das mit HTML, JavaScript und CSS entwickelt wurde. Das Spiel bietet ein spannendes Unterwasserabenteuer, bei dem die Spieler einen Hai steuern, der durch verschiedene Hindernisse und Herausforderungen navigiert.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/javascript-tech.png', name: 'JavaScript' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/javascript.png', name: 'JavaScript' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/sharkie.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/sharkie.png',
       githubLink: 'https://github.com/RobbyRunge/sharkie',
       liveTestLink: 'https://robby-runge.de/sharkie/index.html'
     },
@@ -68,16 +68,59 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       title: 'DA Bubble',
       description: 'Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.',
       techStack: [
-        { icon: 'assets/imgs/featured-projects/html-tech.png', name: 'HTML' },
-        { icon: 'assets/imgs/featured-projects/css-tech.png', name: 'CSS' },
-        { icon: 'assets/imgs/featured-projects/angular-tech.png', name: 'Angular' },
-        { icon: 'assets/imgs/featured-projects/typescript-tech.png', name: 'TypeScript' },
-        { icon: 'assets/imgs/featured-projects/firebase-tech.png', name: 'Firebase' }
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' },
+        { icon: 'assets/imgs/skills/frontend/angular.png', name: 'Angular' },
+        { icon: 'assets/imgs/skills/frontend/typescript.png', name: 'TypeScript' },
+        { icon: 'assets/imgs/skills/frontend/firebase.png', name: 'Firebase' }
       ],
-      imageSrc: 'assets/imgs/featured-projects/dabubble.png',
+      imageSrc: 'assets/imgs/featured-projects/frontend/dabubble.png',
       githubLink: 'https://github.com/RobbyRunge/dabubble-groupwork',
-      liveTestLink: 'https://robby-runge.de/dabubble/index.html',
-      // inProgress: true
+      liveTestLink: 'https://robby-runge.de/dabubble/index.html'
+    },
+    {
+      id: 4,
+      titleNumber: '04',
+      title: 'Coderr',
+      description: 'Coderr ist eine Freelance-Plattform, die Dienstleister mit Kunden verbindet. Businesses können Angebote erstellen und verwalten, während Kunden diese durchsuchen, beauftragen und bewerten können.',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+      ],
+      imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
+      githubLink: 'https://github.com/RobbyRunge/coderr-backend',
+      // liveTestLink: 'https://robby-runge.de/coderr/',
+      inProgress: true
+    },
+    {
+      id: 5,
+      titleNumber: '05',
+      title: 'Quizly',
+      description: 'Mit Quizly verwandelst du ganz einfach YouTube-Videos in spannende Quizze! Dank KI-Technologie analysiert die App die Inhalte eines Videos und erstellt automatisch ein interaktives Quiz mit 10 Fragen. Ideal zum Lernen, Wiederholen oder einfach zum Spaß. Probiere es aus und teste dein Wissen auf eine neue, unterhaltsame Art!',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+      ],
+      imageSrc: 'assets/imgs/featured-projects/backend/quizly.png',
+      // githubLink: 'https://github.com/RobbyRunge/quizly-backend',
+      inProgress: true
+    },
+    {
+      id: 6,
+      titleNumber: '06',
+      title: 'Videoflix',
+      description: 'Eine Videostreaming-Plattform im Stil von Netflix zu erstellen. Dein eigenes kleines Universum in der digitalen Welt',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+        { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+        { icon: 'assets/imgs/skills/backend/linux.png', name: 'Linux' }
+      ],
+      imageSrc: 'assets/imgs/featured-projects/backend/videoflix.png',
+      // githubLink: 'https://github.com/RobbyRunge/project-6',
+      inProgress: true
     }
   ];
 
@@ -173,6 +216,9 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       case 1: return 'JOIN';
       case 2: return 'SHARKIE';
       case 3: return 'DABUBBLE';
+      case 4: return 'CODERR';
+      case 5: return 'QUIZLY';
+      case 6: return 'VIDEOFLIX';
       default: return '';
     }
   }
