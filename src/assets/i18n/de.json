@@ -58,7 +58,7 @@
     },
     "CODERR": {
       "TITLE": "Coderr",
-      "DESCRIPTION": "Ein Backend-Projekt mit Python, Django REST Framework zur Verwaltung von Developer-Ressourcen und APIs."
+      "DESCRIPTION": "Coderr ist eine Freelance-Plattform, die Dienstleister mit Kunden verbindet. Businesses können Angebote erstellen und verwalten, während Kunden diese durchsuchen, beauftragen und bewerten können."
     },
     "QUIZLY": {
       "TITLE": "Quizly",

@@ -82,7 +82,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       id: 4,
       titleNumber: '04',
       title: 'Coderr',
-      description: 'Ein Backend-Projekt mit Python, Django REST Framework zur Verwaltung von Developer-Ressourcen und APIs.',
+      description: 'Coderr ist eine Freelance-Plattform, die Dienstleister mit Kunden verbindet. Businesses können Angebote erstellen und verwalten, während Kunden diese durchsuchen, beauftragen und bewerten können.',
       techStack: [
         { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
         { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
