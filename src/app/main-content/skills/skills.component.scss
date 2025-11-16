@@ -77,7 +77,7 @@
 
     p {
       font-size: 18px;
-      line-height: 120%;
+      line-height: 1.4;
       color: rgba(255, 255, 255, 1);
       font-weight: normal;
     }
@@ -174,6 +174,7 @@
   width: 732px;
   gap: 16px;
   box-sizing: border-box;
+  padding: 0 10px;
 
   .text-bottom-icon {
     display: flex;
@@ -280,6 +281,7 @@
 
       p {
         font-size: 16px;
+        line-height: 1.4;
       }
     }
   }
@@ -342,7 +344,6 @@
 
     .skill-set-text {
       width: 100%;
-      height: 350px;
       padding: 24px;
 
       button {
@@ -567,8 +568,6 @@
 
   .skill-set {
     .skill-set-text {
-      height: auto !important;
-
       button {
         margin-top: 16px;
         height: 40px;
@@ -608,6 +607,15 @@
       }
     }
   }
+
+  .skill-icons {
+    gap: 16px !important;
+
+    img {
+      height: 36px !important;
+      width: 36px !important;
+    }
+  }
 }
 
 @media (max-width: 370px) {
@@ -623,6 +631,15 @@
     button {
       margin-top: 0 !important;
       height: 30px !important;
+    }
+  }
+
+  .skill-icons {
+    gap: 12px !important;
+
+    img {
+      height: 32px !important;
+      width: 32px !important;
     }
   }
 }
@@ -758,8 +775,6 @@
 @media (max-height: 850px) {
   .skill-set {
     .skill-set-text {
-      height: 350px;
-
       h3 {
         margin-bottom: 16px !important;
       }
@@ -785,13 +800,11 @@
 @media (max-height: 740px) {
   .skills {
     height: 100vh;
-    padding-bottom: 56px;
+    padding-bottom: 90px;
   }
 
   .skill-set {
     .skill-set-text {
-      height: 300px;
-
       h3 {
         margin-bottom: 0 !important;
       }

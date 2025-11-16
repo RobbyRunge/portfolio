@@ -68,7 +68,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 540px;
   width: 566px;
   border: 1px solid rgba(61, 207, 182, 1);
   border-radius: 30px;
@@ -88,7 +87,7 @@
 
   p {
     font-size: 18px;
-    line-height: 120%;
+    line-height: 1.4;
     color: rgba(255, 255, 255, 1);
   }
 }
@@ -98,7 +97,7 @@
   align-items: flex-start;
   gap: 16px;
   margin-top: 24px;
-  line-height: 120%;
+  line-height: 1.2;
 
   img {
     width: 32px;
