@@ -32,5 +32,13 @@ export class SkillsComponent {
     { name: 'Python', iconPath: 'assets/imgs/skills/backend/python.png', alt: 'python icon' },
     { name: 'Django', iconPath: 'assets/imgs/skills/backend/django.png', alt: 'django icon' },
     { name: 'DRF', iconPath: 'assets/imgs/skills/backend/drf.png', alt: 'drf icon' },
+    { name: 'PostgreSQL', iconPath: 'assets/imgs/skills/backend/postgresql.png', alt: 'postgresql icon' },
+    { name: 'SQL', iconPath: 'assets/imgs/skills/backend/sql.png', alt: 'sql icon' },
+    { name: 'Cloud', iconPath: 'assets/imgs/skills/backend/cloud.png', alt: 'cloud icon' },
+    { name: 'Docker', iconPath: 'assets/imgs/skills/backend/docker.png', alt: 'docker icon' },
+    { name: 'Flask', iconPath: 'assets/imgs/skills/backend/flask.png', alt: 'flask icon' },
+    { name: 'Heroku', iconPath: 'assets/imgs/skills/backend/heroku.png', alt: 'heroku icon' },
+    { name: 'Redis', iconPath: 'assets/imgs/skills/backend/redis.png', alt: 'redis icon' },
+    { name: 'RxJs', iconPath: 'assets/imgs/skills/backend/rxjs.png', alt: 'rxjs icon' },
   ];
 }

@@ -90,8 +90,8 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/coderr.png',
       githubLink: 'https://github.com/RobbyRunge/coderr-backend',
-      // liveTestLink: 'https://robby-runge.de/coderr/',
-      inProgress: true
+      liveTestLink: 'https://robby-runge.de/coderr/',
+      // inProgress: true
     },
     {
       id: 5,
