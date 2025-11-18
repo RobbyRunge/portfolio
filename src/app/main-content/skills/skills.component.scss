@@ -112,7 +112,7 @@
 
         .text-container {
           color: rgba(61, 207, 182, 1);
-          animation: marquee 2s linear infinite;
+          animation: marquee 2.5s linear infinite;
           animation-delay: 125ms;
         }
       }
@@ -127,7 +127,7 @@
 
   49.9% {
     transform: translateX(-150%);
-    opacity: 1;
+    opacity: 0;
   }
 
   50% {
@@ -140,7 +140,7 @@
   }
 
   50.2% {
-    opacity: 1;
+    opacity: 0;
   }
 
   100% {

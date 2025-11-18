@@ -35,6 +35,7 @@ export class SkillsComponent {
     { name: 'PostgreSQL', iconPath: 'assets/imgs/skills/backend/postgresql.png', alt: 'postgresql icon' },
     { name: 'SQL', iconPath: 'assets/imgs/skills/backend/sql.png', alt: 'sql icon' },
     { name: 'Cloud', iconPath: 'assets/imgs/skills/backend/cloud.png', alt: 'cloud icon' },
+    { name: 'Linux', iconPath: 'assets/imgs/skills/backend/linux.png', alt: 'linux icon' },
     { name: 'Docker', iconPath: 'assets/imgs/skills/backend/docker.png', alt: 'docker icon' },
     { name: 'Flask', iconPath: 'assets/imgs/skills/backend/flask.png', alt: 'flask icon' },
     { name: 'Heroku', iconPath: 'assets/imgs/skills/backend/heroku.png', alt: 'heroku icon' },
