@@ -104,7 +104,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/quizly.png',
-      // githubLink: 'https://github.com/RobbyRunge/quizly-backend',
+      githubLink: 'https://github.com/RobbyRunge/quizly-backend',
       inProgress: true
     },
     {
