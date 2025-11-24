@@ -3,12 +3,13 @@ import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { RouterOutlet } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
+import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.component';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CookieBannerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

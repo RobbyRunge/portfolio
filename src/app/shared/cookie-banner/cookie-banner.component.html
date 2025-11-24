@@ -1,0 +1,18 @@
+@if (showBanner) {
+  <div class="cookie-banner">
+    <div class="cookie-banner-content">
+      <div class="cookie-text">
+        <h3>{{ 'COOKIE.TITLE' | translate }}</h3>
+        <p>{{ 'COOKIE.MESSAGE' | translate }}</p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="btn-decline" (click)="declineCookies()">
+          {{ 'COOKIE.DECLINE' | translate }}
+        </button>
+        <button class="btn-accept" (click)="acceptCookies()">
+          {{ 'COOKIE.ACCEPT' | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+}
