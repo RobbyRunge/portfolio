@@ -119,8 +119,9 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/skills/backend/linux.png', name: 'Linux' }
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/videoflix.png',
-      // githubLink: 'https://github.com/RobbyRunge/project-6',
-      inProgress: true
+      githubLink: 'https://github.com/RobbyRunge/videoflix-backend',
+      liveTestLink: 'https://robby-runge.de/videoflix.robby-runge.de/index.html',
+      // inProgress: true
     }
   ];
 
