@@ -120,7 +120,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       ],
       imageSrc: 'assets/imgs/featured-projects/backend/videoflix.png',
       githubLink: 'https://github.com/RobbyRunge/videoflix-backend',
-      liveTestLink: 'https://robby-runge.de/videoflix.robby-runge.de/index.html',
+      liveTestLink: 'https://robby-runge.de/videoflix/index.html',
       // inProgress: true
     }
   ];
