@@ -5,13 +5,13 @@
     "PROJECTS": "Projekte"
   },
   "HERO": {
-    "JOB_TITLE": "Full-Stack Entwickler",
+    "JOB_TITLE": "Fullstack Entwickler",
     "MY_PROJECTS": "Meine Projekte",
     "CONTACT_ME": "Kontaktiere mich"
   },
   "MARQUEE": {
     "MOBILE_WORK": "Einsetzbar für mobiles Arbeiten",
-    "FULLSTACK_DEV": "Full-Stack Entwickler",
+    "FULLSTACK_DEV": "Fullstack Entwickler",
     "LOCATION": "mit Sitz in Eilenburg",
     "AVAILABLE": "offen für Arbeit"
   },
@@ -89,7 +89,7 @@
     "LETS_WORK_TOGETHER": "Lassen Sie uns zusammenarbeiten",
     "PROBLEM_TO_SOLVE": "Haben Sie ein Problem zu lösen?",
     "EXPERTISE_TEXT": "Ob Projektmanagement, Digitalisierung oder Prozessoptimierung – mit mir an Ihrer Seite wird's strategisch, kreativ und vor allem wirksam. Ich bringe nicht nur Expertise, sondern auch frischen Wind in Ihre Vorhaben.",
-    "NEED_FULLSTACK": "Brauchen Sie einen Full-Stack-Entwickler?",
+    "NEED_FULLSTACK": "Brauchen Sie einen Fullstack-Entwickler?",
     "LETS_TALK": "Lassen Sie uns reden!",
     "NAME_QUESTION": "Wie ist Ihr Name?",
     "NAME_PLACEHOLDER": "Ihr Name steht hier",
@@ -191,7 +191,7 @@
     }
   },
   "FOOTER": {
-    "DEVELOPER": "Full-Stack Entwickler",
+    "DEVELOPER": "Fullstack Entwickler",
     "LOCATION": "Eilenburg Deutschland",
     "EMAIL": "E-Mail",
     "IMPRINT": "Impressum"

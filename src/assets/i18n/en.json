@@ -5,13 +5,13 @@
     "PROJECTS": "Projects"
   },
   "HERO": {
-    "JOB_TITLE": "Full-Stack Developer",
+    "JOB_TITLE": "Fullstack Developer",
     "MY_PROJECTS": "My Projects",
     "CONTACT_ME": "Contact me"
   },
   "MARQUEE": {
     "MOBILE_WORK": "Available for remote work",
-    "FULLSTACK_DEV": "Full-Stack Developer",
+    "FULLSTACK_DEV": "Fullstack Developer",
     "LOCATION": "based in Eilenburg",
     "AVAILABLE": "open for work"
   },
@@ -89,7 +89,7 @@
     "LETS_WORK_TOGETHER": "Let's work together",
     "PROBLEM_TO_SOLVE": "Do you have a problem to solve?",
     "EXPERTISE_TEXT": "Whether it's project management, digitalization, or process optimization – with me by your side, it'll be strategic, creative, and above all, effective. I bring not only expertise but also fresh ideas to your projects.",
-    "NEED_FULLSTACK": "Need a full-stack developer?",
+    "NEED_FULLSTACK": "Need a fullstack developer?",
     "LETS_TALK": "Let's talk!",
     "NAME_QUESTION": "What is your name?",
     "NAME_PLACEHOLDER": "Your name goes here",
@@ -191,7 +191,7 @@
     }
   },
   "FOOTER": {
-    "DEVELOPER": "Full-Stack Developer",
+    "DEVELOPER": "Fullstack Developer",
     "LOCATION": "Eilenburg Germany",
     "EMAIL": "Email",
     "IMPRINT": "Imprint"
