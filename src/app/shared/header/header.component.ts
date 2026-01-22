@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   mobileMenuOpen = false;
   isGerman = true;
-  isNight = false;
+  isDay = false;
 
   constructor(
     private elementRef: ElementRef,
@@ -67,9 +67,12 @@ export class HeaderComponent {
   }
 
   changeButtonDayAndNight() {
-    this.isNight = !this.isNight;
-    const version = this.isNight ? 'night' : 'day';
-    // Change the app theme here based on 'version'
+    this.isDay = !this.isDay;
+    if (this.isDay) {
+      document.body.classList.add('light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+    }
     this.closeMobileMenu();
   }
 

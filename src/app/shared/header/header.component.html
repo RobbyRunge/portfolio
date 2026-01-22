@@ -10,9 +10,9 @@
 
     <div class="day-night-slider" (click)="changeButtonDayAndNight()">
       <div class="slider-track">
-        <div class="slider-thumb" [class.night]="isNight"></div>
-        <span class="lang-symbol day" [class.active]="!isNight">☀</span>
-        <span class="lang-symbol night" [class.active]="isNight">●</span>
+        <div class="slider-thumb" [class.night]="!isDay"></div>
+        <span class="lang-symbol day" [class.active]="isDay">☀</span>
+        <span class="lang-symbol night" [class.active]="!isDay">●</span>
       </div>
     </div>
 
@@ -39,6 +39,13 @@
           <div class="slider-thumb" [class.english]="!isGerman"></div>
           <span class="lang-text de" [class.active]="isGerman">DE</span>
           <span class="lang-text en" [class.active]="!isGerman">EN</span>
+        </div>
+      </div>
+      <div class="day-night-slider" (click)="changeButtonDayAndNight()">
+        <div class="slider-track">
+          <div class="slider-thumb" [class.night]="!isDay"></div>
+          <span class="lang-symbol day" [class.active]="isDay">☀</span>
+          <span class="lang-symbol night" [class.active]="!isDay">●</span>
         </div>
       </div>
     </div>
