@@ -9,7 +9,7 @@ header {
   position: relative;
 }
 
-.language-slider {
+.language-slider, .day-night-slider {
   cursor: pointer;
 
   .slider-track {
@@ -41,6 +41,10 @@ header {
       &.english {
         transform: translateX(37px);
       }
+
+      &.night {
+        transform: translateX(37px);
+      }
     }
 
     .lang-text {
@@ -59,6 +63,29 @@ header {
 
       &.en {
         right: 11px;
+      }
+
+      &.active {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .lang-symbol {
+      position: absolute;
+      font-size: 22px;
+      color: rgba(39, 116, 102, 1);
+      transition: color 0.3s ease;
+      z-index: 1;
+      cursor: pointer;
+
+      &.day {
+        top: -2px;
+        left: 12px;
+      }
+
+      &.night {
+        top: 0px;
+        right: 15px;
       }
 
       &.active {

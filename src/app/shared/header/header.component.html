@@ -8,6 +8,14 @@
       </div>
     </div>
 
+    <div class="day-night-slider" (click)="changeButtonDayAndNight()">
+      <div class="slider-track">
+        <div class="slider-thumb" [class.night]="isNight"></div>
+        <span class="lang-symbol day" [class.active]="!isNight">☀</span>
+        <span class="lang-symbol night" [class.active]="isNight">●</span>
+      </div>
+    </div>
+
     <a (click)="navigateToSection('about-me-section')">{{ 'NAV.ABOUT' | translate }}</a>
     <a (click)="navigateToSection('skills-section')">{{ 'NAV.SKILLS' | translate }}</a>
     <a (click)="navigateToSection('projects-section')">{{ 'NAV.PROJECTS' | translate }}</a>
