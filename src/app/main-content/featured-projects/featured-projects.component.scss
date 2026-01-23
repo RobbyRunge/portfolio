@@ -74,6 +74,107 @@
   }
 }
 
+:host-context(body.light-mode) .project-overlay {
+  .overlay-background {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .overlay-content {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 1) 36.26%, rgba(184, 230, 220, 0.9) 93.28%);
+    border: 2px solid rgba(61, 207, 182, 0.8);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+
+    h2 {
+      color: rgba(8, 70, 59, 1);
+    }
+
+    .project-technologies {
+      span {
+        color: rgba(8, 70, 59, 1);
+
+        img {
+          filter: brightness(0) saturate(100%);
+        }
+      }
+    }
+
+    .project-details {
+      .project-description {
+        h2 {
+          color: rgba(8, 70, 59, 1);
+        }
+
+        h3 {
+          color: rgba(28, 28, 28, 1);
+        }
+
+        h4 {
+          color: rgba(8, 70, 59, 1);
+        }
+
+        p {
+          color: rgba(28, 28, 28, 1);
+        }
+
+        .button-position {
+          button {
+            border: 1px solid rgba(8, 70, 59, 0.8);
+            color: rgba(8, 70, 59, 1);
+
+            img {
+              filter: brightness(0) saturate(100%);
+            }
+
+            &:hover {
+              border: 2px solid rgba(61, 207, 182, 1);
+              background: rgba(61, 207, 182, 0.1);
+              color: rgba(8, 70, 59, 1);
+            }
+
+            &.coming-soon-button {
+              border: 2px solid rgba(128, 128, 128, 0.5);
+              color: rgba(128, 128, 128, 0.7);
+
+              &:hover {
+                border: 2px solid rgba(128, 128, 128, 0.5);
+                color: rgba(128, 128, 128, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button.next-btn {
+      color: rgba(8, 70, 59, 1);
+
+      img {
+        filter: brightness(0) saturate(100%);
+      }
+
+      &:hover {
+        color: rgba(28, 28, 28, 1);
+      }
+    }
+
+    .close-btn {
+      img {
+        filter: brightness(0) saturate(100%);
+      }
+    }
+  }
+}
+
+:host-context(body.light-mode) .in-progress-badge {
+  background-color: rgba(8, 70, 59, 0.9);
+  color: rgba(255, 255, 255, 1);
+}
+
+:host-context(body.light-mode) .development-banner {
+  background-color: rgba(8, 70, 59, 0.9);
+  color: rgba(255, 255, 255, 1);
+}
+
 .featured-projects {
   background-color: rgba(28, 28, 28, 1);
   padding: 48px 0;
