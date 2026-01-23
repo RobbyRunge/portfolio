@@ -1,3 +1,73 @@
+:host-context(body.light-mode) .featured-projects {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+:host-context(body.light-mode) .featured-projects-text {
+  p:first-child {
+    color: rgba(8, 70, 59, 1);
+  }
+
+  h3 {
+    color: rgba(8, 70, 59, 1);
+  }
+
+  span {
+    color: rgba(28, 28, 28, 1);
+  }
+
+  h4 {
+    color: rgba(28, 28, 28, 1);
+  }
+}
+
+:host-context(body.light-mode) .projects-list {
+  %project-item {
+    border-bottom: 2px solid rgba(61, 207, 182, 0.8);
+    border-top: 2px solid rgba(61, 207, 182, 0.8);
+
+    &:hover {
+      background-color: rgba(61, 207, 182, 0.2);
+    }
+
+    p {
+      color: rgba(28, 28, 28, 1);
+    }
+
+    span {
+      color: rgba(8, 70, 59, 1);
+    }
+
+    .hover-background {
+      filter: brightness(1.1);
+    }
+  }
+}
+
+:host-context(body.light-mode) .reversed {
+  h4 {
+    color: rgba(28, 28, 28, 1);
+  }
+
+  .projects-list-backend {
+    %project-item {
+      border-bottom: 2px solid rgba(61, 207, 182, 0.8);
+      border-top: 2px solid rgba(61, 207, 182, 0.8);
+
+      &:hover {
+        background-color: rgba(61, 207, 182, 0.2);
+      }
+
+      p {
+        color: rgba(28, 28, 28, 1);
+      }
+
+      span {
+        color: rgba(8, 70, 59, 1);
+      }
+    }
+  }
+}
+
 .featured-projects {
   background-color: rgba(28, 28, 28, 1);
   padding: 48px 0;
