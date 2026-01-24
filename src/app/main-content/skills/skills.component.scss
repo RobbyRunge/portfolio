@@ -324,7 +324,7 @@
   border-radius: 16px;
 
   position: absolute;
-  bottom: 100px;
+  bottom: 110px;
   z-index: 1;
 
   span {
@@ -340,7 +340,7 @@
     width: 26px;
     height: 17px;
     position: absolute;
-    bottom: -15px;
+    bottom: -16px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -655,6 +655,16 @@
 
     .arrow-indicator {
       left: 87% !important;
+      width: 20px !important;
+      height: 13px !important;
+      bottom: -12px !important;
+    }
+
+    :host-context(body.light-mode) .skill-preview .skill-preview-content .arrow-indicator {
+      left: 87% !important;
+      width: 20px;
+      height: 13px;
+      bottom: -13px;
     }
   }
 
@@ -676,6 +686,17 @@
     .arrow-indicator {
       left: 50% !important;
       transform: translateX(-50%) !important;
+      width: 18px !important;
+      height: 12px !important;
+      bottom: -11px !important;
+    }
+
+    :host-context(body.light-mode) .skill-preview .skill-preview-content .arrow-indicator {
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      width: 18px !important;
+      height: 12px !important;
+      bottom: -12px;
     }
   }
 
@@ -750,6 +771,10 @@
 
     .arrow-indicator {
       left: 57% !important;
+    }
+
+    :host-context(body.light-mode) .skill-preview .skill-preview-content .arrow-indicator {
+      left: 55% !important;
     }
   }
 
