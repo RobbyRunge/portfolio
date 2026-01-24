@@ -36,8 +36,8 @@
     }
 
     %hover-effect {
-      border-top: 1px solid rgba(8, 70, 59, 1);
-      border-bottom: 1px solid rgba(8, 70, 59, 1);
+      border-top-color: rgba(8, 70, 59, 1);
+      border-bottom-color: rgba(8, 70, 59, 1);
 
       ::placeholder {
         color: rgba(28, 28, 28, 1);
@@ -45,8 +45,8 @@
     }
 
     %border-style {
-      border-top: 1px solid rgba(61, 207, 182, 0.6);
-      border-bottom: 1px solid rgba(61, 207, 182, 0.6);
+      border-top-color: rgba(61, 207, 182, 0.6);
+      border-bottom-color: rgba(61, 207, 182, 0.6);
     }
   }
 
@@ -273,8 +273,8 @@
 
         %hover-effect {
           cursor: pointer;
-          border-top: 1px solid rgba(61, 207, 182, 1);
-          border-bottom: 1px solid rgba(61, 207, 182, 1);
+          border-top-color: rgba(61, 207, 182, 1);
+          border-bottom-color: rgba(61, 207, 182, 1);
 
           ::placeholder {
             color: rgba(255, 255, 255, 1);
@@ -290,6 +290,7 @@
         .name {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
@@ -299,6 +300,7 @@
         .email {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
@@ -308,6 +310,7 @@
         .message {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
