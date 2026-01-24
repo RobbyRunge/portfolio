@@ -106,6 +106,10 @@
   filter: brightness(0) saturate(100%) opacity(0.7);
 }
 
+:host-context(body.light-mode) .testimonial-card.active .github-link {
+  animation: moving-light 1.5s infinite;
+}
+
 .colleagues {
   background-color: rgba(28, 28, 28, 1);
   width: 100%;
@@ -436,7 +440,6 @@
 }
 
 @keyframes moving {
-
   0%,
   100% {
     transform: translateX(4px);
@@ -446,6 +449,19 @@
   50% {
     transform: translateX(0px);
     color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+@keyframes moving-light {
+  0%,
+  100% {
+    transform: translateX(4px);
+    color: rgba(61, 207, 182, 1);
+  }
+
+  50% {
+    transform: translateX(0px);
+    color: rgba(28, 28, 28, 0.7);
   }
 }
 
