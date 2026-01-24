@@ -1,3 +1,39 @@
+:host-context(body.light-mode) footer {
+  background-color: rgba(245, 245, 245, 1);
+
+  .footer-container {
+    .logo-and-text {
+      img {
+        filter: brightness(0) saturate(100%);
+
+        &:hover {
+          filter: brightness(0) saturate(100%) drop-shadow(0px 0px 2px rgba(8, 70, 59, 1));
+        }
+      }
+
+      p {
+        color: rgba(28, 28, 28, 1);
+      }
+    }
+
+    .copyright {
+      p {
+        color: rgba(61, 207, 182, 1);
+      }
+    }
+
+    .links {
+      a {
+        color: rgba(28, 28, 28, 1);
+
+        &:hover {
+          color: rgba(61, 207, 182, 1);
+        }
+      }
+    }
+  }
+}
+
 footer {
   background-color: rgba(28, 28, 28, 1);
   height: auto;
