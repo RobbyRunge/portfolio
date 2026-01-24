@@ -1,3 +1,43 @@
+:host-context(body.light-mode) .about-me {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+:host-context(body.light-mode) .about-me-info {
+  p {
+    color: rgba(8, 70, 59, 1);
+  }
+}
+
+:host-context(body.light-mode) .about-me-text {
+  background: linear-gradient(135deg, rgba(184, 230, 220, 0.8) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border: 1px solid rgba(61, 207, 182, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(61, 207, 182, 0.15);
+
+  h3 {
+    color: rgba(8, 70, 59, 1);
+  }
+
+  p {
+    color: rgba(28, 28, 28, 1);
+  }
+}
+
+:host-context(body.light-mode) .icon-text {
+  img {
+    filter: brightness(0) saturate(100%) opacity(0.8);
+  }
+
+  span {
+    color: rgba(28, 28, 28, 0.8);
+
+    &:hover {
+      color: rgba(8, 70, 59, 1);
+      font-weight: 450;
+    }
+  }
+}
+
 .about-me {
   background-color: rgba(28, 28, 28, 1);
   padding: 48px 0;
@@ -110,6 +150,7 @@
 
     &:hover {
       color: rgba(255, 255, 255, 1);
+      font-weight: 450;
     }
   }
 }

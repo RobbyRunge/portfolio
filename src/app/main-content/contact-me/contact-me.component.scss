@@ -1,3 +1,158 @@
+:host-context(body.light-mode) .contact-me {
+  background-color: rgba(245, 245, 245, 1);
+
+  .work-together {
+    .contact-me-text,
+    h3,
+    .problem-text {
+      color: rgba(8, 70, 59, 1) !important;
+    }
+
+    .need-me-text {
+      color: rgba(28, 28, 28, 0.9);
+
+      span {
+        color: rgba(8, 70, 59, 1) !important;
+      }
+    }
+  }
+
+  .form {
+    .input-fields {
+      %form-position {
+        p {
+          color: rgba(8, 70, 59, 1) !important;
+        }
+      }
+
+      input,
+      textarea {
+        color: rgba(28, 28, 28, 1);
+
+        &::placeholder {
+          color: rgba(28, 28, 28, 0.6) !important;
+        }
+      }
+    }
+
+    %hover-effect {
+      border-top-color: rgba(8, 70, 59, 1);
+      border-bottom-color: rgba(8, 70, 59, 1);
+
+      ::placeholder {
+        color: rgba(28, 28, 28, 1) !important;
+      }
+    }
+
+    %border-style {
+      border-top-color: rgba(61, 207, 182, 0.6);
+      border-bottom-color: rgba(61, 207, 182, 0.6);
+    }
+  }
+
+  .message {
+    textarea {
+      background-color: rgba(245, 245, 245, 1) !important;
+    }
+  }
+
+  .name:hover,
+  .email:hover,
+  .message:hover {
+    input,
+    textarea {
+      color: rgba(28, 28, 28, 0.9) !important;
+    }
+  }
+
+  .checkbox-row {
+    color: rgba(28, 28, 28, 0.9);
+
+    .policy {
+      color: rgba(8, 70, 59, 1);
+
+      &:hover {
+        color: rgba(28, 28, 28, 1);
+        border-bottom: 1px solid rgba(8, 70, 59, 1);
+      }
+    }
+  }
+
+  button.active {
+    border: 1px solid rgba(28, 28, 28, 1);
+
+    .text-container {
+      color: rgba(28, 28, 28, 1);
+    }
+
+    &:hover {
+      border: 1px solid rgba(8, 70, 59, 1);
+
+      .text-container {
+        color: rgba(8, 70, 59, 1);
+      }
+    }
+  }
+
+  .data-protection-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .overlay-content {
+      background-color: rgba(255, 255, 255, 1);
+      border: 2px solid rgba(8, 70, 59, 1);
+
+      h1 {
+        color: rgba(8, 70, 59, 1);
+      }
+
+      p {
+        color: rgba(28, 28, 28, 0.9);
+      }
+
+      .close-button {
+        &::before,
+        &::after {
+          background-color: rgba(8, 70, 59, 1);
+        }
+
+        &:hover::before,
+        &:hover::after {
+          background-color: rgba(28, 28, 28, 1);
+        }
+      }
+    }
+  }
+}
+
+:host-context(body.light-mode) .success-overlay {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(184, 230, 220, 0.95) 100%);
+  border-left: 2px solid rgba(8, 70, 59, 1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+
+  .success-content {
+    color: rgba(28, 28, 28, 1);
+
+    h3 {
+      color: rgba(8, 70, 59, 1);
+    }
+
+    p {
+      color: rgba(28, 28, 28, 0.9);
+    }
+
+    .close-success-btn {
+      border: 2px solid rgba(8, 70, 59, 1);
+      color: rgba(8, 70, 59, 1);
+
+      &:hover {
+        background: rgba(8, 70, 59, 1);
+        color: rgba(255, 255, 255, 1);
+        box-shadow: 0 8px 20px rgba(8, 70, 59, 0.3);
+      }
+    }
+  }
+}
+
 .contact-me {
   background-color: rgba(28, 28, 28, 1);
   padding: 48px 0;
@@ -119,8 +274,8 @@
 
         %hover-effect {
           cursor: pointer;
-          border-top: 1px solid rgba(61, 207, 182, 1);
-          border-bottom: 1px solid rgba(61, 207, 182, 1);
+          border-top-color: rgba(61, 207, 182, 1);
+          border-bottom-color: rgba(61, 207, 182, 1);
 
           ::placeholder {
             color: rgba(255, 255, 255, 1);
@@ -136,6 +291,7 @@
         .name {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
@@ -145,6 +301,7 @@
         .email {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
@@ -154,6 +311,7 @@
         .message {
           @extend %form-position;
           @extend %border-style;
+          transition: all 125ms ease-in-out;
 
           &:hover {
             @extend %hover-effect;
@@ -482,10 +640,6 @@
       margin-bottom: 24px;
       display: flex;
       justify-content: center;
-
-      svg {
-        animation: checkmarkAnimation 0.6s ease-in-out 0.3s both;
-      }
     }
 
     h3 {
@@ -494,16 +648,12 @@
       font-weight: 700;
       color: rgba(61, 207, 182, 1);
       margin-bottom: 16px;
-      opacity: 0;
-      animation: slideInUp 0.6s ease-out 0.5s both;
     }
 
     p {
       font-size: 16px;
       line-height: 1.5;
       margin-bottom: 32px;
-      opacity: 0;
-      animation: slideInUp 0.6s ease-out 0.7s both;
     }
 
     .close-success-btn {
@@ -515,9 +665,7 @@
       font-size: 14px;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.3s ease;
-      opacity: 0;
-      animation: slideInUp 0.6s ease-out 0.9s both;
+      transition: all 125ms ease-in-out;
 
       &:hover {
         background: rgba(61, 207, 182, 1);
@@ -543,18 +691,6 @@
   100% {
     transform: scale(1) rotate(360deg);
     opacity: 1;
-  }
-}
-
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 

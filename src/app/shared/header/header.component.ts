@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   mobileMenuOpen = false;
   isGerman = true;
+  isDay = false;
 
   constructor(
     private elementRef: ElementRef,
@@ -62,6 +63,16 @@ export class HeaderComponent {
     this.isGerman = !this.isGerman;
     const lang = this.isGerman ? 'de' : 'en';
     this.translationService.changeLang(lang);
+    this.closeMobileMenu();
+  }
+
+  changeButtonDayAndNight() {
+    this.isDay = !this.isDay;
+    if (this.isDay) {
+      document.body.classList.add('light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+    }
     this.closeMobileMenu();
   }
 

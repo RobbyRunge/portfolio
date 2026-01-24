@@ -1,3 +1,30 @@
+:host-context(body.light-mode) .logo {
+  filter: brightness(0) saturate(100%);
+
+  &:hover {
+    filter: brightness(0) saturate(100%) drop-shadow(0px 0px 3px rgba(8, 70, 59, 0.8));
+  }
+}
+
+:host-context(body.light-mode) .mobile-menu {
+  background: linear-gradient(55.22deg, #FFFFFF 36.26%, #B8E6DC 93.28%);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+  
+  .mobile-nav-items a {
+    color: rgba(28, 28, 28, 1);
+    
+    &:hover {
+      color: rgba(8, 70, 59, 1);
+    }
+  }
+}
+
+:host-context(body.light-mode) .hamburger-icon {
+  span {
+    background-color: rgba(28, 28, 28, 1);
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -9,7 +36,8 @@ header {
   position: relative;
 }
 
-.language-slider {
+.language-slider,
+.day-night-slider {
   cursor: pointer;
 
   .slider-track {
@@ -41,6 +69,10 @@ header {
       &.english {
         transform: translateX(37px);
       }
+
+      &.night {
+        transform: translateX(37px);
+      }
     }
 
     .lang-text {
@@ -59,6 +91,29 @@ header {
 
       &.en {
         right: 11px;
+      }
+
+      &.active {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .lang-symbol {
+      position: absolute;
+      font-size: 22px;
+      color: rgba(39, 116, 102, 1);
+      transition: color 0.3s ease;
+      z-index: 1;
+      cursor: pointer;
+
+      &.day {
+        top: -2px;
+        left: 12px;
+      }
+
+      &.night {
+        top: 0px;
+        right: 15px;
       }
 
       &.active {
@@ -136,7 +191,7 @@ header {
   right: -100%;
   width: 80%;
   max-width: 238px;
-  height: 252px;
+  height: 294px;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
   border-bottom-left-radius: 30px;
   transition: right 0.3s ease;
@@ -181,7 +236,7 @@ header {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 720px) {
   .nav-bar {
     display: none;
   }

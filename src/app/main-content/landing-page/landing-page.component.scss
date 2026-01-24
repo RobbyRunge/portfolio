@@ -1,3 +1,77 @@
+:host-context(body.light-mode) .landing-page {
+  background: linear-gradient(55.22deg, #F5F5F5 36.26%, #B8E6DC 93.28%);
+}
+
+:host-context(body.light-mode) .header-background {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 13.56%, rgba(255, 255, 255, 0.8) 84.01%);
+}
+
+:host-context(body.light-mode) .your-info {
+  color: rgba(28, 28, 28, 1) !important;
+  
+  h1, h2 {
+    color: rgba(28, 28, 28, 1) !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+:host-context(body.light-mode) .button-link {
+  border: 1px solid rgba(8, 70, 59, 0.8) !important;
+  
+  .text-container {
+    color: rgba(8, 70, 59, 1) !important;
+  }
+  
+  &:hover {
+    border: 1px solid rgba(61, 207, 182, 1) !important;
+    background: rgba(61, 207, 182, 0.1);
+    
+    .text-container {
+      color: rgba(8, 70, 59, 1) !important;
+    }
+  }
+}
+
+:host-context(body.light-mode) .container-scroll-down {
+  .arrow-bottom {
+    border: 1px solid rgba(61, 207, 182, 1);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    
+    &::after {
+      border-left: 1px solid rgba(8, 70, 59, 1);
+      border-bottom: 1px solid rgba(8, 70, 59, 1);
+    }
+  }
+  
+  .border-left {
+    border: 1px solid rgba(61, 207, 182, 0.6);
+  }
+}
+
+:host-context(body.light-mode) .container-info-links {
+  .border-right {
+    border: 1px solid rgba(61, 207, 182, 0.6);
+  }
+  
+  .email a {
+    color: rgba(28, 28, 28, 1);
+    
+    &:hover {
+      color: rgba(8, 70, 59, 1);
+    }
+  }
+}
+
+:host-context(body.light-mode) .marquee {
+  background: rgba(61, 207, 182, 0.2);
+  backdrop-filter: blur(10px);
+  
+  .marquee-inner p {
+    color: rgba(8, 70, 59, 1);
+  }
+}
+
 .landing-page {
   height: 100vh;
   background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
