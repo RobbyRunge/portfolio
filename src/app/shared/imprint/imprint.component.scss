@@ -1,3 +1,31 @@
+body.light-mode .header-background {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 13.56%, rgba(255, 255, 255, 0.9) 84.01%) !important;
+}
+
+body.light-mode .imprint-container {
+  background: linear-gradient(55.22deg, rgba(245, 245, 245, 1) 36.26%, rgba(184, 230, 220, 1) 93.28%) !important;
+
+  h1 {
+    color: rgba(8, 70, 59, 1) !important;
+  }
+
+  p {
+    color: rgba(28, 28, 28, 0.9) !important;
+
+    ::ng-deep strong {
+      color: rgba(8, 70, 59, 1) !important;
+    }
+  }
+
+  a {
+    color: rgba(8, 70, 59, 1) !important;
+
+    &:hover {
+      color: rgba(28, 28, 28, 1) !important;
+    }
+  }
+}
+
 .header-background {
   position: absolute;
   top: 0;
