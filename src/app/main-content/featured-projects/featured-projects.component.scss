@@ -182,13 +182,26 @@
 }
 
 :host-context(body.light-mode) .in-progress-badge {
-  background-color: rgba(8, 70, 59, 0.9);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(61, 207, 182, 0.9);
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+:host-context(body.light-mode) .project-in-progress .development-banner {
+  background-color: rgba(61, 207, 182, 0.9);
+  color: rgba(255, 255, 255, 1) !important;
+
+  span {
+    color: rgba(255, 255, 255, 1) !important;
+  }
 }
 
 :host-context(body.light-mode) .development-banner {
-  background-color: rgba(8, 70, 59, 0.9);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(61, 207, 182, 0.9);
+  color: rgba(255, 255, 255, 1) !important;
+
+  span {
+    color: rgba(255, 255, 255, 1) !important;
+  }
 }
 
 .featured-projects {
