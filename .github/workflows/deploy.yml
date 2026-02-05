@@ -31,6 +31,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/browser/
+          local-dir: ./dist/portfolio/browser/
           server-dir: /robby-runge.de/
           dangerous-clean-slate: false
