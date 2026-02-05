@@ -34,3 +34,5 @@ jobs:
           local-dir: ./dist/portfolio/browser/
           server-dir: /robby-runge.de/
           dangerous-clean-slate: false
+          timeout: 300000
+          log-level: verbose
