@@ -39,6 +39,14 @@
     .hover-background {
       filter: brightness(1.1);
     }
+
+    .project-arrow {
+      filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(92%);
+    }
+
+    .project-arrow:hover {
+      filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(92%);
+    }
   }
 
   .join-project {
@@ -65,6 +73,14 @@
 
       span {
         color: rgba(8, 70, 59, 1);
+      }
+
+      .project-arrow {
+        filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(92%);
+      }
+
+      .project-arrow:hover {
+        filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(92%);
       }
     }
 
@@ -1460,7 +1476,7 @@
       p:first-child {
         font-size: 18px;
       }
-  
+
       p {
         padding: 12px;
       }
