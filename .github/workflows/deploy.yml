@@ -25,6 +25,16 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Clean old hashed files on FTP
+        run: |
+          lftp -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }} <<EOF
+          cd /robby-runge.de/
+          rm -f main-*.js
+          rm -f styles-*.css
+          rm -f polyfills-*.js
+          bye
+          EOF
+
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
