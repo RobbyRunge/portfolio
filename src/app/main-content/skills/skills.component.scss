@@ -490,17 +490,11 @@
     gap: 16px;
     box-sizing: border-box;
 
-    h3 {
-      margin: 0;
-      font-family: 'Fira Code', monospace;
-      font-size: 20px;
-      color: rgba(61, 207, 182, 1);
-    }
-
-    iframe {
-      flex: 1;
+    img {
       width: 100%;
-      border: none;
+      height: auto;
+      max-height: calc(85vh - 80px);
+      object-fit: contain;
       border-radius: 8px;
     }
   }
@@ -530,10 +524,6 @@
 :host-context(body.light-mode) .cert-overlay .cert-overlay-content {
   background: rgba(245, 245, 245, 1);
   border-color: rgba(61, 207, 182, 0.8);
-
-  h3 {
-    color: rgba(8, 70, 59, 1);
-  }
 }
 
 @media (max-width: 1440px) {

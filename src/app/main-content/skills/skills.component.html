@@ -92,8 +92,7 @@
           <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close">
           <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close hover">
         </div>
-        <h3>{{ currentCert.stack }} – {{ currentCert.title }}</h3>
-        <iframe [src]="safePdfUrl" title="Certificate PDF"></iframe>
+        <img [src]="currentCert.imgPath" [alt]="currentCert.title + ' certificate'">
       </div>
     </div>
   }
