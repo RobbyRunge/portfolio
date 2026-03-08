@@ -64,4 +64,23 @@
       </div>
     </div>
   </div>
+
+  <div class="content-width">
+    <div class="certificates-section" data-aos="fade-up">
+      <p class="cert-headline">{{ 'SKILLS.CERTIFICATES_LABEL' | translate }}</p>
+      <div class="certificates-grid">
+        @for (cert of certificates; track cert.title) {
+          <a [href]="cert.link" target="_blank" class="certificate-card">
+            <span class="cert-stack">{{ cert.stack }}</span>
+            <h4>{{ cert.title }}</h4>
+            <p>{{ cert.issuer }} · {{ cert.year }}</p>
+            <div class="cert-view-link">
+              {{ 'SKILLS.VIEW_CERTIFICATE' | translate }}
+              <img src="assets/imgs/featured-projects/arrow-project.png" alt="View certificate">
+            </div>
+          </a>
+        }
+      </div>
+    </div>
+  </div>
 </div>

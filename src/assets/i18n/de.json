@@ -32,7 +32,9 @@
     "CONTACT_ME": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
     "LETS_TALK": "Reden wir",
     "GROWTH_MINDSET": "Growth mindset",
-    "LEARNING_INTEREST": "Ich habe ein besonderes Interesse am Lernen"
+    "LEARNING_INTEREST": "Ich habe ein besonderes Interesse am Lernen",
+    "CERTIFICATES_LABEL": "Zertifikate",
+    "VIEW_CERTIFICATE": "Zertifikat ansehen"
   },
   "PROJECTS": {
     "PORTFOLIO": "Portfolio",

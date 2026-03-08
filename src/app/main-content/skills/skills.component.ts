@@ -8,6 +8,14 @@ interface Skill {
   alt: string;
 }
 
+interface Certificate {
+  title: string;
+  issuer: string;
+  year: string;
+  stack: string;
+  link: string;
+}
+
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -41,5 +49,22 @@ export class SkillsComponent {
     { name: 'Heroku', iconPath: 'assets/imgs/skills/backend/heroku.png', alt: 'heroku icon' },
     { name: 'Redis', iconPath: 'assets/imgs/skills/backend/redis.png', alt: 'redis icon' },
     { name: 'RxJs', iconPath: 'assets/imgs/skills/backend/rxjs.png', alt: 'rxjs icon' },
+  ];
+
+  certificates: Certificate[] = [
+    {
+      title: 'Frontend Development',
+      issuer: 'Developer Academy',
+      year: '2025',
+      stack: 'Frontend',
+      link: '#', // TODO: Zertifikats-Link einfügen
+    },
+    {
+      title: 'Backend Development',
+      issuer: 'Developer Academy',
+      year: '2026',
+      stack: 'Backend',
+      link: '#', // TODO: Zertifikats-Link einfügen
+    },
   ];
 }
