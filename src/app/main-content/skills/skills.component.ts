@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface Skill {
   name: string;
@@ -13,7 +14,7 @@ interface Certificate {
   issuer: string;
   year: string;
   stack: string;
-  link: string;
+  pdfPath: string;
 }
 
 @Component({
@@ -24,6 +25,8 @@ interface Certificate {
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  constructor(private sanitizer: DomSanitizer) {}
+
   skillsFrontend: Skill[] = [
     { name: 'HTML', iconPath: 'assets/imgs/skills/frontend/html.png', alt: 'html icon' },
     { name: 'CSS', iconPath: 'assets/imgs/skills/frontend/css.png', alt: 'css icon' },
@@ -36,6 +39,7 @@ export class SkillsComponent {
     { name: 'Rest-Api', iconPath: 'assets/imgs/skills/frontend/rest-api.png', alt: 'rest-api icon' },
     { name: 'Scrum', iconPath: 'assets/imgs/skills/tools/scrum.png', alt: 'scrum icon' },
   ];
+
   skillsBackend: Skill[] = [
     { name: 'Python', iconPath: 'assets/imgs/skills/backend/python.png', alt: 'python icon' },
     { name: 'Django', iconPath: 'assets/imgs/skills/backend/django.png', alt: 'django icon' },
@@ -57,14 +61,30 @@ export class SkillsComponent {
       issuer: 'Developer Academy',
       year: '2025',
       stack: 'Frontend',
-      link: '#', // TODO: Zertifikats-Link einfügen
+      pdfPath: 'assets/certificates/frontend-certificate.pdf',
     },
     {
       title: 'Backend Development',
       issuer: 'Developer Academy',
       year: '2026',
       stack: 'Backend',
-      link: '#', // TODO: Zertifikats-Link einfügen
+      pdfPath: 'assets/certificates/backend-certificate.pdf',
     },
   ];
+
+  showCertOverlay = false;
+  currentCert: Certificate | null = null;
+  safePdfUrl: SafeResourceUrl | null = null;
+
+  openCertificate(cert: Certificate): void {
+    this.currentCert = cert;
+    this.safePdfUrl = this.sanitizer.bypassSecurityTrustResourceUrl(cert.pdfPath);
+    this.showCertOverlay = true;
+  }
+
+  closeCertOverlay(): void {
+    this.showCertOverlay = false;
+    this.currentCert = null;
+    this.safePdfUrl = null;
+  }
 }

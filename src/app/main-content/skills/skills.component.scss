@@ -460,6 +460,82 @@
   }
 }
 
+.cert-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cert-overlay-background {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  .cert-overlay-content {
+    position: relative;
+    z-index: 1;
+    width: 90vw;
+    max-width: 900px;
+    height: 85vh;
+    background: rgba(28, 28, 28, 1);
+    border: 1px solid rgba(61, 207, 182, 0.6);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+
+    h3 {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      font-size: 20px;
+      color: rgba(61, 207, 182, 1);
+    }
+
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    .close-hover {
+      display: none;
+    }
+
+    &:hover .close-default {
+      display: none;
+    }
+
+    &:hover .close-hover {
+      display: block;
+    }
+  }
+}
+
+:host-context(body.light-mode) .cert-overlay .cert-overlay-content {
+  background: rgba(245, 245, 245, 1);
+  border-color: rgba(61, 207, 182, 0.8);
+
+  h3 {
+    color: rgba(8, 70, 59, 1);
+  }
+}
+
 @media (max-width: 1440px) {
   .skill-set {
     width: 520px;

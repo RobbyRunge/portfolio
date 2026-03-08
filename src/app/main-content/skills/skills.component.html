@@ -70,7 +70,7 @@
       <p class="cert-headline">{{ 'SKILLS.CERTIFICATES_LABEL' | translate }}</p>
       <div class="certificates-grid">
         @for (cert of certificates; track cert.title) {
-          <a [href]="cert.link" target="_blank" class="certificate-card">
+          <div class="certificate-card" (click)="openCertificate(cert)">
             <span class="cert-stack">{{ cert.stack }}</span>
             <h4>{{ cert.title }}</h4>
             <p>{{ cert.issuer }} · {{ cert.year }}</p>
@@ -78,9 +78,23 @@
               {{ 'SKILLS.VIEW_CERTIFICATE' | translate }}
               <img src="assets/imgs/featured-projects/arrow-project.png" alt="View certificate">
             </div>
-          </a>
+          </div>
         }
       </div>
     </div>
   </div>
+
+  @if (showCertOverlay && currentCert) {
+    <div class="cert-overlay">
+      <div class="cert-overlay-background" (click)="closeCertOverlay()"></div>
+      <div class="cert-overlay-content">
+        <div class="close-btn" (click)="closeCertOverlay()">
+          <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close">
+          <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close hover">
+        </div>
+        <h3>{{ currentCert.stack }} – {{ currentCert.title }}</h3>
+        <iframe [src]="safePdfUrl" title="Certificate PDF"></iframe>
+      </div>
+    </div>
+  }
 </div>
