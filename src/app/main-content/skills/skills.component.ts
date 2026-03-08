@@ -8,6 +8,14 @@ interface Skill {
   alt: string;
 }
 
+interface Certificate {
+  title: string;
+  issuer: string;
+  year: string;
+  stack: string;
+  imgPath: string;
+}
+
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -28,6 +36,7 @@ export class SkillsComponent {
     { name: 'Rest-Api', iconPath: 'assets/imgs/skills/frontend/rest-api.png', alt: 'rest-api icon' },
     { name: 'Scrum', iconPath: 'assets/imgs/skills/tools/scrum.png', alt: 'scrum icon' },
   ];
+
   skillsBackend: Skill[] = [
     { name: 'Python', iconPath: 'assets/imgs/skills/backend/python.png', alt: 'python icon' },
     { name: 'Django', iconPath: 'assets/imgs/skills/backend/django.png', alt: 'django icon' },
@@ -42,4 +51,34 @@ export class SkillsComponent {
     { name: 'Redis', iconPath: 'assets/imgs/skills/backend/redis.png', alt: 'redis icon' },
     { name: 'RxJs', iconPath: 'assets/imgs/skills/backend/rxjs.png', alt: 'rxjs icon' },
   ];
+
+  certificates: Certificate[] = [
+    {
+      title: 'Frontend Development',
+      issuer: 'Developer Academy',
+      year: '2025',
+      stack: 'Frontend',
+      imgPath: 'assets/certificates/frontend-certificate.png',
+    },
+    {
+      title: 'Backend Development',
+      issuer: 'Developer Academy',
+      year: '2026',
+      stack: 'Backend',
+      imgPath: 'assets/certificates/backend-certificate.png',
+    },
+  ];
+
+  showCertOverlay = false;
+  currentCert: Certificate | null = null;
+
+  openCertificate(cert: Certificate): void {
+    this.currentCert = cert;
+    this.showCertOverlay = true;
+  }
+
+  closeCertOverlay(): void {
+    this.showCertOverlay = false;
+    this.currentCert = null;
+  }
 }

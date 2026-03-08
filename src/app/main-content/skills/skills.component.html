@@ -64,4 +64,36 @@
       </div>
     </div>
   </div>
+
+  <div class="content-width">
+    <div class="certificates-section" data-aos="fade-up">
+      <p class="cert-headline">{{ 'SKILLS.CERTIFICATES_LABEL' | translate }}</p>
+      <div class="certificates-grid">
+        @for (cert of certificates; track cert.title) {
+          <div class="certificate-card" (click)="openCertificate(cert)">
+            <span class="cert-stack">{{ cert.stack }}</span>
+            <h4>{{ cert.title }}</h4>
+            <p>{{ cert.issuer }} · {{ cert.year }}</p>
+            <div class="cert-view-link">
+              {{ 'SKILLS.VIEW_CERTIFICATE' | translate }}
+              <img src="assets/imgs/featured-projects/arrow-project.png" alt="View certificate">
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  @if (showCertOverlay && currentCert) {
+    <div class="cert-overlay">
+      <div class="cert-overlay-background" (click)="closeCertOverlay()"></div>
+      <div class="cert-overlay-content">
+        <div class="close-btn" (click)="closeCertOverlay()">
+          <img class="close-default" src="assets/imgs/featured-projects/close-button.png" alt="Close">
+          <img class="close-hover" src="assets/imgs/featured-projects/close-button-hover.png" alt="Close hover">
+        </div>
+        <img [src]="currentCert.imgPath" [alt]="currentCert.title + ' certificate'">
+      </div>
+    </div>
+  }
 </div>
