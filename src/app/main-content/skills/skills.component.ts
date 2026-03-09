@@ -75,10 +75,12 @@ export class SkillsComponent {
   openCertificate(cert: Certificate): void {
     this.currentCert = cert;
     this.showCertOverlay = true;
+    document.body.style.overflow = 'hidden';
   }
 
   closeCertOverlay(): void {
     this.showCertOverlay = false;
     this.currentCert = null;
+    document.body.style.overflow = 'auto';
   }
 }
