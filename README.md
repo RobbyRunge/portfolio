@@ -2,7 +2,7 @@
 
 **Modern Angular Portfolio Website**
 
-A responsive, multilingual portfolio website built with Angular 19, showcasing my skills as a Frontend Developer. Features a sleek design with custom cursor interactions and smooth animations.
+A responsive, multilingual portfolio website built with Angular 19, showcasing my skills as a Fullstack Developer. Features a sleek design with custom cursor interactions, smooth animations, and a cookie consent management system.
 
 ![Angular](https://img.shields.io/badge/Angular-19.2.0-red?style=flat-square&logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-blue?style=flat-square&logo=typescript)
@@ -16,9 +16,9 @@ https://robby-runge.de/
 ## ✨ Features
 
 ### 🎨 Design & UX
-- **Responsive Design** - Optimized for all devices
+- **Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
 - **Custom Cursor** - Interactive cursor with hover effects
-- **Smooth Animations** - Engaging user experience
+- **Smooth Animations** - AOS (Animate On Scroll) for engaging scroll animations
 - **Modern UI/UX** - Clean and professional design
 
 ### 🌍 Internationalization
@@ -26,17 +26,25 @@ https://robby-runge.de/
 - **Dynamic Language Switching** - Seamless language transitions
 - **Localized Content** - Fully translated interface
 
+### 🔒 Privacy & Compliance
+- **Cookie Banner** - GDPR-compliant cookie consent management
+- **Cookie Consent Service** - Persistent user preference storage
+- **Imprint & Data Protection** - Dedicated legal pages
+
 ### 📱 Sections
 - **Landing Page** - Eye-catching hero section with call-to-action
 - **About Me** - Personal introduction and background
-- **Skills** - Technical expertise and technologies
-- **Featured Projects** - Showcase of key projects including:
-  - **Join** - Kanban task management application
-  - **Sharkie** - 2D underwater adventure game
-  - **DA Bubble** - Slack-inspired team communication app
+- **Skills** - Frontend and backend technical expertise with certificate showcase
+- **Featured Projects** - Showcase of 6 projects:
+  - **Join** - Kanban task management application (HTML/CSS/JS/Firebase)
+  - **Sharkie** - 2D underwater adventure game (HTML/CSS/JS)
+  - **DA Bubble** - Slack-inspired team communication app (Angular/Firebase)
+  - **Coderr** - Freelance platform connecting businesses and clients (Python/Django)
+  - **Quizly** - AI-powered YouTube-to-quiz generator (Python/Django) *(in progress)*
+  - **Videoflix** - Netflix-style video streaming platform (Python/Django/Linux)
 - **Colleagues** - Testimonials and recommendations
-- **Contact** - Professional contact information
-- **Footer** - Additional links and information
+- **Contact** - Professional contact form
+- **Footer** - Links to imprint and data protection
 
 ## 🛠️ Tech Stack
 
@@ -44,11 +52,18 @@ https://robby-runge.de/
 - **Angular 19.2.0** - Latest Angular with standalone components
 - **TypeScript 5.7.2** - Type-safe JavaScript development
 - **RxJS 7.8.0** - Reactive programming with observables
+- **SCSS** - Advanced CSS preprocessing
+- **AOS** - Animate On Scroll library
 
-### Styling & Design
-- **SCSS** - Advanced CSS preprocessing (58% of codebase)
-- **Custom CSS Animations** - Smooth transitions and effects
-- **Responsive Grid System** - Mobile-first approach
+### Backend Skills (showcased in projects)
+- **Python** - Primary backend language
+- **Django & Django REST Framework** - Web framework and REST API development
+- **PostgreSQL / SQL** - Relational database management
+- **Docker** - Containerization
+- **Redis** - Caching and message brokering
+- **Linux** - Server administration
+- **Flask** - Lightweight Python web framework
+- **Heroku** - Cloud deployment
 
 ### Internationalization
 - **@ngx-translate/core** - Angular internationalization
@@ -68,17 +83,20 @@ src/
 │   │   ├── about-me/               # About section component
 │   │   ├── colleagues/             # Testimonials section component
 │   │   ├── contact-me/             # Contact form section component
-│   │   ├── featured-projects/      # Projects showcase
+│   │   ├── featured-projects/      # Projects showcase (6 projects)
 │   │   ├── landing-page/           # Hero section component
-│   │   └── skills/                 # Skills section component
+│   │   └── skills/                 # Skills & certificates section
 │   ├── shared/
-│   │   ├── data-protection/        # Data-protection component
+│   │   ├── cookie-banner/          # GDPR cookie consent banner
+│   │   ├── cookie-consent.service.ts # Cookie preference management
+│   │   ├── data-protection/        # Data protection page
 │   │   ├── footer/                 # Footer component
 │   │   ├── header/                 # Navigation header component
-│   │   ├── imprint/                # Imprint Component
+│   │   ├── imprint/                # Imprint page
 │   │   └── translation.service.ts  # i18n service
 │   └── sendMail.php                # Handles contact form
 ├── assets/
+│   ├── certificates/               # Developer Academy certificates
 │   ├── fonts/                      # Fonts
 │   ├── i18n/                       # Translation files
 │   │  ├── de.json                  # German translations
@@ -91,7 +109,7 @@ src/
 
 ### Prerequisites
 - Node.js (v18 or higher)
-- npm or yarn
+- npm
 - Angular CLI
 
 ### Installation
@@ -138,6 +156,14 @@ The portfolio supports multiple languages:
 
 Translation files are located in `src/assets/i18n/` and are loaded dynamically based on user preference.
 
+## 🗺️ Routing
+
+| Path               | Component            |
+|--------------------|----------------------|
+| `/`                | Main content         |
+| `/imprint`         | Imprint              |
+| `/data-protection` | Data Protection      |
+
 ## 📱 Responsive Design
 
 The portfolio is fully responsive and optimized for:
@@ -156,10 +182,10 @@ The portfolio is fully responsive and optimized for:
 
 ## 📄 License
 
-This project is personal portfolio website. All rights reserved.
+This project is a personal portfolio website. All rights reserved.
 
 ---
 
 **Built with ❤️ by Robby Runge**
 
-*Frontend Developer based in Eilenburg, Germany*
+*Fullstack Developer based in Eilenburg, Germany*
