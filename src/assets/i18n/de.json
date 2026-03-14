@@ -69,6 +69,10 @@
     "VIDEOFLIX": {
       "TITLE": "Videoflix",
       "DESCRIPTION": "Eine Videostreaming-Plattform im Stil von Netflix zu erstellen. Dein eigenes kleines Universum in der digitalen Welt"
+    },
+    "HW_MONITOR": {
+      "TITLE": "HW Monitor Dashboard",
+      "DESCRIPTION": "Ein leichtgewichtiges Web-Dashboard für Echtzeit-Systemmetriken – optimiert für den AMD Ryzen 7 7800X3D und die Samsung 990 Pro NVMe. WebSocket-gestützte Live-Updates jede Sekunde für CPU, RAM und NVMe-Daten, inklusive 60-Sekunden-Rolldiagrammen."
     }
   },
   "HEADLINE_SECTION": "Was meine Kollegen über mich sagen",

@@ -121,6 +121,21 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       githubLink: 'https://github.com/RobbyRunge/videoflix-backend',
       liveTestLink: 'https://robby-runge.de/videoflix/index.html',
       // inProgress: true
+    },
+    {
+      id: 7,
+      titleNumber: '07',
+      title: 'HW Monitor Dashboard',
+      description: 'A lightweight web dashboard for real-time system metrics – WebSocket-powered updates every second.',
+      techStack: [
+        { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+        { icon: 'assets/imgs/skills/backend/flask.png', name: 'Flask' },
+        { icon: 'assets/imgs/skills/frontend/javascript.png', name: 'JavaScript' },
+        { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
+        { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' }
+      ],
+      imageSrc: 'assets/imgs/featured-projects/hw-monitor.png',
+      githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard'
     }
   ];
 
@@ -219,6 +234,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
       case 4: return 'CODERR';
       case 5: return 'QUIZLY';
       case 6: return 'VIDEOFLIX';
+      case 7: return 'HW_MONITOR';
       default: return '';
     }
   }

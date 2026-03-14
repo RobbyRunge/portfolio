@@ -95,6 +95,28 @@
     </div>
   </div>
 
+  <div class="content-width">
+    <div data-aos="flip-up" class="featured-projects-text featured-projects-fullstack">
+      <h4>Fullstack</h4>
+
+      <div class="projects-list projects-list-single">
+        <div class="hw-monitor-project" (click)="openProject(7)">
+          <div class="project-info">
+            <p>HW Monitor <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
+                alt="Arrow project"></p>
+            <p>Python <span>|</span> Flask <span>|</span> JavaScript</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+            <div class="in-progress-badge" *ngIf="projects[6].inProgress">Coming Soon</div>
+            <img class="hover-preview" src="assets/imgs/featured-projects/hw-monitor.png" alt="HW Monitor Preview">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="project-overlay" *ngIf="showOverlay && currentProject">
     <div class="overlay-background" (click)="closeOverlay()"></div>
     <div class="overlay-content">
