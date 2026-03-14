@@ -135,7 +135,8 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
         { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' }
       ],
       imageSrc: 'assets/imgs/featured-projects/hw-monitor.png',
-      githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard'
+      githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard',
+      inProgress: true
     }
   ];
 
