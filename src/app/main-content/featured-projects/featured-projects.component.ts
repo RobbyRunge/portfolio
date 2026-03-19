@@ -104,7 +104,6 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             ],
             imageSrc: 'assets/imgs/featured-projects/backend/quizly.png',
             githubLink: 'https://github.com/RobbyRunge/quizly-backend',
-            inProgress: true
         },
         {
             id: 6,
@@ -137,7 +136,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             imageSrc: 'assets/imgs/featured-projects/hw-monitor.png',
             githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard',
             liveTestLink: 'https://robby-runge.de/hw-dashboard/index.html',
-            inProgress: true
+            // inProgress: true
         }
     ];
 
