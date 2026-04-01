@@ -651,7 +651,8 @@
 .coderr-project:hover .project-image,
 .quizly-project:hover .project-image,
 .videoflix-project:hover .project-image,
-.hw-monitor-project:hover .project-image {
+.hw-monitor-project:hover .project-image,
+.arbor-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
@@ -681,7 +682,11 @@
 }
 
 .projects-list:not(:hover) .hw-monitor-project .project-image {
-  animation: myAnimSingle 4s ease-in-out infinite;
+  animation: myAnim 8s ease-in-out 0s infinite;
+}
+
+.projects-list:not(:hover) .arbor-project .project-image {
+  animation: myAnim 8s ease-in-out 4s infinite;
 }
 
 @keyframes myAnim {
