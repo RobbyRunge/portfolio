@@ -113,6 +113,18 @@
             <img class="hover-preview" src="assets/imgs/featured-projects/hw-monitor.png" alt="HW Monitor Preview">
           </div>
         </div>
+        <div class="arbor-project" (click)="openProject(8)">
+          <div class="project-info">
+            <p>Arbor <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
+                alt="Arrow project"></p>
+            <p>React <span>|</span> Django <span>|</span> DRF <span>|</span> PostgreSQL</p>
+          </div>
+          <div class="project-image">
+            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
+              alt="Background">
+            <div class="in-progress-badge" *ngIf="projects[7].inProgress">Coming Soon</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
