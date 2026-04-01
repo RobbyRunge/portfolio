@@ -56,6 +56,10 @@
   .hw-monitor-project {
     border-top: 2px solid rgba(61, 207, 182, 0.8);
   }
+
+  .arbor-project {
+    border-bottom: 2px solid rgba(61, 207, 182, 0.8);
+  }
 }
 
 :host-context(body.light-mode) .reversed {
@@ -426,6 +430,16 @@
       transform: translateY(0);
     }
   }
+
+  .arbor-project {
+    @extend %project-item;
+
+    .project-image {
+      bottom: 0px;
+      top: auto;
+      transform: translateY(0);
+    }
+  }
 }
 
 .projects-list-single {
@@ -637,7 +651,8 @@
 .coderr-project:hover .project-image,
 .quizly-project:hover .project-image,
 .videoflix-project:hover .project-image,
-.hw-monitor-project:hover .project-image {
+.hw-monitor-project:hover .project-image,
+.arbor-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
 }
@@ -667,7 +682,11 @@
 }
 
 .projects-list:not(:hover) .hw-monitor-project .project-image {
-  animation: myAnimSingle 4s ease-in-out infinite;
+  animation: myAnim 8s ease-in-out 0s infinite;
+}
+
+.projects-list:not(:hover) .arbor-project .project-image {
+  animation: myAnim 8s ease-in-out 4s infinite;
 }
 
 @keyframes myAnim {
@@ -794,6 +813,7 @@
           height: 24px;
           vertical-align: middle;
           margin-right: 4px;
+          filter: brightness(0) invert(1);
         }
       }
     }

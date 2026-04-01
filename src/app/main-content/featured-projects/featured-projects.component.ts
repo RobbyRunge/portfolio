@@ -119,7 +119,6 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             imageSrc: 'assets/imgs/featured-projects/backend/videoflix.png',
             githubLink: 'https://github.com/RobbyRunge/videoflix-backend',
             liveTestLink: 'https://robby-runge.de/videoflix/index.html',
-            // inProgress: true
         },
         {
             id: 7,
@@ -133,10 +132,28 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
                 { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
                 { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' }
             ],
-            imageSrc: 'assets/imgs/featured-projects/hw-monitor.png',
+            imageSrc: 'assets/imgs/featured-projects/fullstack/hw-monitor.png',
             githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard',
             liveTestLink: 'https://robby-runge.de/hw-dashboard/index.html',
             // inProgress: true
+        },
+        {
+            id: 8,
+            titleNumber: '08',
+            title: 'Arbor',
+            description: '',
+            techStack: [
+                { icon: 'assets/imgs/skills/frontend/react.png', name: 'React' },
+                { icon: 'assets/imgs/skills/frontend/typescript.png', name: 'TypeScript' },
+                { icon: 'assets/imgs/skills/backend/python.png', name: 'Python' },
+                { icon: 'assets/imgs/skills/backend/django.png', name: 'Django' },
+                { icon: 'assets/imgs/skills/backend/drf.png', name: 'Django REST Framework' },
+                { icon: 'assets/imgs/skills/backend/postgresql.png', name: 'PostgreSQL' },
+                { icon: 'assets/imgs/skills/backend/redis.png', name: 'Redis' }
+            ],
+            imageSrc: 'assets/imgs/featured-projects/fullstack/arbor.png',
+            githubLink: 'https://github.com/RobbyRunge/arbor',
+            inProgress: true
         }
     ];
 
@@ -236,6 +253,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             case 5: return 'QUIZLY';
             case 6: return 'VIDEOFLIX';
             case 7: return 'HW_MONITOR';
+            case 8: return 'ARBOR';
             default: return '';
         }
     }

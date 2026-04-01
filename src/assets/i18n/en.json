@@ -73,6 +73,10 @@
         "HW_MONITOR": {
             "TITLE": "HW Monitor Dashboard",
             "DESCRIPTION": "Real-time system metrics in the browser via WebSocket — developed iteratively with Claude: CPU temperatures (lm_sensors), RAM details via SPD-EEPROM, AMD GPU metrics from the Linux kernel sysfs. No root access required."
+        },
+        "ARBOR": {
+            "TITLE": "Arbor",
+            "DESCRIPTION": "Arbor is a personal finance management app. Track income and expenses, manage accounts and budgets, and visualize your finances with charts. Built with Django REST Framework and React — currently in active development."
         }
     },
     "HEADLINE_SECTION": "What my colleagues say about me",
