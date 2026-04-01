@@ -132,7 +132,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
                 { icon: 'assets/imgs/skills/frontend/html.png', name: 'HTML' },
                 { icon: 'assets/imgs/skills/frontend/css.png', name: 'CSS' }
             ],
-            imageSrc: 'assets/imgs/featured-projects/hw-monitor.png',
+            imageSrc: 'assets/imgs/featured-projects/fullstack/hw-monitor.png',
             githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard',
             liveTestLink: 'https://robby-runge.de/hw-dashboard/index.html',
             // inProgress: true
@@ -151,6 +151,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
                 { icon: 'assets/imgs/skills/backend/postgresql.png', name: 'PostgreSQL' },
                 { icon: 'assets/imgs/skills/backend/redis.png', name: 'Redis' }
             ],
+            imageSrc: 'assets/imgs/featured-projects/fullstack/arbor.png',
             githubLink: 'https://github.com/RobbyRunge/arbor',
             inProgress: true
         }
