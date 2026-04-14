@@ -34,7 +34,12 @@
         "GROWTH_MINDSET": "Growth mindset",
         "LEARNING_INTEREST": "I have a special interest in learning",
         "CERTIFICATES_LABEL": "Certificates",
-        "VIEW_CERTIFICATE": "View certificate"
+        "VIEW_CERTIFICATE": "View certificate",
+        "CURRENTLY_LEARNING_LABEL": "Currently Learning",
+        "LEARNING_BADGE": "In Progress",
+        "REACT_DESC": "Actively learning React by building Arbor, my personal finance app. I'm deepening my understanding of components, hooks, state management, and working with a REST API — applying what I learn directly in a real project.",
+        "LINUX_BADGE": "Kali Linux VM",
+        "LINUX_DESC": "On a Kali Linux VM, I'm working through the fundamentals of the operating system: file and directory management, permissions, processes, and terminal navigation. Building a solid foundation step by step."
     },
     "PROJECTS": {
         "PORTFOLIO": "Portfolio",
