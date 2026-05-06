@@ -120,7 +120,7 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             githubLink: 'https://github.com/RobbyRunge/videoflix-backend',
             liveTestLink: 'https://robby-runge.de/videoflix/index.html',
         },
-        {
+        /* {
             id: 7,
             titleNumber: '07',
             title: 'HW Monitor Dashboard',
@@ -136,10 +136,10 @@ export class FeaturedProjectsComponent implements OnInit, OnDestroy {
             githubLink: 'https://github.com/RobbyRunge/hardware-monitor-dashboard',
             liveTestLink: 'https://robby-runge.de/hw-dashboard/index.html',
             // inProgress: true
-        },
+        }, */
         {
             id: 8,
-            titleNumber: '08',
+            titleNumber: '07',
             title: 'Arbor',
             description: '',
             techStack: [
