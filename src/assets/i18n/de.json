@@ -34,7 +34,12 @@
         "GROWTH_MINDSET": "Growth mindset",
         "LEARNING_INTEREST": "Ich habe ein besonderes Interesse am Lernen",
         "CERTIFICATES_LABEL": "Zertifikate",
-        "VIEW_CERTIFICATE": "Zertifikat ansehen"
+        "VIEW_CERTIFICATE": "Zertifikat ansehen",
+        "CURRENTLY_LEARNING_LABEL": "Aktuell am Lernen",
+        "LEARNING_BADGE": "In Arbeit",
+        "REACT_DESC": "Ich lerne React aktiv durch die Entwicklung von Arbor, meiner persönlichen Finanz-App. Dabei vertiefe ich mein Wissen in Komponenten, Hooks, State Management und der Arbeit mit einer REST-API – und wende direkt an, was ich lerne.",
+        "LINUX_BADGE": "Kali Linux VM",
+        "LINUX_DESC": "Auf einer Kali Linux VM arbeite ich mich durch die Grundlagen des Betriebssystems: Datei- und Verzeichnisverwaltung, Berechtigungen, Prozesse und Navigation im Terminal. Ein solides Fundament, das ich Schritt für Schritt aufbaue."
     },
     "PROJECTS": {
         "PORTFOLIO": "Portfolio",
