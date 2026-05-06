@@ -53,9 +53,9 @@
     border-top: 2px solid rgba(61, 207, 182, 0.8);
   }
 
-  .hw-monitor-project {
+  /* .hw-monitor-project {
     border-top: 2px solid rgba(61, 207, 182, 0.8);
-  }
+  } */
 
   .arbor-project {
     border-bottom: 2px solid rgba(61, 207, 182, 0.8);
@@ -421,7 +421,7 @@
     }
   }
 
-  .hw-monitor-project {
+  /* .hw-monitor-project {
     @extend %project-item;
     border-top: 1px solid rgba(61, 207, 182, 1);
 
@@ -429,10 +429,11 @@
       top: 0px;
       transform: translateY(0);
     }
-  }
+  } */
 
   .arbor-project {
     @extend %project-item;
+    border-top: 1px solid rgba(61, 207, 192, 1);
 
     .project-image {
       bottom: 0px;
@@ -651,7 +652,7 @@
 .coderr-project:hover .project-image,
 .quizly-project:hover .project-image,
 .videoflix-project:hover .project-image,
-.hw-monitor-project:hover .project-image,
+/* .hw-monitor-project:hover .project-image, */
 .arbor-project:hover .project-image {
   opacity: 1 !important;
   animation: none !important;
@@ -681,9 +682,9 @@
   animation: myAnim 12s ease-in-out 0s infinite;
 }
 
-.projects-list:not(:hover) .hw-monitor-project .project-image {
+/* .projects-list:not(:hover) .hw-monitor-project .project-image {
   animation: myAnim 8s ease-in-out 0s infinite;
-}
+} */
 
 .projects-list:not(:hover) .arbor-project .project-image {
   animation: myAnim 8s ease-in-out 4s infinite;
@@ -1241,11 +1242,11 @@
       }
     }
 
-    .hw-monitor-project {
+    /* .hw-monitor-project {
       &::after {
         animation-delay: 0s;
       }
-    }
+    } */
   }
 
   .projects-list-backend {
