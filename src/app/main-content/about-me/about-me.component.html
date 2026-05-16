@@ -1,17 +1,13 @@
 <div class="about-me">
   <div class="content-width">
-    <div class="container-picture-and-about-me">
-      <div data-aos="flip-down" class="profil-img" id="profile-container">
-        <img class="profile-picture" src="assets/imgs/pb/pb.JPG" alt="Profile image">
-        <img class="background-hover" src="assets/imgs/about-me/hover-background.png" alt="Background image">
-      </div>
-      <div data-aos="flip-up" class="about-me-info">
-        <p>{{ 'ABOUT.WHO_I_AM' | translate }}</p>
+    <div data-aos="fade-up" class="about-me-inner">
+      <p class="section-label">{{ 'ABOUT.WHO_I_AM' | translate }}</p>
 
-        <div class="about-me-text">
-          <h3 class="typewriter">{{ 'ABOUT.TITLE' | translate }}</h3>
-          <p>{{ 'ABOUT.INTRO' | translate }}</p>
+      <div class="about-me-text">
+        <h3 class="typewriter">{{ 'ABOUT.TITLE' | translate }}</h3>
+        <p>{{ 'ABOUT.INTRO' | translate }}</p>
 
+        <div class="icon-row">
           <div class="icon-text">
             <img src="assets/imgs/about-me/location-on.png" alt="location">
             <span>{{ 'ABOUT.LOCATION' | translate }}</span>

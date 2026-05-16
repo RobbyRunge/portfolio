@@ -3,11 +3,11 @@ body.light-mode .header-background {
 }
 
 body.light-mode .data-container {
-  background: linear-gradient(55.22deg, rgba(245, 245, 245, 1) 36.26%, rgba(184, 230, 220, 1) 93.28%) !important;
+  background: linear-gradient(55.22deg, rgba(245, 245, 245, 1) 36.26%, rgba(186, 230, 253, 1) 93.28%) !important;
 
   h1,
   h2 {
-    color: rgba(8, 70, 59, 1) !important;
+    color: rgba(2, 132, 199, 1) !important;
   }
 
   p {
@@ -15,7 +15,7 @@ body.light-mode .data-container {
   }
 
   strong {
-    color: rgba(8, 70, 59, 1) !important;
+    color: rgba(2, 132, 199, 1) !important;
   }
 
   ul, ol {
@@ -23,7 +23,7 @@ body.light-mode .data-container {
   }
 
   a {
-    color: rgba(8, 70, 59, 1) !important;
+    color: rgba(2, 132, 199, 1) !important;
 
     &:hover {
       color: rgba(28, 28, 28, 1) !important;
@@ -45,18 +45,18 @@ body.light-mode .data-container {
 .data-container {
   background-color: rgba(28, 28, 28, 1);
   min-height: 100vh;
-  background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+  background: linear-gradient(55.22deg, #080814 36.26%, #0C1445 93.28%);
   box-sizing: border-box;
 
   h1 {
-    color: rgba(61, 207, 182, 1);
+    color: rgba(56, 189, 248, 1);
     font-family: Fira Code;
     margin: 20px 0;
     width: 100%;
   }
 
   h2 {
-    color: rgba(61, 207, 182, 1);
+    color: rgba(56, 189, 248, 1);
     font-family: Fira Code;
     margin: 20px 0;
   }
@@ -69,7 +69,7 @@ body.light-mode .data-container {
   }
 
   strong {
-    color: rgba(61, 207, 182, 1);
+    color: rgba(56, 189, 248, 1);
     font-weight: 700;
   }
 
@@ -85,7 +85,7 @@ body.light-mode .data-container {
   }
 
   a {
-    color: rgba(61, 207, 182, 1);
+    color: rgba(56, 189, 248, 1);
     text-decoration: none;
     transition: all 125ms ease-in-out;
 

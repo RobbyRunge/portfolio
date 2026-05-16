@@ -2,19 +2,19 @@
   filter: brightness(0) saturate(100%);
 
   &:hover {
-    filter: brightness(0) saturate(100%) drop-shadow(0px 0px 3px rgba(8, 70, 59, 0.8));
+    filter: brightness(0) saturate(100%) drop-shadow(0px 0px 3px rgba(2, 132, 199, 0.8));
   }
 }
 
 :host-context(body.light-mode) .mobile-menu {
-  background: linear-gradient(55.22deg, #FFFFFF 36.26%, #B8E6DC 93.28%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #EDE9FE 100%);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
-  
+
   .mobile-nav-items a {
     color: rgba(28, 28, 28, 1);
-    
+
     &:hover {
-      color: rgba(8, 70, 59, 1);
+      color: rgba(2, 132, 199, 1);
     }
   }
 }
@@ -32,8 +32,28 @@ header {
   align-items: center;
   color: black;
   height: 98px;
-  z-index: 2;
-  position: relative;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 22px;
+  box-sizing: border-box;
+  transition: background 300ms ease, backdrop-filter 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
+
+  &.scrolled {
+    background: rgba(8, 8, 20, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: 1484px) {
+  header {
+    padding: 0 calc((100vw - 1440px) / 2 + 22px);
+  }
 }
 
 .language-slider,
@@ -48,22 +68,22 @@ header {
     height: 28px;
     background: transparent;
     border-radius: 100px;
-    border: 1px solid rgba(61, 207, 182, 1);
+    border: 1px solid rgba(56, 189, 248, 1);
     transition: all 0.3s ease;
 
     &:hover {
-      border-color: rgba(61, 207, 182, 0.5);
+      border-color: rgba(56, 189, 248, 0.5);
     }
 
     .slider-thumb {
       position: absolute;
       width: 46px;
       height: 30px;
-      background: rgba(61, 207, 182, 1);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 1), rgba(96, 165, 250, 1));
       border-radius: 20px;
       left: 2px;
       transition: transform 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 12px rgba(56, 189, 248, 0.4);
       transform: translateX(-3px);
 
       &.english {
@@ -80,7 +100,7 @@ header {
       top: 4px;
       font-size: 16px;
       font-weight: 600;
-      color: rgba(39, 116, 102, 1);
+      color: rgba(56, 189, 248, 0.6);
       transition: color 0.3s ease;
       z-index: 1;
       cursor: pointer;
@@ -101,7 +121,7 @@ header {
     .lang-symbol {
       position: absolute;
       font-size: 22px;
-      color: rgba(39, 116, 102, 1);
+      color: rgba(56, 189, 248, 0.6);
       transition: color 0.3s ease;
       z-index: 1;
       cursor: pointer;
@@ -140,12 +160,12 @@ header {
       left: 0;
       width: 0;
       height: 2px;
-      background-color: rgba(61, 207, 182, 1);
+      background: linear-gradient(90deg, rgba(56, 189, 248, 1), rgba(96, 165, 250, 1));
       transition: width 125ms ease-in-out;
     }
 
     &:hover {
-      color: rgba(61, 207, 182, 1);
+      color: rgba(56, 189, 248, 1);
 
       &::after {
         width: 50%;
@@ -159,7 +179,7 @@ header {
   transition: all 125ms ease-in-out;
 
   &:hover {
-    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
+    filter: drop-shadow(0px 0px 6px rgba(56, 189, 248, 0.8));
   }
 }
 
@@ -192,12 +212,14 @@ header {
   width: 80%;
   max-width: 238px;
   height: 294px;
-  background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+  background: linear-gradient(135deg, #0F0F1E 0%, #0C1445 100%);
   border-bottom-left-radius: 30px;
   transition: right 0.3s ease;
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 0 30px rgba(56, 189, 248, 0.2);
   padding: 30px 20px 20px 60px;
   box-sizing: border-box;
+  border-left: 1px solid rgba(56, 189, 248, 0.2);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
 
   &.open {
     right: 0;
@@ -221,12 +243,12 @@ header {
         left: 0;
         width: 0;
         height: 2px;
-        background-color: rgba(61, 207, 182, 1);
+        background: linear-gradient(90deg, rgba(56, 189, 248, 1), rgba(96, 165, 250, 1));
         transition: width 125ms ease-in-out;
       }
 
       &:hover {
-        color: rgba(61, 207, 182, 1);
+        color: rgba(56, 189, 248, 1);
 
         &::after {
           width: 25%;
