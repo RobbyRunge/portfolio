@@ -398,17 +398,24 @@
   .hero-layout {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 32px;
     bottom: 80px;
   }
 
   .your-info {
+    flex: none;
     text-align: center;
     align-items: center;
     padding-left: 0;
 
     h1 { font-size: 64px; }
     h2 { font-size: 16px; }
+  }
+
+  .hero-visual {
+    flex: none;
+    justify-content: center;
   }
 
   .hero-image-frame { width: 200px !important; height: 200px !important; }
@@ -442,7 +449,7 @@
       top: -205px;
       .social-icon {
         img { width: 24px; height: 24px; }
-        .hover { width: 33px; }
+        .hover { width: 24px; height: 24px; }
       }
     }
   }

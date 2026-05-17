@@ -1,2 +1,5 @@
+@if (showIntro) {
+  <app-intro (done)="showIntro = false"></app-intro>
+}
 <!-- <app-cookie-banner></app-cookie-banner> -->
 <router-outlet></router-outlet>
