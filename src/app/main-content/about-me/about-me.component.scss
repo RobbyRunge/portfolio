@@ -28,8 +28,7 @@
 }
 
 .about-me-inner {
-  max-width: 860px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .section-label {
@@ -41,6 +40,7 @@
 }
 
 .about-me-text {
+  flex: 2;
   border: 1px solid rgba(56, 189, 248, 0.2);
   border-radius: 24px;
   padding: 48px;
@@ -92,10 +92,78 @@
   }
 }
 
+.about-me-layout {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.stat-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  padding: 24px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  background: rgba(56, 189, 248, 0.03);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out, border-color 200ms ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(56, 189, 248, 0.2);
+    border-color: rgba(56, 189, 248, 0.3);
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+  }
+
+  .stat-value {
+    font-family: 'Fira Code', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(56, 189, 248, 1);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+  }
+}
+
+:host-context(body.light-mode) .stat-card {
+  background: linear-gradient(135deg, rgba(186, 230, 253, 0.6) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border-color: rgba(56, 189, 248, 0.5);
+
+  .stat-value { color: rgba(2, 132, 199, 1); }
+  .stat-label { color: rgba(28, 28, 28, 0.7); }
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 992px) {
   .about-me { padding: 72px 0; }
+  .about-me-layout { flex-direction: column; }
+  .stat-grid {
+    flex-direction: row;
+    width: 100%;
+  }
   .about-me-text {
     padding: 36px;
     h3 { font-size: 44px; }
@@ -119,6 +187,7 @@
     h3 { font-size: 28px; }
     p { font-size: 14px; }
   }
+  .stat-grid { flex-direction: column; }
   .icon-text span { font-size: 13px; }
   .icon-text img { width: 20px; height: 20px; }
 }

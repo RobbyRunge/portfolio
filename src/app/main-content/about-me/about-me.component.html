@@ -3,24 +3,44 @@
     <div data-aos="fade-up" class="about-me-inner">
       <p class="section-label">{{ 'ABOUT.WHO_I_AM' | translate }}</p>
 
-      <div class="about-me-text">
-        <h3 class="typewriter">{{ 'ABOUT.TITLE' | translate }}</h3>
-        <p>{{ 'ABOUT.INTRO' | translate }}</p>
+      <div class="about-me-layout">
+        <div class="about-me-text">
+          <h3 class="typewriter">{{ 'ABOUT.TITLE' | translate }}</h3>
+          <p>{{ 'ABOUT.INTRO' | translate }}</p>
 
-        <div class="icon-row">
-          <div class="icon-text">
-            <img src="assets/imgs/about-me/location-on.png" alt="location">
-            <span>{{ 'ABOUT.LOCATION' | translate }}</span>
+          <div class="icon-row">
+            <div class="icon-text">
+              <img src="assets/imgs/about-me/location-on.png" alt="location">
+              <span>{{ 'ABOUT.LOCATION' | translate }}</span>
+            </div>
+
+            <div class="icon-text">
+              <img src="assets/imgs/about-me/cognition.png" alt="learning">
+              <span>{{ 'ABOUT.LEARNING' | translate }}</span>
+            </div>
+
+            <div class="icon-text">
+              <img src="assets/imgs/about-me/new-releases.png" alt="approach">
+              <span>{{ 'ABOUT.APPROACH' | translate }}</span>
+            </div>
           </div>
+        </div>
 
-          <div class="icon-text">
-            <img src="assets/imgs/about-me/cognition.png" alt="learning">
-            <span>{{ 'ABOUT.LEARNING' | translate }}</span>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <img src="assets/imgs/about-me/cognition.png" alt="certificates">
+            <span class="stat-value">2</span>
+            <span class="stat-label">{{ 'ABOUT.STAT_CERTS' | translate }}</span>
           </div>
-
-          <div class="icon-text">
-            <img src="assets/imgs/about-me/new-releases.png" alt="approach">
-            <span>{{ 'ABOUT.APPROACH' | translate }}</span>
+          <div class="stat-card">
+            <img src="assets/imgs/about-me/new-releases.png" alt="fullstack">
+            <span class="stat-value">Full Stack</span>
+            <span class="stat-label">{{ 'ABOUT.STAT_STACK' | translate }}</span>
+          </div>
+          <div class="stat-card">
+            <img src="assets/imgs/about-me/location-on.png" alt="remote">
+            <span class="stat-value">Remote</span>
+            <span class="stat-label">{{ 'ABOUT.STAT_REMOTE' | translate }}</span>
           </div>
         </div>
       </div>
