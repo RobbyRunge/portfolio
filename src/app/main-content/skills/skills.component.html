@@ -69,14 +69,19 @@
       <div class="certificates-grid">
         @for (cert of certificates; track cert.title) {
           <div class="certificate-card" (click)="openCertificate(cert)">
-            <span class="cert-stack">{{ cert.stack }}</span>
-            <div class="cert-title-row">
-              <h4>{{ cert.title }}</h4>
-              <p>{{ cert.issuer }} · {{ cert.year }}</p>
+            <div class="cert-preview">
+              <img [src]="cert.imgPath" [alt]="cert.title">
+              <div class="cert-hover-overlay">
+                <span>{{ 'SKILLS.VIEW_CERTIFICATE' | translate }}</span>
+                <img src="assets/imgs/featured-projects/arrow-project.png" alt="">
+              </div>
             </div>
-            <div class="cert-view-link">
-              {{ 'SKILLS.VIEW_CERTIFICATE' | translate }}
-              <img src="assets/imgs/featured-projects/arrow-project.png" alt="View certificate">
+            <div class="cert-body">
+              <span class="cert-stack">{{ cert.stack }}</span>
+              <div class="cert-title-row">
+                <h4>{{ cert.title }}</h4>
+                <p>{{ cert.issuer }} · {{ cert.year }}</p>
+              </div>
             </div>
           </div>
         }
@@ -89,28 +94,28 @@
       <p class="learning-headline">{{ 'SKILLS.CURRENTLY_LEARNING_LABEL' | translate }}</p>
       <div class="learning-grid">
         <div class="learning-card">
-          <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+          <div class="learning-icon-area">
+            <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+            <span class="learning-badge">
+              <span class="pulse-dot"></span>
+              {{ 'SKILLS.LEARNING_BADGE' | translate }}
+            </span>
+          </div>
           <div class="learning-card-body">
-            <div class="learning-card-top">
-              <h4>React</h4>
-              <span class="learning-badge">
-                <span class="pulse-dot"></span>
-                {{ 'SKILLS.LEARNING_BADGE' | translate }}
-              </span>
-            </div>
+            <h4>React</h4>
             <p>{{ 'SKILLS.REACT_DESC' | translate }}</p>
           </div>
         </div>
         <div class="learning-card">
-          <img src="assets/imgs/skills/backend/linux.png" alt="Linux icon">
+          <div class="learning-icon-area">
+            <img src="assets/imgs/skills/backend/linux.png" alt="Linux icon">
+            <span class="learning-badge">
+              <span class="pulse-dot"></span>
+              {{ 'SKILLS.LEARNING_BADGE' | translate }}
+            </span>
+          </div>
           <div class="learning-card-body">
-            <div class="learning-card-top">
-              <h4>{{ 'SKILLS.LINUX_BADGE' | translate }}</h4>
-              <span class="learning-badge">
-                <span class="pulse-dot"></span>
-                {{ 'SKILLS.LEARNING_BADGE' | translate }}
-              </span>
-            </div>
+            <h4>{{ 'SKILLS.LINUX_BADGE' | translate }}</h4>
             <p>{{ 'SKILLS.LINUX_DESC' | translate }}</p>
           </div>
         </div>
