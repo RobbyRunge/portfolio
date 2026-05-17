@@ -214,6 +214,11 @@
   .featured-projects { padding: 72px 0; }
 }
 
+@media (max-width: 768px) {
+  .featured-projects { padding: 60px 0; }
+  .section-header h2 { font-size: 36px; }
+}
+
 @media (max-width: 576px) {
   .projects-grid { grid-template-columns: 1fr; }
   .section-header h2 { font-size: 32px; }
