@@ -1,75 +1,41 @@
 <div class="colleagues">
   <div class="content-width">
-    <div data-aos="zoom-in" class="container-colleagues-say">
-      <h3>{{ headline | translate }}</h3>
-
-      <div class="testimonial-carousel">
-        <div class="testimonial-wrapper">
-          <div class="testimonial-cards">
-            @for (card of testimonials; track card.id) { 
-              <div class="testimonial-card" 
-                   [class.active]="currentIndex === card.id"
-                   [class.inactive-left]="getCardPosition(card.id) === 'left'"
-                   [class.inactive-right]="getCardPosition(card.id) === 'right'"
-                   [class.hidden]="getCardPosition(card.id) === 'hidden'" 
-                   [class.transitioning]="isPositionChanging">
-                
-                <div class="testimonial-content">
-                  <div class="quote-icon">
-                    <img src="./assets/imgs/colleagues/quotes.png" alt="Quote icon">
-                  </div>
-                  
-                  <div class="testimonial-text">
-                    <p>{{ card.translationKey | translate }}</p>
-                  </div>
-                  
-                  <div class="testimonial-author">
-                    <div class="author-avatar">
-                      <div class="avatar-placeholder">
-                        {{ card.author.charAt(0) }}
-                      </div>
-                    </div>
-                    <div class="author-info">
-                      <h4>{{ card.author }}</h4>
-                      <span class="author-role">{{ card.role }}</span>
-                      <a href="{{ card.gitHubLink }}" target="_blank" class="github-link">
-                        <img src="./assets/imgs/colleagues/github.png" alt="Github icon">
-                        GitHub
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="card-background-glow"></div>
-              </div>
-            }
-          </div>
-        </div>
-        
-        <div class="carousel-navigation">
-          <button class="nav-button prev" (click)="prevCard()" [disabled]="currentIndex === 0">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15,18 9,12 15,6"></polyline>
-            </svg>
-          </button>
-          
-          <div class="carousel-indicators">
-            @for (card of testimonials; track card.id) {
-              <button class="indicator" 
-                      [class.active]="currentIndex === card.id"
-                      (click)="goToCard(card.id)">
-                <span class="sr-only">Testimonial {{ card.id + 1 }}</span>
-              </button>
-            }
-          </div>
-          
-          <button class="nav-button next" (click)="nextCard()" [disabled]="currentIndex === testimonials.length - 1">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9,18 15,12 9,6"></polyline>
-            </svg>
-          </button>
-        </div>
-      </div>
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">{{ 'COLLEAGUES_LABEL' | translate }}</p>
+      <h2>{{ headline | translate }}</h2>
     </div>
+  </div>
+
+  <div class="content-width">
+  <div class="testimonials-marquee" data-aos="fade-up">
+    <div class="testimonials-track">
+      @for (card of marqueeTestimonials; track $index) {
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="quote-icon">
+              <img src="./assets/imgs/colleagues/quotes.png" alt="Quote icon">
+            </div>
+            <div class="testimonial-text">
+              <p>{{ card.translationKey | translate }}</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <div class="avatar-placeholder">{{ card.author.charAt(0) }}</div>
+              </div>
+              <div class="author-info">
+                <h4>{{ card.author }}</h4>
+                <span class="author-role">{{ card.role }}</span>
+                <a href="{{ card.gitHubLink }}" target="_blank" class="github-link">
+                  <img src="./assets/imgs/colleagues/github.png" alt="Github icon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-background-glow"></div>
+        </div>
+      }
+    </div>
+  </div>
   </div>
 </div>

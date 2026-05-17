@@ -87,6 +87,7 @@
             "DESCRIPTION": "Arbor is a personal finance management app. Track income and expenses, manage accounts and budgets, and visualize your finances with charts. Built with Django REST Framework and React — currently in active development."
         }
     },
+    "COLLEAGUES_LABEL": "References",
     "HEADLINE_SECTION": "What my colleagues say about me",
     "TESTIMONIALS": {
         "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",

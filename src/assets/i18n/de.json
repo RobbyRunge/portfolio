@@ -87,6 +87,7 @@
             "DESCRIPTION": "Arbor ist eine persönliche Finanzverwaltungs-App. Einnahmen und Ausgaben tracken, Konten und Budgets verwalten und Finanzen mit Diagrammen visualisieren. Gebaut mit Django REST Framework und React — aktuell in aktiver Entwicklung."
         }
     },
+    "COLLEAGUES_LABEL": "Referenzen",
     "HEADLINE_SECTION": "Was meine Kollegen über mich sagen",
     "TESTIMONIALS": {
         "ARNESTO": "Robby ist für mich ein guter Mitarbeiter im Team. Er ist sehr organisiert und hat stets dazu beigetragen, eine gute Atmosphäre im Team aufrechtzuerhalten. Auf jeden Fall war es eine positive Erfahrung, ein Projekt mit ihm umsetzen zu dürfen.",
