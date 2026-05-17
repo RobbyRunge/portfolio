@@ -313,6 +313,7 @@
           height: 100%;
           object-fit: contain;
           cursor: pointer;
+          filter: brightness(0) saturate(100%) invert(76%) sepia(77%) saturate(514%) hue-rotate(168deg) brightness(104%) contrast(101%);
         }
 
         .checkbox-hover {

@@ -287,7 +287,6 @@
     top: -220px;
 
     .social-icon {
-      position: relative;
       width: 30px;
       height: 30px;
 
@@ -296,27 +295,13 @@
         display: block;
         width: 30px;
         height: 30px;
-      }
-
-      .normal {
-        transition: opacity 125ms ease-in-out;
         filter: brightness(0) invert(1) opacity(0.7);
+        transition: filter 150ms ease-in-out, opacity 150ms ease-in-out;
       }
 
-      .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 125ms ease-in-out;
-        width: 30px;
-        height: 30px;
+      &:hover img {
         filter: brightness(0) saturate(100%) invert(76%) sepia(77%) saturate(514%) hue-rotate(168deg) brightness(104%) contrast(101%);
-      }
-
-      &:hover {
-        .normal { opacity: 0; }
-        .hover { opacity: 1; }
+        opacity: 1;
       }
     }
   }
@@ -447,10 +432,7 @@
     .icon-position {
       gap: 11px;
       top: -205px;
-      .social-icon {
-        img { width: 24px; height: 24px; }
-        .hover { width: 24px; height: 24px; }
-      }
+      .social-icon img { width: 24px; height: 24px; }
     }
   }
 
