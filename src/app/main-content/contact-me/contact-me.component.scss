@@ -631,7 +631,7 @@
 
 @media (max-width: 992px) {
   .contact-me {
-    padding-bottom: 56px;
+    padding: 72px 0;
 
     .section-header h2 { font-size: 40px; }
     .contact-card { padding: 36px 32px; }
@@ -640,6 +640,8 @@
 
 @media (max-width: 768px) {
   .contact-me {
+    padding: 60px 0;
+
     .section-header {
       h2 { font-size: 32px; }
       .section-desc { font-size: 17px; }
@@ -678,6 +680,8 @@
 
 @media (max-width: 576px) {
   .contact-me {
+    padding: 48px 0;
+
     .section-header {
       h2 { font-size: 26px; }
       .section-desc { font-size: 15px; }

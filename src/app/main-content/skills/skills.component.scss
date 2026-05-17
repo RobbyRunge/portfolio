@@ -705,6 +705,8 @@
 }
 
 @media (max-width: 992px) {
+  .skills { padding: 72px 0; }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -724,6 +726,8 @@
 }
 
 @media (max-width: 768px) {
+  .skills { padding: 60px 0; }
+
   .section-header {
     margin-bottom: 40px;
 
@@ -808,6 +812,8 @@
 }
 
 @media (max-width: 576px) {
+  .skills { padding: 48px 0; }
+
   .cert-overlay-content {
     height: 60vh;
   }

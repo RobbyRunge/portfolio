@@ -115,7 +115,7 @@
   background-image:
     radial-gradient(ellipse 50% 40% at 50% 100%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
   width: 100%;
-  padding: 96px 0 80px;
+  padding: 96px 0;
   position: relative;
   overflow: hidden;
 
@@ -475,7 +475,7 @@
 
 @media (max-width: 768px) {
   .colleagues {
-    padding: 0 0 40px 0;
+    padding: 60px 0;
 
     .container-colleagues-say h3 {
       font-size: 36px !important;
