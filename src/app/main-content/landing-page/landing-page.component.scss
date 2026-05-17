@@ -61,6 +61,7 @@
 .landing-page {
   height: 100vh;
   background:
+    linear-gradient(to bottom, transparent 85%, rgba(8, 8, 20, 1) 100%),
     radial-gradient(ellipse 70% 55% at 10% 20%, rgba(14, 165, 233, 0.2) 0%, transparent 55%),
     radial-gradient(ellipse 55% 50% at 90% 80%, rgba(96, 165, 250, 0.15) 0%, transparent 55%),
     radial-gradient(ellipse 35% 30% at 65% 5%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),

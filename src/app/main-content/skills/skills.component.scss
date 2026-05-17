@@ -102,7 +102,9 @@
   .background-img {
     position: absolute;
     left: 0;
-    background: radial-gradient(ellipse 50% 60% at 2% 50%, rgba(56, 189, 248, 0.15) 0%, rgba(8, 8, 20, 1) 70%),
+    background:
+      linear-gradient(to bottom, rgba(8, 8, 20, 1) 0%, transparent 12%, transparent 88%, rgba(8, 8, 20, 1) 100%),
+      radial-gradient(ellipse 50% 60% at 2% 50%, rgba(56, 189, 248, 0.15) 0%, transparent 70%),
       radial-gradient(ellipse 40% 40% at 98% 20%, rgba(96, 165, 250, 0.1) 0%, transparent 60%);
     height: 100%;
     width: 100%;
