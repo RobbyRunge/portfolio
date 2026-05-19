@@ -1,7 +1,8 @@
 /* ── Light mode ── */
 
 :host-context(body.light-mode) .featured-projects {
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(240, 249, 255, 1);
+  background-image: none;
 }
 
 :host-context(body.light-mode) .section-label {

@@ -1,3 +1,17 @@
+:host-context(body.light-mode) header.scrolled {
+  background: rgba(240, 249, 255, 0.9);
+  border-bottom: 1px solid rgba(2, 132, 199, 0.2);
+  box-shadow: 0 4px 24px rgba(2, 132, 199, 0.12);
+}
+
+:host-context(body.light-mode) .nav-bar a {
+  color: rgba(28, 28, 28, 1);
+
+  &:hover {
+    color: rgba(2, 132, 199, 1);
+  }
+}
+
 :host-context(body.light-mode) .logo {
   filter: brightness(0) saturate(100%);
 

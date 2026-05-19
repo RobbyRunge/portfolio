@@ -2,7 +2,7 @@
   background:
     radial-gradient(ellipse 70% 50% at 15% 30%, rgba(14, 165, 233, 0.12) 0%, transparent 60%),
     radial-gradient(ellipse 60% 40% at 85% 70%, rgba(96, 165, 250, 0.08) 0%, transparent 60%),
-    linear-gradient(55.22deg, #F5F5F5 36.26%, #EDE9FE 93.28%);
+    #f0f9ff;
 }
 
 :host-context(body.light-mode) .your-info {

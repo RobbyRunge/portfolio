@@ -33,6 +33,10 @@ body {
   background-color: #080814;
 }
 
+body.light-mode {
+  background-color: #f0f9ff;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
