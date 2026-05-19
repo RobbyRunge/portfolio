@@ -20,6 +20,14 @@
   &:hover { color: rgba(2, 132, 199, 1); }
 }
 
+:host-context(body.light-mode) .icon-text img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(82%) saturate(700%) hue-rotate(189deg) brightness(90%);
+}
+
+:host-context(body.light-mode) .stat-card img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(82%) saturate(700%) hue-rotate(189deg) brightness(90%);
+}
+
 .about-me {
   background-color: rgba(8, 8, 20, 1);
   background-image:
@@ -83,6 +91,7 @@
     width: 26px;
     height: 26px;
     flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(80%) saturate(450%) hue-rotate(173deg) brightness(103%);
   }
 
   span {
@@ -131,7 +140,7 @@
   img {
     width: 32px;
     height: 32px;
-    opacity: 0.85;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(80%) saturate(450%) hue-rotate(173deg) brightness(103%);
   }
 
   .stat-value {
