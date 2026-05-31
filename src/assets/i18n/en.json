@@ -19,12 +19,12 @@
         "WHO_I_AM": "Who I am",
         "TITLE": "About me",
         "INTRO": "Hello, I'm Robby. IT is a great source of inspiration for me, as I enjoy constantly learning new things and staying up to date with technology. This exciting field has always fascinated me. It's simply fun to solve problems, code, or develop innovative solutions. The mix of creativity and logic excites me every day anew!",
-        "LOCATION": "I currently live in Eilenburg. I'm very open to remote work (home office).",
+        "LOCATION": "I currently live in Eilenburg. I prefer to work on projects remotely.",
         "LEARNING": "I love new technologies and constantly learn - through practice, projects, and further education.",
         "APPROACH": "My approach: break down problems analytically, solve them creatively - always with a focus on elegant, efficient results. Perseverance and teamwork help me learn from every challenge.",
         "STAT_CERTS": "Certificates",
         "STAT_STACK": "Frontend · Backend",
-        "STAT_REMOTE": "Remote-ready"
+        "STAT_REMOTE": "Remote-capable"
     },
     "SKILLS": {
         "TECHNOLOGIES": "Technologies",
