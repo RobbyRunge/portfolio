@@ -1,18 +1,27 @@
 <div class="landing-page">
-  <div class="header-background"></div>
   <div class="content-width">
     <app-header></app-header>
 
-    <div class="your-info">
-      <h2>{{ 'HERO.JOB_TITLE' | translate }}</h2>
-      <h1>Robby Runge</h1>
-      <div class="button-position-you-info">
-        <a href="#projects-section" class="button-link">
-          <span class="text-container">{{ 'HERO.MY_PROJECTS' | translate }}</span>
-        </a>
-        <a href="#contact-me" class="button-link">
-          <span class="text-container">{{ 'HERO.CONTACT_ME' | translate }}</span>
-        </a>
+    <div class="hero-layout">
+      <div class="your-info">
+        <h2>{{ 'HERO.JOB_TITLE' | translate }}</h2>
+        <h1>Robby Runge</h1>
+        <div class="button-position-you-info">
+          <a href="#projects-section" class="button-link">
+            <span class="text-container">{{ 'HERO.MY_PROJECTS' | translate }}</span>
+          </a>
+          <a href="#contact-me" class="button-link">
+            <span class="text-container">{{ 'HERO.CONTACT_ME' | translate }}</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="assets/imgs/pb/pb.JPG" alt="Robby Runge">
+        </div>
+        <div class="hero-ring hero-ring--outer"></div>
+        <div class="hero-ring hero-ring--inner"></div>
       </div>
     </div>
 
@@ -24,29 +33,18 @@
     <div class="container-info-links">
       <div class="icon-position">
         <div class="social-icon">
-          <a href="https://linkedin.com/in/robby-runge-796494368" target="_blank"><img class="normal"
-              src="assets/imgs/header/linkedin.png" alt="linkedin"></a>
-          <a href="https://linkedin.com/in/robby-runge-796494368" target="_blank"><img class="hover"
-              src="assets/imgs/header/linkedin-hover.png" alt="linkedin"></a>
+          <a href="https://linkedin.com/in/robby-runge-796494368" target="_blank">
+            <img src="assets/imgs/header/linkedin.png" alt="linkedin">
+          </a>
         </div>
 
         <div class="social-icon">
-          <a href="https://github.com/RobbyRunge" target="_blank"><img class="normal"
-              src="assets/imgs/header/github.png" alt="github"></a>
-          <a href="https://github.com/RobbyRunge" target="_blank"><img class="hover"
-              src="assets/imgs/header/github-hover.png" alt="github"></a>
-        </div>
-
-        <div class="social-icon email-mobile-icon">
-          <a href="mailto:mail@robby-runge.de"><img class="normal" src="assets/imgs/header/mail.png" alt="mailto"></a>
-          <a href="mailto:mail@robby-runge.de"><img class="hover" src="assets/imgs/header/mail-hover.png"
-              alt="mailto-hover"></a>
+          <a href="https://github.com/RobbyRunge" target="_blank">
+            <img src="assets/imgs/header/github.png" alt="github">
+          </a>
         </div>
       </div>
       <div class="border-right"></div>
-      <div class="email">
-        <a href="mailto:mail@robby-runge.de">mail&#64;robby-runge.de</a>
-      </div>
     </div>
   </div>
 

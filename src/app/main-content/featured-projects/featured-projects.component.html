@@ -1,133 +1,104 @@
 <div class="featured-projects">
   <div class="content-width">
-    <div data-aos="flip-up" class="featured-projects-text">
-      <p>{{ 'PROJECTS.PORTFOLIO' | translate }}</p>
-      <h3>{{ 'PROJECTS.TITLE' | translate }}</h3>
-      <span>{{ 'PROJECTS.DESCRIPTION' | translate }}</span>
-      <h4>Frontend</h4>
 
-      <div class="projects-list">
-        <div class="join-project" (click)="openProject(1)">
-          <div class="project-info">
-            <p>Join <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
-                alt="Arrow project"></p>
-            <p>HTML <span>|</span> CSS <span>|</span> JavaScript <span>|</span> Firebase</p>
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">{{ 'PROJECTS.PORTFOLIO' | translate }}</p>
+      <h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
+      <p class="section-desc">{{ 'PROJECTS.DESCRIPTION' | translate }}</p>
+    </div>
+
+    <div class="category-block" data-aos="fade-up">
+      <h4 class="category-label">Frontend</h4>
+      <div class="projects-grid">
+        <div class="project-card" (click)="openProject(1)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/frontend/join.png" alt="Join preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/join.png" alt="Join Preview">
-          </div>
-        </div>
-        <div class="sharkie-project" (click)="openProject(2)">
-          <div class="project-info">
-            <p>Sharkie <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
-                alt="Arrow project"></p>
-            <p>HTML <span>|</span> CSS <span>|</span> JavaScript</p>
-          </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/sharkie.png" alt="Sharkie Preview">
+          <div class="card-info">
+            <span class="card-title">Join</span>
+            <span class="card-stack">HTML · CSS · JavaScript · Firebase</span>
           </div>
         </div>
-        <div class="da-bubble-project" (click)="openProject(3)">
-          <div class="project-info">
-            <p>DA Bubble <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
-                alt="Arrow project"></p>
-            <p>HTML <span>|</span> CSS <span>|</span> Angular <span>|</span> TypeScript <span>|</span> Firebase</p>
+        <div class="project-card" (click)="openProject(2)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/frontend/sharkie.png" alt="Sharkie preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-            <img class="hover-preview" src="assets/imgs/featured-projects/frontend/dabubble.png" alt="In Progress">
+          <div class="card-info">
+            <span class="card-title">Sharkie</span>
+            <span class="card-stack">HTML · CSS · JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card" (click)="openProject(3)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/frontend/dabubble.png" alt="DA Bubble preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
+          </div>
+          <div class="card-info">
+            <span class="card-title">DA Bubble</span>
+            <span class="card-stack">Angular · TypeScript · Firebase</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="content-width">
-    <div class="reversed" data-aos="flip-down">
-      <h4>Backend</h4>
-
-      <div class="projects-list-backend">
-        <div class="coderr-project" (click)="openProject(4)">
-          <div class="project-info">
-            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
-              Coderr</p>
-            <p>Python <span>|</span> Django <span>|</span> DRF</p>
+    <div class="category-block" data-aos="fade-up">
+      <h4 class="category-label">Backend</h4>
+      <div class="projects-grid">
+        <div class="project-card" (click)="openProject(4)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/backend/coderr.png" alt="Coderr preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
+            <div class="coming-soon-tag" *ngIf="projects[3].inProgress">Coming Soon</div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-              <div class="in-progress-badge" *ngIf="projects[3].inProgress">Coming Soon</div>
-              <img class="hover-preview" src="assets/imgs/featured-projects/backend/coderr.png" alt="Coderr Preview">
+          <div class="card-info">
+            <span class="card-title">Coderr</span>
+            <span class="card-stack">Python · Django · DRF</span>
           </div>
         </div>
-        <div class="quizly-project" (click)="openProject(5)">
-          <div class="project-info">
-            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
-              Quizly</p>
-            <p>Python <span>|</span> Django <span>|</span> DRF</p>
+        <div class="project-card" (click)="openProject(5)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/backend/quizly.png" alt="Quizly preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
+            <div class="coming-soon-tag" *ngIf="projects[4].inProgress">Coming Soon</div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-              <div class="in-progress-badge" *ngIf="projects[4].inProgress">Coming Soon</div>
-              <img class="hover-preview" src="assets/imgs/featured-projects/backend/quizly.png" alt="Quizly Preview">
+          <div class="card-info">
+            <span class="card-title">Quizly</span>
+            <span class="card-stack">Python · Django · DRF</span>
           </div>
         </div>
-        <div class="videoflix-project" (click)="openProject(6)">
-          <div class="project-info">
-            <p><img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png" alt="Arrow project">
-              Videoflix</p>
-            <p>Python <span>|</span> Django <span>|</span> DRF <span>|</span> Linux</p>
+        <div class="project-card" (click)="openProject(6)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/backend/videoflix.png" alt="Videoflix preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
+            <div class="coming-soon-tag" *ngIf="projects[5].inProgress">Coming Soon</div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-              <div class="in-progress-badge" *ngIf="projects[5].inProgress">Coming Soon</div>
-              <img class="hover-preview" src="assets/imgs/featured-projects/backend/videoflix.png" alt="Project 6 Preview">
+          <div class="card-info">
+            <span class="card-title">Videoflix</span>
+            <span class="card-stack">Python · Django · DRF · Linux</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="content-width">
-    <div data-aos="flip-up" class="featured-projects-text featured-projects-fullstack">
-      <h4>Fullstack</h4>
-
-      <div class="projects-list projects-list-single">
-        <!-- <div class="hw-monitor-project" (click)="openProject(7)">
-          <div class="project-info">
-            <p>HW Monitor <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
-                alt="Arrow project"></p>
-            <p>Python <span>|</span> Flask <span>|</span> JavaScript</p>
+    <div class="category-block" data-aos="fade-up">
+      <h4 class="category-label">Fullstack</h4>
+      <div class="projects-grid projects-grid--wide">
+        <div class="project-card" (click)="openProject(8)">
+          <div class="card-img">
+            <img src="assets/imgs/featured-projects/fullstack/arbor.png" alt="Arbor preview">
+            <div class="card-overlay"><span>Details ansehen</span></div>
+            <div class="coming-soon-tag" *ngIf="projects[6].inProgress">Coming Soon</div>
           </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-            <div class="in-progress-badge" *ngIf="projects[6].inProgress">Coming Soon</div>
-            <img class="hover-preview" src="assets/imgs/featured-projects/fullstack/hw-monitor.png" alt="HW Monitor Preview">
-          </div>
-        </div> -->
-        <div class="arbor-project" (click)="openProject(8)">
-          <div class="project-info">
-            <p>Arbor <img class="project-arrow" src="assets/imgs/featured-projects/arrow-project.png"
-                alt="Arrow project"></p>
-            <p>React <span>|</span> Django <span>|</span> DRF <span>|</span> PostgreSQL</p>
-          </div>
-          <div class="project-image">
-            <img class="hover-background" src="assets/imgs/featured-projects/hover-background-projects.png"
-              alt="Background">
-            <div class="in-progress-badge" *ngIf="projects[6].inProgress">Coming Soon</div>
-            <img class="hover-preview" src="assets/imgs/featured-projects/fullstack/arbor.png" alt="Arbor Preview">
+          <div class="card-info">
+            <span class="card-title">Arbor</span>
+            <span class="card-stack">React · Django · DRF · PostgreSQL</span>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
   <div class="project-overlay" *ngIf="showOverlay && currentProject">
@@ -156,8 +127,7 @@
               GitHub <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
             </button>
             <button (click)="openLiveTest()" *ngIf="currentProject.liveTestLink" class="live-test-button-width">
-              {{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png"
-                alt="Arrow button link">
+              {{ 'PROJECTS.LIVE_TEST' | translate }} <img src="assets/imgs/featured-projects/arrow-button-link.png" alt="Arrow button link">
             </button>
             <button *ngIf="currentProject.inProgress" class="coming-soon-button" disabled>
               {{ 'PROJECTS.COMING_SOON' | translate }}

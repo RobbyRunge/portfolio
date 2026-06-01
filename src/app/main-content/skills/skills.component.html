@@ -1,67 +1,65 @@
 <div id="skills-section" class="skills">
   <div class="background-img"></div>
+
   <div class="content-width">
-    <div class="container-skill-set-and-icons">
-      <div data-aos="fade-up" class="skill-set">
-        <p>{{ 'SKILLS.TECHNOLOGIES' | translate }}</p>
-        <div class="skill-set-text">
-          <h3 class="typewriter">{{ 'SKILLS.TITLE' | translate }}</h3>
-          <p>{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-label">{{ 'SKILLS.TECHNOLOGIES' | translate }}</p>
+      <h2 class="typewriter">{{ 'SKILLS.TITLE' | translate }}</h2>
+      <p class="section-desc">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+    </div>
+  </div>
 
-          <h4>{{ 'SKILLS.NEED' | translate }} <span>{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span></h4>
-          <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
-
-          <button onclick="window.location.href='#contact-me'">
-            <span class="text-container">{{ 'SKILLS.LETS_TALK' | translate }}</span>
-          </button>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in" class="responsive">
-        <div>
-          <h4 class="stack-headline">Frontend</h4>
-          <div class="skill-icons">
-            @for (skill of skillsFrontend; track skill.name) {
-            <div class="text-bottom-icon">
-              <img [src]="skill.iconPath" [alt]="skill.alt">
-              <p>{{ skill.name }}</p>
-            </div>
-            }
-
-            <div class="text-bottom-icon skill-preview">
-              <img src="assets/imgs/skills/growth-mindset.png" alt="Growth mindset">
-              <p class="text-color-change-by-icon">{{ 'SKILLS.GROWTH_MINDSET' | translate }}</p>
-
-              <div class="skill-preview-content">
-                <span>{{ 'SKILLS.LEARNING_INTEREST' | translate }}</span>
-                <div class="icon-position">
-                  <div>
-                    <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
-                    <p>React</p>
-                  </div>
-                  <div>
-                    <img src="assets/imgs/skills/frontend/vue-js.png" alt="Vue Js icon">
-                    <p>Vue Js</p>
-                  </div>
+  <div class="content-width">
+    <div class="skills-grid" data-aos="zoom-in">
+      <div class="skill-col">
+        <h4 class="stack-headline">Frontend</h4>
+        <div class="skill-icons">
+          @for (skill of skillsFrontend; track skill.name) {
+          <div class="text-bottom-icon">
+            <img [src]="skill.iconPath" [alt]="skill.alt">
+            <p>{{ skill.name }}</p>
+          </div>
+          }
+          <div class="text-bottom-icon skill-preview">
+            <img src="assets/imgs/skills/growth-mindset.png" alt="Growth mindset">
+            <p class="text-color-change-by-icon">{{ 'SKILLS.GROWTH_MINDSET' | translate }}</p>
+            <div class="skill-preview-content">
+              <span>{{ 'SKILLS.LEARNING_INTEREST' | translate }}</span>
+              <div class="icon-position">
+                <div>
+                  <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+                  <p>React</p>
                 </div>
-                <img class="arrow-indicator" src="assets/imgs/skills/arrow-skills.png" alt="Arrow indicator">
+                <div>
+                  <img src="assets/imgs/skills/frontend/vue-js.png" alt="Vue Js icon">
+                  <p>Vue Js</p>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 class="stack-headline mt-24">Backend</h4>
-            <div class="skill-icons">
-              @for (skill of skillsBackend; track skill.name) {
-              <div class="text-bottom-icon">
-                <img [src]="skill.iconPath" [alt]="skill.alt">
-                <p>{{ skill.name }}</p>
-              </div>
-              }
+              <img class="arrow-indicator" src="assets/imgs/skills/arrow-skills.png" alt="Arrow indicator">
             </div>
           </div>
         </div>
       </div>
+
+      <div class="skill-col">
+        <h4 class="stack-headline">Backend</h4>
+        <div class="skill-icons">
+          @for (skill of skillsBackend; track skill.name) {
+          <div class="text-bottom-icon">
+            <img [src]="skill.iconPath" [alt]="skill.alt">
+            <p>{{ skill.name }}</p>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-cta" data-aos="fade-up">
+      <h4>{{ 'SKILLS.NEED' | translate }} <span>{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span></h4>
+      <p>{{ 'SKILLS.CONTACT_ME' | translate }}</p>
+      <button onclick="window.location.href='#contact-me'">
+        <span class="text-container">{{ 'SKILLS.LETS_TALK' | translate }}</span>
+      </button>
     </div>
   </div>
 
@@ -71,14 +69,19 @@
       <div class="certificates-grid">
         @for (cert of certificates; track cert.title) {
           <div class="certificate-card" (click)="openCertificate(cert)">
-            <span class="cert-stack">{{ cert.stack }}</span>
-            <div class="cert-title-row">
-              <h4>{{ cert.title }}</h4>
-              <p>{{ cert.issuer }} · {{ cert.year }}</p>
+            <div class="cert-preview">
+              <img [src]="cert.imgPath" [alt]="cert.title">
+              <div class="cert-hover-overlay">
+                <span>{{ 'SKILLS.VIEW_CERTIFICATE' | translate }}</span>
+                <img src="assets/imgs/featured-projects/arrow-project.png" alt="">
+              </div>
             </div>
-            <div class="cert-view-link">
-              {{ 'SKILLS.VIEW_CERTIFICATE' | translate }}
-              <img src="assets/imgs/featured-projects/arrow-project.png" alt="View certificate">
+            <div class="cert-body">
+              <span class="cert-stack">{{ cert.stack }}</span>
+              <div class="cert-title-row">
+                <h4>{{ cert.title }}</h4>
+                <p>{{ cert.issuer }} · {{ cert.year }}</p>
+              </div>
             </div>
           </div>
         }
@@ -91,28 +94,28 @@
       <p class="learning-headline">{{ 'SKILLS.CURRENTLY_LEARNING_LABEL' | translate }}</p>
       <div class="learning-grid">
         <div class="learning-card">
-          <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+          <div class="learning-icon-area">
+            <img src="assets/imgs/skills/frontend/react.png" alt="React icon">
+            <span class="learning-badge">
+              <span class="pulse-dot"></span>
+              {{ 'SKILLS.LEARNING_BADGE' | translate }}
+            </span>
+          </div>
           <div class="learning-card-body">
-            <div class="learning-card-top">
-              <h4>React</h4>
-              <span class="learning-badge">
-                <span class="pulse-dot"></span>
-                {{ 'SKILLS.LEARNING_BADGE' | translate }}
-              </span>
-            </div>
+            <h4>React</h4>
             <p>{{ 'SKILLS.REACT_DESC' | translate }}</p>
           </div>
         </div>
         <div class="learning-card">
-          <img src="assets/imgs/skills/backend/linux.png" alt="Linux icon">
+          <div class="learning-icon-area">
+            <img src="assets/imgs/skills/backend/linux.png" alt="Linux icon">
+            <span class="learning-badge">
+              <span class="pulse-dot"></span>
+              {{ 'SKILLS.LEARNING_BADGE' | translate }}
+            </span>
+          </div>
           <div class="learning-card-body">
-            <div class="learning-card-top">
-              <h4>{{ 'SKILLS.LINUX_BADGE' | translate }}</h4>
-              <span class="learning-badge">
-                <span class="pulse-dot"></span>
-                {{ 'SKILLS.LEARNING_BADGE' | translate }}
-              </span>
-            </div>
+            <h4>{{ 'SKILLS.LINUX_BADGE' | translate }}</h4>
             <p>{{ 'SKILLS.LINUX_DESC' | translate }}</p>
           </div>
         </div>

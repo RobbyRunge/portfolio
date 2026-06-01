@@ -1,67 +1,31 @@
 :host-context(body.light-mode) .contact-me {
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgba(240, 249, 255, 1);
+  background-image: none;
 
-  .work-together {
-    .contact-me-text,
-    h3,
-    .problem-text {
-      color: rgba(8, 70, 59, 1) !important;
-    }
+  .section-header {
+    h2 { color: rgba(28, 28, 28, 1); }
+    .section-label { color: rgba(2, 132, 199, 1); }
+    .section-desc { color: rgba(2, 132, 199, 1); }
+  }
 
-    .need-me-text {
+  .contact-card {
+    background: linear-gradient(135deg, rgba(186, 230, 253, 0.7) 0%, rgba(255, 255, 255, 0.95) 100%);
+    border-color: rgba(56, 189, 248, 0.6);
+
+    .contact-intro {
       color: rgba(28, 28, 28, 0.9);
+      border-bottom-color: rgba(56, 189, 248, 0.3);
 
-      span {
-        color: rgba(8, 70, 59, 1) !important;
-      }
+      .highlight { color: rgba(2, 132, 199, 1); }
     }
-  }
 
-  .form {
     .input-fields {
-      %form-position {
-        p {
-          color: rgba(8, 70, 59, 1) !important;
-        }
-      }
-
-      input,
-      textarea {
+      input, textarea {
         color: rgba(28, 28, 28, 1);
-
-        &::placeholder {
-          color: rgba(28, 28, 28, 0.6) !important;
-        }
+        &::placeholder { color: rgba(28, 28, 28, 0.5) !important; }
       }
-    }
 
-    %hover-effect {
-      border-top-color: rgba(8, 70, 59, 1);
-      border-bottom-color: rgba(8, 70, 59, 1);
-
-      ::placeholder {
-        color: rgba(28, 28, 28, 1) !important;
-      }
-    }
-
-    %border-style {
-      border-top-color: rgba(61, 207, 182, 0.6);
-      border-bottom-color: rgba(61, 207, 182, 0.6);
-    }
-  }
-
-  .message {
-    textarea {
-      background-color: rgba(245, 245, 245, 1) !important;
-    }
-  }
-
-  .name:hover,
-  .email:hover,
-  .message:hover {
-    input,
-    textarea {
-      color: rgba(28, 28, 28, 0.9) !important;
+      textarea { background-color: transparent !important; }
     }
   }
 
@@ -69,11 +33,11 @@
     color: rgba(28, 28, 28, 0.9);
 
     .policy {
-      color: rgba(8, 70, 59, 1);
+      color: rgba(2, 132, 199, 1);
 
       &:hover {
         color: rgba(28, 28, 28, 1);
-        border-bottom: 1px solid rgba(8, 70, 59, 1);
+        border-bottom: 1px solid rgba(2, 132, 199, 1);
       }
     }
   }
@@ -81,59 +45,25 @@
   button.active {
     border: 1px solid rgba(28, 28, 28, 1);
 
-    .text-container {
-      color: rgba(28, 28, 28, 1);
-    }
+    .text-container { color: rgba(28, 28, 28, 1); }
 
     &:hover {
-      border: 1px solid rgba(8, 70, 59, 1);
-
-      .text-container {
-        color: rgba(8, 70, 59, 1);
-      }
-    }
-  }
-
-  .data-protection-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-
-    .overlay-content {
-      background-color: rgba(255, 255, 255, 1);
-      border: 2px solid rgba(8, 70, 59, 1);
-
-      h1 {
-        color: rgba(8, 70, 59, 1);
-      }
-
-      p {
-        color: rgba(28, 28, 28, 0.9);
-      }
-
-      .close-button {
-        &::before,
-        &::after {
-          background-color: rgba(8, 70, 59, 1);
-        }
-
-        &:hover::before,
-        &:hover::after {
-          background-color: rgba(28, 28, 28, 1);
-        }
-      }
+      border: 1px solid rgba(2, 132, 199, 1);
+      .text-container { color: rgba(2, 132, 199, 1); }
     }
   }
 }
 
 :host-context(body.light-mode) .success-overlay {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(184, 230, 220, 0.95) 100%);
-  border-left: 2px solid rgba(8, 70, 59, 1);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(186, 230, 253, 0.95) 100%);
+  border-left: 2px solid rgba(2, 132, 199, 1);
   box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
 
   .success-content {
     color: rgba(28, 28, 28, 1);
 
     h3 {
-      color: rgba(8, 70, 59, 1);
+      color: rgba(2, 132, 199, 1);
     }
 
     p {
@@ -141,181 +71,182 @@
     }
 
     .close-success-btn {
-      border: 2px solid rgba(8, 70, 59, 1);
-      color: rgba(8, 70, 59, 1);
+      border: 2px solid rgba(2, 132, 199, 1);
+      color: rgba(2, 132, 199, 1);
 
       &:hover {
-        background: rgba(8, 70, 59, 1);
+        background: rgba(2, 132, 199, 1);
         color: rgba(255, 255, 255, 1);
-        box-shadow: 0 8px 20px rgba(8, 70, 59, 0.3);
+        box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
       }
     }
   }
 }
 
 .contact-me {
-  background-color: rgba(28, 28, 28, 1);
-  padding: 48px 0;
+  background-color: rgba(8, 8, 20, 1);
+  background-image:
+    linear-gradient(to bottom, rgba(8, 8, 20, 1) 0%, transparent 12%, transparent 88%, rgba(8, 8, 20, 1) 100%),
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(56, 189, 248, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 40% 30% at 90% 100%, rgba(96, 165, 250, 0.08) 0%, transparent 55%);
+  padding: 96px 0;
 
   .content-width {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
+  }
 
-    .contact-me-container {
-      display: flex;
-      gap: 40px;
-      height: 541px;
+  .section-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 48px;
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(56, 189, 248, 1);
+      margin: 0 0 16px 0;
+    }
+
+    h2 {
+      font-family: 'Fira Code', monospace;
+      font-size: 56px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 1);
+      margin: 0 0 20px 0;
+      line-height: 1.1;
+    }
+
+    .section-desc {
+      font-family: 'Fira Code', monospace;
+      font-size: 20px;
+      font-weight: 700;
+      color: rgba(56, 189, 248, 1);
+      margin: 0;
+    }
+  }
+
+  .contact-card {
+    width: 100%;
+    background: rgba(56, 189, 248, 0.03);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    border-radius: 28px;
+    padding: 48px;
+    backdrop-filter: blur(20px);
+    box-sizing: border-box;
+
+    .contact-intro {
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0 0 36px 0;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+
+      .highlight {
+        font-weight: 700;
+        color: rgba(56, 189, 248, 1);
+      }
+    }
+
+    form {
       width: 100%;
 
-      .work-together {
-        width: 50%;
-        height: auto;
+      .input-fields {
+        %form-position {
+          text-align: start;
+          padding: 20px 0;
 
-        .contact-me-text {
-          font-size: 24px;
-          font-weight: 500;
-          color: rgba(61, 207, 182, 1);
-          margin: 0;
-          margin-bottom: 16px;
-        }
+          p {
+            font-family: Fira Code;
+            font-size: 20px;
+            font-weight: 500;
+            color: rgba(56, 189, 248, 1);
+            margin: 0;
+            margin-bottom: 12px;
 
-        h3 {
-          font-family: Fira Code;
-          font-weight: 700;
-          font-size: 64px;
-          color: rgba(61, 207, 182, 1);
-          line-height: 0.9;
-          margin: 0;
-          margin-bottom: 24px;
-        }
-
-        .problem-text {
-          font-family: Fira Code;
-          font-weight: 700;
-          font-size: 24px;
-          color: rgba(61, 207, 182, 1);
-        }
-
-        .need-me-text {
-          line-height: 1.6;
-
-          span {
-            font-weight: 700;
-            color: rgba(61, 207, 182, 1);
-          }
-        }
-      }
-
-      .form {
-        width: 50%;
-        height: auto;
-        text-align: center;
-
-        .input-fields {
-          height: 393px;
-
-          %form-position {
-            text-align: start;
-            padding: 24px;
-            height: 80px;
-
-            p {
-              font-family: Fira Code;
-              font-size: 24px;
-              font-weight: 500;
-              color: rgba(61, 207, 182, 1);
-              margin: 0;
-              margin-bottom: 16px;
-
-              &:hover {
-                cursor: pointer;
-              }
+            &:hover {
+              cursor: pointer;
             }
           }
+        }
 
-          input {
-            font-size: 18px;
-            background-color: transparent;
-            border: unset;
-            padding: 0;
-            width: 100%;
-            height: 22px;
-          }
+        input {
+          font-size: 18px;
+          background-color: transparent;
+          border: unset;
+          padding: 0;
+          width: 100%;
+          height: 22px;
+          color: inherit;
+        }
 
-          input::placeholder {
-            font-size: 18px;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.8);
-            background-color: transparent;
-            transition: all 125ms ease-in-out;
-          }
+        input::placeholder {
+          font-size: 18px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.5);
+          background-color: transparent;
+          transition: all 125ms ease-in-out;
+        }
 
-          textarea {
-            background-color: rgba(28, 28, 28, 1);
-            border: unset;
-            padding: 0;
-            width: 100%;
-            height: 22px;
-            max-height: 44px;
-            resize: vertical;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
-          }
+        textarea {
+          background-color: transparent;
+          border: unset;
+          padding: 0;
+          width: 100%;
+          height: 22px;
+          max-height: 88px;
+          resize: vertical;
+          font-family: inherit;
+          font-size: inherit;
+          color: inherit;
+        }
 
-          textarea::placeholder {
-            font-size: 18px;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.8);
-            transition: all 125ms ease-in-out;
-          }
+        textarea::placeholder {
+          font-size: 18px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.5);
+          transition: all 125ms ease-in-out;
         }
 
         %hover-effect {
           cursor: pointer;
-          border-top-color: rgba(61, 207, 182, 1);
-          border-bottom-color: rgba(61, 207, 182, 1);
+          border-top-color: rgba(56, 189, 248, 1);
+          border-bottom-color: rgba(56, 189, 248, 1);
 
           ::placeholder {
-            color: rgba(255, 255, 255, 1);
+            color: rgba(255, 255, 255, 0.8);
           }
         }
 
         %border-style {
-          border-top: 1px solid rgba(61, 207, 182, 0.5);
-          border-bottom: 1px solid rgba(61, 207, 182, 0.5);
+          border-top: 1px solid rgba(56, 189, 248, 0.35);
+          border-bottom: 1px solid rgba(56, 189, 248, 0.35);
           transition: all 125ms ease-in-out;
         }
 
         .name {
           @extend %form-position;
           @extend %border-style;
-          transition: all 125ms ease-in-out;
 
-          &:hover {
-            @extend %hover-effect;
-          }
+          &:hover { @extend %hover-effect; }
         }
 
         .email {
           @extend %form-position;
           @extend %border-style;
-          transition: all 125ms ease-in-out;
 
-          &:hover {
-            @extend %hover-effect;
-          }
+          &:hover { @extend %hover-effect; }
         }
 
         .message {
           @extend %form-position;
           @extend %border-style;
-          transition: all 125ms ease-in-out;
 
-          &:hover {
-            @extend %hover-effect;
-          }
+          &:hover { @extend %hover-effect; }
         }
       }
     }
@@ -384,6 +315,7 @@
           height: 100%;
           object-fit: contain;
           cursor: pointer;
+          filter: brightness(0) saturate(100%) invert(76%) sepia(77%) saturate(514%) hue-rotate(168deg) brightness(104%) contrast(101%);
         }
 
         .checkbox-hover {
@@ -413,7 +345,7 @@
 
     .policy {
       font-weight: 700;
-      color: rgba(61, 207, 182, 1);
+      color: rgba(56, 189, 248, 1);
       transition: all 125ms ease-in-out;
       border-bottom: 1px solid transparent;
       animation: policyPulse 3s ease-in-out infinite;
@@ -421,7 +353,7 @@
       &:hover {
         cursor: pointer;
         color: rgba(255, 255, 255, 1);
-        border-bottom: 1px solid rgba(61, 207, 182, 1);
+        border-bottom: 1px solid rgba(56, 189, 248, 1);
         animation: none;
       }
     }
@@ -456,10 +388,10 @@
       }
 
       &:hover {
-        border: 1px solid rgba(61, 207, 182, 1);
+        border: 1px solid rgba(56, 189, 248, 1);
 
         .text-container {
-          color: rgba(61, 207, 182, 1);
+          color: rgba(56, 189, 248, 1);
           animation: marquee 2s linear infinite;
           animation-delay: 125ms;
         }
@@ -541,7 +473,7 @@
 
   .overlay-content {
     background-color: rgba(28, 28, 28, 1);
-    border: 1px solid rgba(61, 207, 182, 1);
+    border: 1px solid rgba(56, 189, 248, 1);
     border-radius: 24px;
     width: 80%;
     max-width: 800px;
@@ -554,7 +486,7 @@
 
     h1 {
       font-size: 24px;
-      color: rgba(61, 207, 182, 1);
+      color: rgba(56, 189, 248, 1);
       margin-bottom: 20px;
       font-family: Fira Code;
       padding-right: 40px;
@@ -590,7 +522,7 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: rgba(61, 207, 182, 1);
+        background-color: rgba(56, 189, 248, 1);
         top: 50%;
         left: 0;
       }
@@ -617,9 +549,9 @@
   right: -402px;
   width: 400px;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(28, 28, 28, 0.95) 0%, rgba(38, 82, 75, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(8, 8, 20, 0.97) 0%, rgba(12, 20, 69, 0.97) 100%);
   backdrop-filter: blur(10px);
-  border-left: 2px solid rgba(61, 207, 182, 1);
+  border-left: 2px solid rgba(56, 189, 248, 1);
   z-index: 1001;
   display: flex;
   align-items: center;
@@ -646,7 +578,7 @@
       font-family: 'Fira Code', monospace;
       font-size: 24px;
       font-weight: 700;
-      color: rgba(61, 207, 182, 1);
+      color: rgba(56, 189, 248, 1);
       margin-bottom: 16px;
     }
 
@@ -658,8 +590,8 @@
 
     .close-success-btn {
       background: transparent;
-      border: 2px solid rgba(61, 207, 182, 1);
-      color: rgba(61, 207, 182, 1);
+      border: 2px solid rgba(56, 189, 248, 1);
+      color: rgba(56, 189, 248, 1);
       padding: 12px 24px;
       border-radius: 25px;
       font-size: 14px;
@@ -668,10 +600,10 @@
       transition: all 125ms ease-in-out;
 
       &:hover {
-        background: rgba(61, 207, 182, 1);
+        background: rgba(56, 189, 248, 1);
         color: rgba(28, 28, 28, 1);
         transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(61, 207, 182, 0.3);
+        box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
       }
     }
   }
@@ -694,468 +626,109 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .contact-me {
-    .content-width {
-      .contact-me-container {
-        height: auto;
-        gap: 32px;
-
-        .work-together {
-          h3 {
-            font-size: 56px;
-          }
-
-          .contact-me-text {
-            font-size: 22px;
-          }
-
-          .problem-text {
-            font-size: 22px;
-          }
-        }
-
-        .form {
-          .input-fields {
-            height: auto;
-
-            %form-position {
-              padding: 20px;
-              height: 70px;
-
-              p {
-                font-size: 22px;
-                margin-bottom: 12px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .data-protection-overlay {
-    .overlay-content {
-      max-width: 700px;
-      padding: 25px;
-
-      h1 {
-        font-size: 22px;
-      }
-
-      .scroll-content {
-        strong {
-          font-size: 17px;
-        }
-      }
-    }
-  }
-
-  .error-message {
-    font-size: 14px;
-  }
-
-  .error-message-privacy {
-    font-size: 12px;
-    margin-bottom: -6px;
+@media (max-width: 1200px) {
+  .contact-me .section-header h2 {
+    font-size: 48px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .contact-me {
-    .content-width {
-      .contact-me-container {
-        gap: 24px;
+    padding: 72px 0;
 
-        .work-together {
-          h3 {
-            font-size: 48px;
-          }
+    .section-header h2 { font-size: 40px; }
+    .contact-card { padding: 36px 32px; }
+  }
+}
 
-          .contact-me-text {
-            font-size: 20px;
-          }
+@media (max-width: 768px) {
+  .contact-me {
+    padding: 60px 0;
 
-          .problem-text {
-            font-size: 20px;
-          }
-        }
+    .section-header {
+      h2 { font-size: 32px; }
+      .section-desc { font-size: 17px; }
+    }
 
-        .form {
-          .input-fields {
-            %form-position {
-              padding: 16px;
-              height: 65px;
+    .contact-card {
+      padding: 28px 20px;
 
-              p {
-                font-size: 20px;
-                margin-bottom: 10px;
-              }
-            }
-          }
-        }
+      .contact-intro { font-size: 15px; }
+
+      .input-fields {
+        input, textarea { font-size: 16px; }
+        input::placeholder, textarea::placeholder { font-size: 16px; }
       }
     }
   }
 
-  .data-protection-overlay {
-    .overlay-content {
-      max-width: 650px;
-      max-height: 75vh;
+  .checkbox-row .policy-text { font-size: 14px; }
+
+  button { width: 130px; height: 42px; font-size: 14px; }
+
+  .error-message { font-size: 14px; }
+  .error-message-privacy { font-size: 12px; }
+
+  .success-overlay {
+    width: 350px;
+    right: -350px;
+
+    .success-content {
+      padding: 30px 20px;
+      h3 { font-size: 20px; }
+      p { font-size: 14px; }
     }
   }
+}
 
-  @media (max-width: 992px) {
-    .contact-me {
-      height: auto;
-      padding-bottom: 40px;
+@media (max-width: 576px) {
+  .contact-me {
+    padding: 48px 0;
 
-      .content-width {
-        .contact-me-container {
-          flex-direction: column;
-          height: auto;
-
-          .work-together,
-          .form {
-            width: 100%;
-          }
-
-          .work-together {
-            margin-bottom: 40px;
-
-            h3 {
-              font-size: 36px;
-            }
-
-            .contact-me-text {
-              font-size: 18px;
-            }
-
-            .problem-text {
-              font-size: 18px;
-            }
-          }
-        }
-      }
+    .section-header {
+      h2 { font-size: 26px; }
+      .section-desc { font-size: 15px; }
     }
 
-    .data-protection-overlay {
-      .overlay-content {
-        width: 90%;
-        max-width: 600px;
-        padding: 25px;
-
-        h1 {
-          font-size: 20px;
-        }
-
-        .scroll-content {
-          padding-right: 10px;
-          margin-right: -10px;
-
-          strong {
-            font-size: 16px;
-            margin-top: 12px;
-            margin-bottom: 8px;
-          }
-
-          p,
-          li {
-            font-size: 15px;
-          }
-        }
-      }
-    }
-
-    button {
-      margin-top: 16px;
-    }
-
-    .error-message {
-      margin: 0;
-      font-size: 16px;
-    }
+    .contact-card { padding: 24px 16px; border-radius: 20px; }
   }
 
-  @media (max-width: 768px) {
-    .contact-me {
-      .content-width {
-        .contact-me-container {
-          gap: 16px;
-
-          .work-together {
-            margin-bottom: 32px;
-
-            h3 {
-              font-size: 30px;
-            }
-
-            .need-me-text {
-              font-size: 14px;
-            }
-          }
-
-          .form {
-            .input-fields {
-              %form-position {
-                padding: 14px;
-                height: 60px;
-
-                p {
-                  font-size: 18px;
-                  margin-bottom: 8px;
-                }
-              }
-
-              input,
-              textarea {
-                font-size: 16px;
-              }
-
-              input::placeholder,
-              textarea::placeholder {
-                font-size: 16px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .data-protection-overlay {
-      .overlay-content {
-        width: 100%;
-        margin: 0 15px;
-        padding: 20px;
-        max-height: 70vh;
-
-        h1 {
-          font-size: 18px;
-          margin-bottom: 15px;
-        }
-
-        .scroll-content {
-          height: calc(100% - 35px);
-
-          strong {
-            font-size: 15px;
-          }
-
-          p,
-          li {
-            font-size: 14px;
-            margin-bottom: 12px;
-          }
-
-          ul {
-            padding-left: 15px;
-          }
-        }
-      }
-    }
-
-    .checkbox-row {
-      .policy-text {
-        font-size: 14px;
-      }
-    }
-
-    button {
-      width: 130px;
-      height: 42px;
-      font-size: 14px;
-    }
-
-    .error-message {
-      font-size: 14px;
-    }
-
-    .error-message-privacy {
-      font-size: 12px;
-    }
-
-    .success-overlay {
-      width: 350px;
-      right: -350px;
-
-      .success-content {
-        padding: 30px 20px;
-
-        h3 {
-          font-size: 20px;
-        }
-
-        p {
-          font-size: 14px;
-        }
-      }
-    }
+  .checkbox-row .checkbox-container {
+    width: 20px;
+    height: 20px;
   }
 
-  @media (max-width: 576px) {
-    .contact-me {
-      .content-width {
-        .contact-me-container {
-          .work-together {
-            h3 {
-              font-size: 24px;
-            }
+  .success-overlay {
+    width: 100%;
+    right: -100%;
+    border-left: none;
 
-            .contact-me-text,
-            .problem-text {
-              font-size: 16px;
-            }
-          }
-
-          .form {
-            .input-fields {
-              %form-position {
-
-                p {
-                  font-size: 16px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .data-protection-overlay {
-      .overlay-content {
-        padding: 15px;
-        border-radius: 16px;
-
-        h1 {
-          font-size: 16px;
-          margin-bottom: 12px;
-        }
-
-        .close-button {
-          width: 25px;
-          height: 25px;
-          top: 10px;
-          right: 10px;
-        }
-
-        .scroll-content {
-          padding-right: 8px;
-          margin-right: -8px;
-
-          strong {
-            font-size: 14px;
-            margin-top: 10px;
-            margin-bottom: 6px;
-          }
-
-          p,
-          li {
-            font-size: 13px;
-            margin-bottom: 10px;
-          }
-        }
-      }
-    }
-
-    .checkbox-row {
-      .checkbox-container {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .success-overlay {
-      width: 100%;
-      right: -100%;
-      border-left: none;
-      border-top: none;
-
-      .success-content {
-        padding: 20px 15px;
-
-        .success-icon svg {
-          width: 50px;
-          height: 50px;
-        }
-
-        h3 {
-          font-size: 18px;
-        }
-
-        p {
-          font-size: 13px;
-        }
-      }
+    .success-content {
+      padding: 20px 15px;
+      .success-icon svg { width: 50px; height: 50px; }
+      h3 { font-size: 18px; }
+      p { font-size: 13px; }
     }
   }
+}
 
-  @media (max-width: 400px) {
-    .contact-me {
-      .content-width {
-        .contact-me-container {
-          .work-together {
-            h3 {
-              font-size: 20px;
-            }
-
-            .need-me-text {
-              font-size: 13px;
-            }
-          }
-
-          .form {
-            .input-fields {
-
-              input,
-              textarea {
-                font-size: 14px;
-              }
-
-              input::placeholder,
-              textarea::placeholder {
-                font-size: 14px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    button {
-      width: 120px;
-      height: 36px;
-      padding: 0 16px;
-      font-size: 13px;
-    }
-
-    .success-overlay {
-      button {
-        height: 42px;
-      }
-    }
+@media (max-width: 400px) {
+  .contact-me .contact-card .input-fields {
+    input, textarea { font-size: 14px; }
+    input::placeholder, textarea::placeholder { font-size: 14px; }
   }
 
-  @media (max-width: 360px) {
-    .error-message {
-      font-size: 12px;
-    }
-
-    .error-message-privacy {
-      font-size: 12px;
-    }
+  button {
+    width: 120px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 13px;
   }
 
-  @media (max-width: 320px) {
-    .contact-me {
-      .content-width {
-        .contact-me-container {
-          .work-together {
-            h3 {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-    }
-  }
+  .success-overlay button { height: 42px; }
+}
+
+@media (max-width: 360px) {
+  .error-message { font-size: 12px; }
+  .error-message-privacy { font-size: 12px; }
 }

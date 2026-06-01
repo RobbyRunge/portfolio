@@ -5,17 +5,19 @@ import { RouterOutlet } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
+import { IntroComponent } from './shared/intro/intro.component';
 // import { CookieBannerComponent } from './shared/cookie-banner/cookie-banner.component';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet], // CookieBannerComponent
+  imports: [RouterOutlet, IntroComponent], // CookieBannerComponent
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  showIntro = false;
 
   constructor(
     private router: Router,
@@ -25,6 +27,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   ) { }
 
   ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const alreadyShown = sessionStorage.getItem('intro_shown');
+      const isHome = window.location.pathname === '/';
+      this.showIntro = !alreadyShown && isHome;
+      if (this.showIntro) {
+        sessionStorage.setItem('intro_shown', '1');
+      }
+    }
+
     this.setTranslatedTitle();
     this.translate.onLangChange.subscribe(() => {
       this.setTranslatedTitle();

@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, signal } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../translation.service';
 import { Router } from '@angular/router';
@@ -13,6 +13,12 @@ export class HeaderComponent {
   mobileMenuOpen = false;
   isGerman = true;
   isDay = false;
+  isScrolled = false;
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.isScrolled = window.scrollY > 30;
+  }
 
   constructor(
     private elementRef: ElementRef,

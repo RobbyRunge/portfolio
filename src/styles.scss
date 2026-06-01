@@ -30,6 +30,11 @@ body {
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden !important;
+  background-color: #080814;
+}
+
+body.light-mode {
+  background-color: #f0f9ff;
 }
 
 ::-webkit-scrollbar {
@@ -64,12 +69,12 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(61, 207, 182, 0.3);
+    background-color: rgba(56, 189, 248, 0.25);
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    box-shadow: 0 0 100px 20px rgba(61, 207, 182, 0.3),
-      0 0 40px 20px rgba(61, 207, 182, 0.3);
+    box-shadow: 0 0 100px 20px rgba(56, 189, 248, 0.2),
+      0 0 40px 20px rgba(96, 165, 250, 0.15);
     transition: transform 0.2s ease;
   }
 }
@@ -86,7 +91,7 @@ span {
 .typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 2px solid rgba(61, 207, 182, 1);
+  border-right: 2px solid rgba(56, 189, 248, 1);
   white-space: nowrap;
   animation:
     typing-loop 4s steps(30, end) infinite,
@@ -121,6 +126,6 @@ span {
   }
 
   50% {
-    border-color: rgba(61, 207, 182, 1);
+    border-color: rgba(56, 189, 248, 1);
   }
 }

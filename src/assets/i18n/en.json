@@ -10,18 +10,21 @@
         "CONTACT_ME": "Contact me"
     },
     "MARQUEE": {
-        "MOBILE_WORK": "Available for remote work",
+        "MOBILE_WORK": "Available for freelance projects",
         "FULLSTACK_DEV": "Fullstack Developer",
         "LOCATION": "based in Eilenburg",
-        "AVAILABLE": "open for work"
+        "AVAILABLE": "open for projects"
     },
     "ABOUT": {
         "WHO_I_AM": "Who I am",
         "TITLE": "About me",
         "INTRO": "Hello, I'm Robby. IT is a great source of inspiration for me, as I enjoy constantly learning new things and staying up to date with technology. This exciting field has always fascinated me. It's simply fun to solve problems, code, or develop innovative solutions. The mix of creativity and logic excites me every day anew!",
-        "LOCATION": "I currently live in Eilenburg. I'm very open to remote work (home office).",
+        "LOCATION": "I currently live in Eilenburg. I prefer to work on projects remotely.",
         "LEARNING": "I love new technologies and constantly learn - through practice, projects, and further education.",
-        "APPROACH": "My approach: break down problems analytically, solve them creatively - always with a focus on elegant, efficient results. Perseverance and teamwork help me learn from every challenge."
+        "APPROACH": "My approach: break down problems analytically, solve them creatively - always with a focus on elegant, efficient results. Perseverance and teamwork help me learn from every challenge.",
+        "STAT_CERTS": "Certificates",
+        "STAT_STACK": "Frontend · Backend",
+        "STAT_REMOTE": "Remote-capable"
     },
     "SKILLS": {
         "TECHNOLOGIES": "Technologies",
@@ -29,7 +32,7 @@
         "DESCRIPTION": "I develop modern web applications and backend solutions using HTML5, CSS3, JavaScript/TypeScript, Angular as well as Python, Django, and the Django REST Framework. I particularly value clean code, performance, UX, and scalability. Since web and backend development are constantly evolving, I continuously learn – whether it's new tools, frameworks, libraries, or best practices. Flexibility and adaptability are second nature to me.",
         "NEED": "Do you need ",
         "ANOTHER_SKILL": "another skill?",
-        "CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+        "CONTACT_ME": "Feel free to reach out – I'm excited about interesting projects.",
         "LETS_TALK": "Let's talk",
         "GROWTH_MINDSET": "Growth mindset",
         "LEARNING_INTEREST": "I have a special interest in learning",
@@ -84,6 +87,7 @@
             "DESCRIPTION": "Arbor is a personal finance management app. Track income and expenses, manage accounts and budgets, and visualize your finances with charts. Built with Django REST Framework and React — currently in active development."
         }
     },
+    "COLLEAGUES_LABEL": "References",
     "HEADLINE_SECTION": "What my colleagues say about me",
     "TESTIMONIALS": {
         "ARNESTO": "Robby is a good team colleague to me. He is very organized and has always contributed to maintaining a good atmosphere in the team. It was definitely a positive experience to implement a project with him.",
@@ -101,10 +105,10 @@
     },
     "CONTACT": {
         "CONTACT_ME": "Contact me",
-        "LETS_WORK_TOGETHER": "Let's work together",
-        "PROBLEM_TO_SOLVE": "Do you have a problem to solve?",
-        "EXPERTISE_TEXT": "Whether it's project management, digitalization, or process optimization – with me by your side, it'll be strategic, creative, and above all, effective. I bring not only expertise but also fresh ideas to your projects.",
-        "NEED_FULLSTACK": "Need a fullstack developer?",
+        "LETS_WORK_TOGETHER": "Let's build something",
+        "PROBLEM_TO_SOLVE": "Got a project idea?",
+        "EXPERTISE_TEXT": "Whether it's a web app, API, or a custom tool – I help turn ideas into working software. Creative, technically solid, and focused on what matters.",
+        "NEED_FULLSTACK": "Have a project for me?",
         "LETS_TALK": "Let's talk!",
         "NAME_QUESTION": "What is your name?",
         "NAME_PLACEHOLDER": "Your name goes here",
