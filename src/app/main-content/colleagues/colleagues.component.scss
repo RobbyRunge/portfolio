@@ -97,6 +97,7 @@
   gap: 24px;
   width: max-content;
   animation: testimonials-scroll 45s linear infinite;
+  position: relative;
 }
 
 @keyframes testimonials-scroll {
@@ -120,10 +121,9 @@
 
   &:hover {
     border-color: rgba(56, 189, 248, 0.45);
-    box-shadow: 0 16px 48px rgba(56, 189, 248, 0.25);
-    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 16px 24px -8px rgba(56, 189, 248, 0.22);
+    transform: translateY(-6px);
     z-index: 10;
-    overflow: visible;
 
     .card-background-glow { opacity: 1; }
   }
