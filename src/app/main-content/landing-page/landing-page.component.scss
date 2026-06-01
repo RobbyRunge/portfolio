@@ -38,6 +38,15 @@
 
 :host-context(body.light-mode) .container-info-links {
   .border-right { border: 1px solid rgba(14, 165, 233, 0.6); }
+
+  .social-icon img {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(82%) saturate(700%) hue-rotate(189deg) brightness(90%);
+    opacity: 1;
+  }
+
+  .social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(80%) saturate(450%) hue-rotate(173deg) brightness(103%);
+  }
 }
 
 :host-context(body.light-mode) .marquee {
@@ -46,6 +55,10 @@
   .marquee-inner p {
     color: rgba(2, 132, 199, 1);
     -webkit-text-fill-color: rgba(2, 132, 199, 1);
+
+    img {
+      filter: brightness(0) saturate(100%) invert(34%) sepia(82%) saturate(700%) hue-rotate(189deg) brightness(90%);
+    }
   }
 }
 
