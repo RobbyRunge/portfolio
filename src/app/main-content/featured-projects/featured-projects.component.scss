@@ -391,13 +391,17 @@
 
             img {
               transform: translate(0, 0);
-              transition: transform 125ms ease-in-out;
+              transition: transform 125ms ease-in-out, filter 125ms ease-in-out;
+              filter: brightness(0) invert(1);
             }
 
             &:hover {
               border: 1px solid rgba(56, 189, 248, 1);
               color: rgba(56, 189, 248, 1);
-              img { transform: translate(2px, -2px); }
+              img {
+                transform: translate(2px, -2px);
+                filter: brightness(0) saturate(100%) invert(76%) sepia(77%) saturate(514%) hue-rotate(168deg) brightness(104%) contrast(101%);
+              }
             }
 
             &.coming-soon-button {
@@ -443,13 +447,17 @@
       gap: 8px;
 
       img {
-        transition: transform 125ms ease-in-out;
+        transition: transform 125ms ease-in-out, filter 125ms ease-in-out;
         transform: translateX(0);
+        filter: brightness(0) saturate(100%) invert(76%) sepia(77%) saturate(514%) hue-rotate(168deg) brightness(104%) contrast(101%);
       }
 
       &:hover {
         color: rgba(255, 255, 255, 1);
-        img { transform: translateX(4px); }
+        img {
+          transform: translateX(4px);
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
